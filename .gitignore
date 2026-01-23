@@ -1,0 +1,20 @@
+*.pth
+*.pt
+*.pkl
+*.ptl
+*.pthl
+*.pth.tar
+*.pth.tar.gz
+*.pth.tar.bz2
+*.pth.tar.xz
+*.pth.tar.lzma
+*.pth.tar.lz
+*.pth.tar.lz4
+*.pth.tar.zstd
+*.pth.tar.z
+*.corrupted_backup
+**/.git/objects/pack/*
+
+# Embedded git repositories (use submodules if needed)
+SPRSound/.git/
+hear/.git/

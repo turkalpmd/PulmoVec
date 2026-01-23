@@ -1,0 +1,1048 @@
+{
+  "accuracy": {
+    "value": 0.7628041216078352,
+    "ci95_lower": 0.7504539889818403,
+    "ci95_upper": 0.7749438890022444
+  },
+  "f1_macro": {
+    "value": 0.6048768742647875,
+    "ci95_lower": 0.5564344728646506,
+    "ci95_upper": 0.6619139711278886
+  },
+  "f1_weighted": {
+    "value": 0.754398383189113,
+    "ci95_lower": 0.7408473276835925,
+    "ci95_upper": 0.7675563000345417
+  },
+  "mcc": {
+    "value": 0.6725080293284362,
+    "ci95_lower": 0.6563589057371968,
+    "ci95_upper": 0.688651745691056
+  },
+  "log_loss": {
+    "value": 0.6563483870174815,
+    "ci95_lower": 0.6286195678792031,
+    "ci95_upper": 0.683238008807567
+  },
+  "precision_per_class": {
+    "Acute upper respiratory infection": {
+      "value": 0.7785234658749851,
+      "ci95_lower": 0.6284821428571429,
+      "ci95_upper": 0.9117647058823529
+    },
+    "Airway foreign body": {
+      "value": 0.995,
+      "ci95_lower": 1.0,
+      "ci95_upper": 1.0
+    },
+    "Asthma": {
+      "value": 0.7070135972872602,
+      "ci95_lower": 0.6470327954190526,
+      "ci95_upper": 0.7666767068273093
+    },
+    "Bronchiectasia": {
+      "value": 0.7254268823152467,
+      "ci95_lower": 0.6,
+      "ci95_upper": 0.8372612126245847
+    },
+    "Bronchiolitis": {
+      "value": 0.7280191477216882,
+      "ci95_lower": 0.6070586253369272,
+      "ci95_upper": 0.8363636363636363
+    },
+    "Bronchitis": {
+      "value": 0.6571723667525059,
+      "ci95_lower": 0.6088054742059023,
+      "ci95_upper": 0.7035068034943007
+    },
+    "Chronic cough": {
+      "value": 0.33668896936396936,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.7783333333333329
+    },
+    "Control Group": {
+      "value": 0.6560171006249392,
+      "ci95_lower": 0.6042153304841206,
+      "ci95_upper": 0.7086155587224411
+    },
+    "Hemoptysis": {
+      "value": 0.6998000947736953,
+      "ci95_lower": 0.5832954545454546,
+      "ci95_upper": 0.8200357142857142
+    },
+    "Kawasaki disease": {
+      "value": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    "Other respiratory diseases": {
+      "value": 0.7301780614929936,
+      "ci95_lower": 0.618956043956044,
+      "ci95_upper": 0.8333333333333334
+    },
+    "Pneumonia (non-severe)": {
+      "value": 0.788056255905988,
+      "ci95_lower": 0.7715340069800606,
+      "ci95_upper": 0.8037400584885808
+    },
+    "Pneumonia (severe)": {
+      "value": 0.7608282277864389,
+      "ci95_lower": 0.7004710144927536,
+      "ci95_upper": 0.8181818181818182
+    },
+    "Protracted bacterial bronchitis": {
+      "value": 0.612,
+      "ci95_lower": 0.0,
+      "ci95_upper": 1.0
+    },
+    "Pulmonary hemosiderosis": {
+      "value": 0.7047294540212109,
+      "ci95_lower": 0.4,
+      "ci95_upper": 1.0
+    },
+    "Unknown": {
+      "value": 0.7993560612472839,
+      "ci95_lower": 0.7765838772472232,
+      "ci95_upper": 0.8235886504580495
+    }
+  },
+  "recall_per_class": {
+    "Acute upper respiratory infection": {
+      "value": 0.5603938840034298,
+      "ci95_lower": 0.41657608695652176,
+      "ci95_upper": 0.7000531914893616
+    },
+    "Airway foreign body": {
+      "value": 0.6261212201303954,
+      "ci95_lower": 0.25,
+      "ci95_upper": 1.0
+    },
+    "Asthma": {
+      "value": 0.5142572455667441,
+      "ci95_lower": 0.4588607594936709,
+      "ci95_upper": 0.5714285714285714
+    },
+    "Bronchiectasia": {
+      "value": 0.481828515385282,
+      "ci95_lower": 0.37971262401642153,
+      "ci95_upper": 0.5858787878787879
+    },
+    "Bronchiolitis": {
+      "value": 0.8596257441144547,
+      "ci95_lower": 0.7567267267267268,
+      "ci95_upper": 0.9459580115830115
+    },
+    "Bronchitis": {
+      "value": 0.5373351123200998,
+      "ci95_lower": 0.4901442415040414,
+      "ci95_upper": 0.5856236786469344
+    },
+    "Chronic cough": {
+      "value": 0.17197578280273293,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.42857142857142855
+    },
+    "Control Group": {
+      "value": 0.5211863067800654,
+      "ci95_lower": 0.4715978572088298,
+      "ci95_upper": 0.572540457094187
+    },
+    "Hemoptysis": {
+      "value": 0.9070943330105661,
+      "ci95_lower": 0.816313104189044,
+      "ci95_upper": 0.9791666666666666
+    },
+    "Kawasaki disease": {
+      "value": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    "Other respiratory diseases": {
+      "value": 0.6557145625770573,
+      "ci95_lower": 0.5399920634920635,
+      "ci95_upper": 0.7561236933797909
+    },
+    "Pneumonia (non-severe)": {
+      "value": 0.877678176921183,
+      "ci95_lower": 0.8642076591434433,
+      "ci95_upper": 0.890261351454162
+    },
+    "Pneumonia (severe)": {
+      "value": 0.6857631035206986,
+      "ci95_lower": 0.6289735396422261,
+      "ci95_upper": 0.7396280104310476
+    },
+    "Protracted bacterial bronchitis": {
+      "value": 0.23827088744588745,
+      "ci95_lower": 0.0,
+      "ci95_upper": 1.0
+    },
+    "Pulmonary hemosiderosis": {
+      "value": 0.6928462438066337,
+      "ci95_lower": 0.375,
+      "ci95_upper": 1.0
+    },
+    "Unknown": {
+      "value": 0.8612271444854662,
+      "ci95_lower": 0.8379445585215606,
+      "ci95_upper": 0.8837926833910693
+    }
+  },
+  "f1_per_class": {
+    "Acute upper respiratory infection": 0.6511627906976745,
+    "Airway foreign body": 0.7692307692307693,
+    "Asthma": 0.5956678700361011,
+    "Bronchiectasia": 0.5777777777777777,
+    "Bronchiolitis": 0.7889908256880734,
+    "Bronchitis": 0.5924170616113744,
+    "Chronic cough": 0.2222222222222222,
+    "Control Group": 0.5804676753782668,
+    "Hemoptysis": 0.7878787878787878,
+    "Kawasaki disease": 0.0,
+    "Other respiratory diseases": 0.6917293233082706,
+    "Pneumonia (non-severe)": 0.8306626245127761,
+    "Pneumonia (severe)": 0.7211740041928721,
+    "Protracted bacterial bronchitis": 0.4,
+    "Pulmonary hemosiderosis": 0.7,
+    "Unknown": 0.8291687914329424
+  },
+  "support_per_class": {
+    "Acute upper respiratory infection": 50,
+    "Airway foreign body": 8,
+    "Asthma": 321,
+    "Bronchiectasia": 81,
+    "Bronchiolitis": 50,
+    "Bronchitis": 464,
+    "Chronic cough": 12,
+    "Control Group": 405,
+    "Hemoptysis": 43,
+    "Kawasaki disease": 3,
+    "Other respiratory diseases": 70,
+    "Pneumonia (non-severe)": 2185,
+    "Pneumonia (severe)": 251,
+    "Protracted bacterial bronchitis": 4,
+    "Pulmonary hemosiderosis": 10,
+    "Unknown": 944
+  },
+  "sensitivity_per_class": {
+    "Acute upper respiratory infection": {
+      "value": 0.5603938840034298,
+      "ci95_lower": 0.41657608695652176,
+      "ci95_upper": 0.7000531914893616
+    },
+    "Airway foreign body": {
+      "value": 0.6261212201303954,
+      "ci95_lower": 0.25,
+      "ci95_upper": 1.0
+    },
+    "Asthma": {
+      "value": 0.5142572455667441,
+      "ci95_lower": 0.4588607594936709,
+      "ci95_upper": 0.5714285714285714
+    },
+    "Bronchiectasia": {
+      "value": 0.481828515385282,
+      "ci95_lower": 0.37971262401642153,
+      "ci95_upper": 0.5858787878787879
+    },
+    "Bronchiolitis": {
+      "value": 0.8596257441144547,
+      "ci95_lower": 0.7567267267267268,
+      "ci95_upper": 0.9459580115830115
+    },
+    "Bronchitis": {
+      "value": 0.5373351123200998,
+      "ci95_lower": 0.4901442415040414,
+      "ci95_upper": 0.5856236786469344
+    },
+    "Chronic cough": {
+      "value": 0.17197578280273293,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.42857142857142855
+    },
+    "Control Group": {
+      "value": 0.5211863067800654,
+      "ci95_lower": 0.4715978572088298,
+      "ci95_upper": 0.572540457094187
+    },
+    "Hemoptysis": {
+      "value": 0.9070943330105661,
+      "ci95_lower": 0.816313104189044,
+      "ci95_upper": 0.9791666666666666
+    },
+    "Kawasaki disease": {
+      "value": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    "Other respiratory diseases": {
+      "value": 0.6557145625770573,
+      "ci95_lower": 0.5399920634920635,
+      "ci95_upper": 0.7561236933797909
+    },
+    "Pneumonia (non-severe)": {
+      "value": 0.877678176921183,
+      "ci95_lower": 0.8642076591434433,
+      "ci95_upper": 0.890261351454162
+    },
+    "Pneumonia (severe)": {
+      "value": 0.6857631035206986,
+      "ci95_lower": 0.6289735396422261,
+      "ci95_upper": 0.7396280104310476
+    },
+    "Protracted bacterial bronchitis": {
+      "value": 0.23827088744588745,
+      "ci95_lower": 0.0,
+      "ci95_upper": 1.0
+    },
+    "Pulmonary hemosiderosis": {
+      "value": 0.6928462438066337,
+      "ci95_lower": 0.375,
+      "ci95_upper": 1.0
+    },
+    "Unknown": {
+      "value": 0.8612271444854662,
+      "ci95_lower": 0.8379445585215606,
+      "ci95_upper": 0.8837926833910693
+    }
+  },
+  "specificity_per_class": {
+    "Acute upper respiratory infection": {
+      "value": 0.9983512242725172,
+      "ci95_lower": 0.9971121665185094,
+      "ci95_upper": 0.9993815708101422
+    },
+    "Airway foreign body": {
+      "value": 1.0,
+      "ci95_lower": 1.0,
+      "ci95_upper": 1.0
+    },
+    "Asthma": {
+      "value": 0.9851186264945861,
+      "ci95_lower": 0.9817330652255876,
+      "ci95_upper": 0.9884635264541902
+    },
+    "Bronchiectasia": {
+      "value": 0.9969386580629979,
+      "ci95_lower": 0.9952251943456576,
+      "ci95_upper": 0.9983406104409732
+    },
+    "Bronchiolitis": {
+      "value": 0.9966924673757042,
+      "ci95_lower": 0.9950443939706793,
+      "ci95_upper": 0.9981458877162497
+    },
+    "Bronchitis": {
+      "value": 0.970690379426249,
+      "ci95_lower": 0.965905887859301,
+      "ci95_upper": 0.9755233453649678
+    },
+    "Chronic cough": {
+      "value": 0.999167923538271,
+      "ci95_lower": 0.9983616629121441,
+      "ci95_upper": 0.9997956264050685
+    },
+    "Control Group": {
+      "value": 0.9753824267969246,
+      "ci95_lower": 0.9709134486229717,
+      "ci95_upper": 0.9798929020455758
+    },
+    "Hemoptysis": {
+      "value": 0.9965821587339476,
+      "ci95_lower": 0.9948517298187809,
+      "ci95_upper": 0.9981470043236566
+    },
+    "Kawasaki disease": {
+      "value": 1.0,
+      "ci95_lower": 1.0,
+      "ci95_upper": 1.0
+    },
+    "Other respiratory diseases": {
+      "value": 0.9964832190824525,
+      "ci95_lower": 0.9948175787728026,
+      "ci95_upper": 0.9979422002496807
+    },
+    "Pneumonia (non-severe)": {
+      "value": 0.8101099555878308,
+      "ci95_lower": 0.7956066000566666,
+      "ci95_upper": 0.8245787981568038
+    },
+    "Pneumonia (severe)": {
+      "value": 0.9883792435577953,
+      "ci95_lower": 0.9849978568366909,
+      "ci95_upper": 0.9912305078673632
+    },
+    "Protracted bacterial bronchitis": {
+      "value": 1.0,
+      "ci95_lower": 1.0,
+      "ci95_upper": 1.0
+    },
+    "Pulmonary hemosiderosis": {
+      "value": 0.9993956048071891,
+      "ci95_lower": 0.9985696771557009,
+      "ci95_upper": 1.0
+    },
+    "Unknown": {
+      "value": 0.9483259106020993,
+      "ci95_lower": 0.9416842787447517,
+      "ci95_upper": 0.9549733942270041
+    }
+  },
+  "npv_per_class": {
+    "Acute upper respiratory infection": {
+      "value": 0.9954739275544182,
+      "ci95_lower": 0.993425107869324,
+      "ci95_upper": 0.9973289500719129
+    },
+    "Airway foreign body": {
+      "value": 0.999392773987259,
+      "ci95_lower": 0.9985705534000409,
+      "ci95_upper": 1.0
+    },
+    "Asthma": {
+      "value": 0.9667040856046545,
+      "ci95_lower": 0.9612494818325603,
+      "ci95_upper": 0.971946835868447
+    },
+    "Bronchiectasia": {
+      "value": 0.9913435068098588,
+      "ci95_lower": 0.9888475836431226,
+      "ci95_upper": 0.9938182885868005
+    },
+    "Bronchiolitis": {
+      "value": 0.9985476790877896,
+      "ci95_lower": 0.9975186104218362,
+      "ci95_upper": 0.999586099135717
+    },
+    "Bronchitis": {
+      "value": 0.9525265365072721,
+      "ci95_lower": 0.9461225890765935,
+      "ci95_upper": 0.9584760726056702
+    },
+    "Chronic cough": {
+      "value": 0.997960744705239,
+      "ci95_lower": 0.9967313585291113,
+      "ci95_upper": 0.9991825056202739
+    },
+    "Control Group": {
+      "value": 0.957643590095505,
+      "ci95_lower": 0.9514327907783393,
+      "ci95_upper": 0.9634468726895676
+    },
+    "Hemoptysis": {
+      "value": 0.9991798677079742,
+      "ci95_lower": 0.998349153941395,
+      "ci95_upper": 0.9997941115915174
+    },
+    "Kawasaki disease": {
+      "value": 0.9993831871046726,
+      "ci95_lower": 0.9985717200571312,
+      "ci95_upper": 1.0
+    },
+    "Other respiratory diseases": {
+      "value": 0.9950165649941151,
+      "ci95_lower": 0.9929736095875612,
+      "ci95_upper": 0.9968938471479674
+    },
+    "Pneumonia (non-severe)": {
+      "value": 0.8916835660732538,
+      "ci95_lower": 0.8796522793342081,
+      "ci95_upper": 0.903885445740379
+    },
+    "Pneumonia (severe)": {
+      "value": 0.983149506455078,
+      "ci95_lower": 0.9794827954691173,
+      "ci95_upper": 0.9867209963387839
+    },
+    "Protracted bacterial bronchitis": {
+      "value": 0.9993881733202615,
+      "ci95_lower": 0.9985717200571312,
+      "ci95_upper": 1.0
+    },
+    "Pulmonary hemosiderosis": {
+      "value": 0.9993633234596984,
+      "ci95_lower": 0.9985690923957482,
+      "ci95_upper": 1.0
+    },
+    "Unknown": {
+      "value": 0.9662021741264795,
+      "ci95_lower": 0.9599680556881212,
+      "ci95_upper": 0.9719183557374215
+    }
+  },
+  "ppv_per_class": {
+    "Acute upper respiratory infection": {
+      "value": 0.7785234658749851,
+      "ci95_lower": 0.6284821428571429,
+      "ci95_upper": 0.9117647058823529
+    },
+    "Airway foreign body": {
+      "value": 0.995,
+      "ci95_lower": 1.0,
+      "ci95_upper": 1.0
+    },
+    "Asthma": {
+      "value": 0.7070135972872602,
+      "ci95_lower": 0.6470327954190526,
+      "ci95_upper": 0.7666767068273093
+    },
+    "Bronchiectasia": {
+      "value": 0.7254268823152467,
+      "ci95_lower": 0.6,
+      "ci95_upper": 0.8372612126245847
+    },
+    "Bronchiolitis": {
+      "value": 0.7280191477216882,
+      "ci95_lower": 0.6070586253369272,
+      "ci95_upper": 0.8363636363636363
+    },
+    "Bronchitis": {
+      "value": 0.6571723667525059,
+      "ci95_lower": 0.6088054742059023,
+      "ci95_upper": 0.7035068034943007
+    },
+    "Chronic cough": {
+      "value": 0.33668896936396936,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.7783333333333329
+    },
+    "Control Group": {
+      "value": 0.6560171006249392,
+      "ci95_lower": 0.6042153304841206,
+      "ci95_upper": 0.7086155587224411
+    },
+    "Hemoptysis": {
+      "value": 0.6998000947736953,
+      "ci95_lower": 0.5832954545454546,
+      "ci95_upper": 0.8200357142857142
+    },
+    "Kawasaki disease": {
+      "value": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    "Other respiratory diseases": {
+      "value": 0.7301780614929936,
+      "ci95_lower": 0.618956043956044,
+      "ci95_upper": 0.8333333333333334
+    },
+    "Pneumonia (non-severe)": {
+      "value": 0.788056255905988,
+      "ci95_lower": 0.7715340069800606,
+      "ci95_upper": 0.8037400584885808
+    },
+    "Pneumonia (severe)": {
+      "value": 0.7608282277864389,
+      "ci95_lower": 0.7004710144927536,
+      "ci95_upper": 0.8181818181818182
+    },
+    "Protracted bacterial bronchitis": {
+      "value": 0.612,
+      "ci95_lower": 0.0,
+      "ci95_upper": 1.0
+    },
+    "Pulmonary hemosiderosis": {
+      "value": 0.7047294540212109,
+      "ci95_lower": 0.4,
+      "ci95_upper": 1.0
+    },
+    "Unknown": {
+      "value": 0.7993560612472839,
+      "ci95_lower": 0.7765838772472232,
+      "ci95_upper": 0.8235886504580495
+    }
+  },
+  "roc_auc_macro": {
+    "value": 0.9787198548281565,
+    "ci95_lower": 0.9764634644995305,
+    "ci95_upper": 0.980631912881934
+  },
+  "roc_auc_weighted": {
+    "value": 0.9455420244344984,
+    "ci95_lower": 0.9409925806253441,
+    "ci95_upper": 0.9499901104742436
+  },
+  "roc_auc_per_class": {
+    "Acute upper respiratory infection": {
+      "value": 0.9789525721867235,
+      "ci95_lower": 0.9559760183993486,
+      "ci95_upper": 0.9940035434007995
+    },
+    "Airway foreign body": {
+      "value": 0.9946570113428999,
+      "ci95_lower": 0.986638141067642,
+      "ci95_upper": 1.0
+    },
+    "Asthma": {
+      "value": 0.9546877629598096,
+      "ci95_lower": 0.9446806761870514,
+      "ci95_upper": 0.9637903263394504
+    },
+    "Bronchiectasia": {
+      "value": 0.9933505908762108,
+      "ci95_lower": 0.9902375087085343,
+      "ci95_upper": 0.9960797453545233
+    },
+    "Bronchiolitis": {
+      "value": 0.9975464006836887,
+      "ci95_lower": 0.9949455342930045,
+      "ci95_upper": 0.9992782283371184
+    },
+    "Bronchitis": {
+      "value": 0.9341228834918445,
+      "ci95_lower": 0.9232331822852079,
+      "ci95_upper": 0.9438408008677589
+    },
+    "Chronic cough": {
+      "value": 0.9977301975981333,
+      "ci95_lower": 0.9960124873321591,
+      "ci95_upper": 0.9990558654946241
+    },
+    "Control Group": {
+      "value": 0.9406140636895108,
+      "ci95_lower": 0.929696339698696,
+      "ci95_upper": 0.9510430217988992
+    },
+    "Hemoptysis": {
+      "value": 0.9990335450119453,
+      "ci95_lower": 0.9982732680447736,
+      "ci95_upper": 0.9996131408045493
+    },
+    "Kawasaki disease": {
+      "value": 0.998083826615735,
+      "ci95_lower": 0.9948979591836735,
+      "ci95_upper": 1.0
+    },
+    "Other respiratory diseases": {
+      "value": 0.9927457717917165,
+      "ci95_lower": 0.9881273252732091,
+      "ci95_upper": 0.996122070658654
+    },
+    "Pneumonia (non-severe)": {
+      "value": 0.9237539001730618,
+      "ci95_lower": 0.9164425879472581,
+      "ci95_upper": 0.9308551560623108
+    },
+    "Pneumonia (severe)": {
+      "value": 0.9806634573798904,
+      "ci95_lower": 0.973549135284517,
+      "ci95_upper": 0.986397771297653
+    },
+    "Protracted bacterial bronchitis": {
+      "value": 0.9996343459131414,
+      "ci95_lower": 0.9989791751735402,
+      "ci95_upper": 1.0
+    },
+    "Pulmonary hemosiderosis": {
+      "value": 0.999412483343476,
+      "ci95_lower": 0.9986875025382512,
+      "ci95_upper": 0.9998980073034164
+    },
+    "Unknown": {
+      "value": 0.9748197606262936,
+      "ci95_lower": 0.9705253737361498,
+      "ci95_upper": 0.9789353875250225
+    }
+  },
+  "confusion_matrix": [
+    [
+      28,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      1,
+      15,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      165,
+      6,
+      2,
+      18,
+      1,
+      6,
+      10,
+      0,
+      1,
+      94,
+      2,
+      0,
+      0,
+      16
+    ],
+    [
+      0,
+      0,
+      3,
+      39,
+      0,
+      12,
+      0,
+      1,
+      0,
+      0,
+      0,
+      11,
+      0,
+      0,
+      0,
+      15
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      43,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      2,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      4,
+      0,
+      6,
+      250,
+      2,
+      20,
+      0,
+      0,
+      0,
+      119,
+      7,
+      0,
+      0,
+      53
+    ],
+    [
+      0,
+      0,
+      3,
+      0,
+      0,
+      2,
+      2,
+      1,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      5,
+      2,
+      8,
+      28,
+      1,
+      211,
+      1,
+      0,
+      3,
+      108,
+      4,
+      0,
+      3,
+      30
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      39,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      46,
+      19,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      50,
+      6,
+      0,
+      41,
+      0,
+      49,
+      5,
+      0,
+      9,
+      1918,
+      31,
+      0,
+      0,
+      75
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      0,
+      7,
+      0,
+      0,
+      1,
+      51,
+      172,
+      0,
+      0,
+      12
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      7,
+      0
+    ],
+    [
+      3,
+      0,
+      3,
+      1,
+      0,
+      17,
+      0,
+      17,
+      1,
+      0,
+      2,
+      81,
+      6,
+      0,
+      0,
+      813
+    ]
+  ],
+  "classification_report": {
+    "Acute upper respiratory infection": {
+      "precision": 0.7777777777777778,
+      "recall": 0.56,
+      "f1-score": 0.6511627906976745,
+      "support": 50.0
+    },
+    "Airway foreign body": {
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1-score": 0.7692307692307693,
+      "support": 8.0
+    },
+    "Asthma": {
+      "precision": 0.7081545064377682,
+      "recall": 0.514018691588785,
+      "f1-score": 0.5956678700361011,
+      "support": 321.0
+    },
+    "Bronchiectasia": {
+      "precision": 0.7222222222222222,
+      "recall": 0.48148148148148145,
+      "f1-score": 0.5777777777777777,
+      "support": 81.0
+    },
+    "Bronchiolitis": {
+      "precision": 0.7288135593220338,
+      "recall": 0.86,
+      "f1-score": 0.7889908256880734,
+      "support": 50.0
+    },
+    "Bronchitis": {
+      "precision": 0.6578947368421053,
+      "recall": 0.5387931034482759,
+      "f1-score": 0.5924170616113744,
+      "support": 464.0
+    },
+    "Chronic cough": {
+      "precision": 0.3333333333333333,
+      "recall": 0.16666666666666666,
+      "f1-score": 0.2222222222222222,
+      "support": 12.0
+    },
+    "Control Group": {
+      "precision": 0.65527950310559,
+      "recall": 0.5209876543209877,
+      "f1-score": 0.5804676753782668,
+      "support": 405.0
+    },
+    "Hemoptysis": {
+      "precision": 0.6964285714285714,
+      "recall": 0.9069767441860465,
+      "f1-score": 0.7878787878787878,
+      "support": 43.0
+    },
+    "Kawasaki disease": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 3.0
+    },
+    "Other respiratory diseases": {
+      "precision": 0.7301587301587301,
+      "recall": 0.6571428571428571,
+      "f1-score": 0.6917293233082706,
+      "support": 70.0
+    },
+    "Pneumonia (non-severe)": {
+      "precision": 0.7883271681052199,
+      "recall": 0.8778032036613272,
+      "f1-score": 0.8306626245127761,
+      "support": 2185.0
+    },
+    "Pneumonia (severe)": {
+      "precision": 0.7610619469026548,
+      "recall": 0.6852589641434262,
+      "f1-score": 0.7211740041928721,
+      "support": 251.0
+    },
+    "Protracted bacterial bronchitis": {
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1-score": 0.4,
+      "support": 4.0
+    },
+    "Pulmonary hemosiderosis": {
+      "precision": 0.7,
+      "recall": 0.7,
+      "f1-score": 0.7,
+      "support": 10.0
+    },
+    "Unknown": {
+      "precision": 0.799410029498525,
+      "recall": 0.861228813559322,
+      "f1-score": 0.8291687914329424,
+      "support": 944.0
+    },
+    "accuracy": 0.7629055294837788,
+    "macro avg": {
+      "precision": 0.6911788803209082,
+      "recall": 0.5753348862624484,
+      "f1-score": 0.6086594077479942,
+      "support": 4901.0
+    },
+    "weighted avg": {
+      "precision": 0.75576832046228,
+      "recall": 0.7629055294837788,
+      "f1-score": 0.7546329716941758,
+      "support": 4901.0
+    }
+  }
+}
