@@ -14,7 +14,8 @@
 *.pth.tar.z
 *.corrupted_backup
 **/.git/objects/pack/*
-
+*.DS_Store
+*.vsc
 # Embedded git repositories (use submodules if needed)
 SPRSound/.git/
 hear/.git/
