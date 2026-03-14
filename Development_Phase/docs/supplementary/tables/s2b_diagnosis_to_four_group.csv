@@ -1,0 +1,17 @@
+Original diagnosis,4 Disease group
+Pneumonia (severe),Pneumonia
+Pneumonia (non-severe),Pneumonia
+Asthma,Bronchial Diseases
+Bronchitis,Bronchial Diseases
+Bronchiolitis,Bronchial Diseases
+Control Group,Normal
+Acute upper respiratory infection,Others
+Airway foreign body,Others
+Bronchiectasia,Others
+Chronic cough,Others
+Hemoptysis,Others
+Kawasaki disease,Others
+Other respiratory diseases,Others
+Protracted bacterial bronchitis,Others
+Pulmonary hemosiderosis,Others
+Unknown,Others

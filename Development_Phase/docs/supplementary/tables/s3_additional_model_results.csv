@@ -1,0 +1,3 @@
+Model,Classes,Accuracy,Macro F1,MCC,ROC-AUC (macro)
+Event type (6-class),"Coarse Crackle, Fine Crackle, Normal, Rhonchi, Wheeze, Wheeze+Crackle",0.9007,0.6714,0.7332,0.9650
+Disease (16-class),All 16 diagnoses (see Table S1),0.7445,0.5991,0.6451,0.9763

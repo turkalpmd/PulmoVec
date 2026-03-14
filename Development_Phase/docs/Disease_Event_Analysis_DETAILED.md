@@ -458,3 +458,83 @@ Stage 3: Fine-grained Disease (optional, for large groups)
 **Rapor Tarihi**: 14 Ocak 2026  
 **Analiz Eden**: HeAR Training Pipeline  
 **Veri Seti**: SPRSound Event Level Dataset (24,808 events)
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+## Tablo 1. Veri Seti Özellikleri (Train vs Test)
+
+Train ve test gruplarının aynı popülasyondan geldiğini göstermek için karşılaştırma. Stratifiye hasta bazlı bölme (train %80 / test %20). p < 0.05 anlamlı fark gösterir.
+
+| Değişken | Train | Test | p değeri |
+|----------|-------|------|----------|
+| Toplam hasta sayısı | 1,321 | 331 | — |
+| Cinsiyet, n (%) | Erkek: 666 (50.4%), Kız: 655 (49.6%) | Erkek: 184 (55.6%), Kız: 147 (44.4%) | 0.105 |
+| Yaş (yıl), medyan (IQR) | 5.0 (3.4–7.4) | 4.5 (3.3–7.0) | 0.066 |
+| Hastalık tanı dağılımı (hasta bazında) |  |  | 1.000 |
+|   Pnömoni | 723 (54.7%) | 181 (54.7%) | — |
+|   Bronkokonstriksiyon | 287 (21.7%) | 72 (21.8%) | — |
+|   Normal | 127 (9.6%) | 32 (9.7%) | — |
+|   Diğer | 184 (13.9%) | 46 (13.9%) | — |
+| Toplam olay sayısı | 20,567 | 4,241 | — |
+| Olay tipi dağılımı (alt gruplar: Normal, Crackles, Rhonchi) |  |  | 0.181 |
+|   Normal | 15623 (76.0%) | 3149 (74.3%) | — |
+|   Fine Crackle | 2909 (14.1%) | 621 (14.6%) | — |
+|   Coarse Crackle | 161 (0.8%) | 16 (0.4%) | — |
+|   Wheeze | 1254 (6.1%) | 251 (5.9%) | — |
+|   Wheeze+Crackle | 229 (1.1%) | 74 (1.7%) | — |
+|   Rhonchi | 201 (1.0%) | 16 (0.4%) | — |
+|   Stridor | 18 (0.1%) | 56 (1.3%) | — |
+|   No Event | 172 (0.8%) | 58 (1.4%) | — |
+| Sound pattern dağılımı |  |  | 0.181 |
+|   Normal | 15623 (76.0%) | 3149 (74.3%) | — |
+|   Crackles | 3299 (16.0%) | 711 (16.8%) | — |
+|   Rhonchi | 1473 (7.2%) | 323 (7.6%) | — |
+| Kayıt lokasyonu dağılımı (p1–p4) |  |  | 0.307 |
+|   p1 | 5162 (25.1%) | 1081 (25.5%) | — |
+|   p2 | 5400 (26.3%) | 1155 (27.2%) | — |
+|   p3 | 4814 (23.4%) | 951 (22.4%) | — |
+|   p4 | 5030 (24.5%) | 1008 (23.8%) | — |
+
+**Notlar:**
+- Toplam hasta: Train 1321 + Test 331 = 1652 (stratifiye hasta bazlı bölme, örtüşme yok)
+- Toplam olay: Train 20,567 + Test 4,241 = 24,808
+- Yaş: Medyan (IQR); Mann-Whitney U veya t-test
+- Kategorik değişkenler: Ki-kare testi
+
+
+## Tablo 2. Hastalık Tanı Dağılımı — Tüm Hastalıklar (Hasta Bazında)
+
+17 hastalık sınıfı, Train vs Test. p = 0.997 (anlamlı değil).
+
+| Hastalık | Train n (%) | Test n (%) |
+|----------|-------------|------------|
+| Acute upper respiratory infection | 20 (1.5%) | 3 (0.9%) |
+| Airway foreign body | 3 (0.2%) | 0 (0.0%) |
+| Asthma | 111 (8.4%) | 25 (7.6%) |
+| Bronchiectasia | 9 (0.7%) | 1 (0.3%) |
+| Bronchiolitis | 8 (0.6%) | 3 (0.9%) |
+| Bronchitis | 168 (12.7%) | 44 (13.3%) |
+| Chronic cough | 3 (0.2%) | 1 (0.3%) |
+| Control Group | 127 (9.6%) | 32 (9.7%) |
+| Hemoptysis | 3 (0.2%) | 1 (0.3%) |
+| Kawasaki disease | 1 (0.1%) | 0 (0.0%) |
+| Other respiratory diseases | 46 (3.5%) | 13 (3.9%) |
+| Pneumonia (non-severe) | 657 (49.7%) | 164 (49.5%) |
+| Pneumonia (severe) | 66 (5.0%) | 17 (5.1%) |
+| Protracted bacterial bronchitis | 2 (0.2%) | 0 (0.0%) |
+| Pulmonary hemosiderosis | 2 (0.2%) | 1 (0.3%) |
+| Unknown | 95 (7.2%) | 26 (7.9%) |
