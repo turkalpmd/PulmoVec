@@ -36,3 +36,4 @@ wav_data_backup.zip
 **/models/
 __pycache__/
 .ipynb_checkpoints/*.npz
+development_phase_legacy.zip
