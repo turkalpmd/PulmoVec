@@ -16,7 +16,7 @@ if [ -f "results_png_backup.zip" ]; then
     unzip -o results_png_backup.zip
     echo "✅ PNG files restored."
 else
-    echo "❌ Error: results_png_backup.zip not found in root."
+    echo "⚠️  Warning: results_png_backup.zip not found."
 fi
 
 echo ""
@@ -27,7 +27,18 @@ if [ -f "wav_data_backup.zip" ]; then
     unzip -o wav_data_backup.zip
     echo "✅ WAV files restored."
 else
-    echo "❌ Error: wav_data_backup.zip not found in root."
+    echo "⚠️  Warning: wav_data_backup.zip not found."
+fi
+
+echo ""
+
+# Restore Legacy Development Phase
+if [ -f "development_phase_legacy.zip" ]; then
+    echo "📦 Restoring legacy Development_Phase from development_phase_legacy.zip..."
+    unzip -o development_phase_legacy.zip
+    echo "✅ Development_Phase restored."
+else
+    echo "⚠️  Warning: development_phase_legacy.zip not found."
 fi
 
 echo ""
