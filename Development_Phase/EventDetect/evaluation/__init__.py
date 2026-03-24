@@ -1,1 +1,0 @@
-"""Temporal segmentation evaluation module."""

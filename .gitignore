@@ -16,6 +16,24 @@
 **/.git/objects/pack/*
 *.DS_Store
 *.vsc
-# Embedded git repositories (use submodules if needed)
-SPRSound/.git/
-hear/.git/
+
+# Security
+.env
+.env.*
+*.key
+*.pem
+
+# Backups
+results_png_backup.zip
+wav_data_backup.zip
+
+# Large Data & Results
+*.wav
+*.png
+*.csv
+**/results/
+**/data/
+**/models/
+__pycache__/
+.ipynb_checkpoints/*.npz
+development_phase_legacy.zip
