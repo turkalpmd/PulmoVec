@@ -76,3 +76,7 @@ scripts/train_hear_classifier.py   legacy end-to-end fine-tuning; kept because i
                                    the contaminated encoder studied as arm L1
 results_clean/       pre-specified analysis plan, audits, aggregate metrics (no per-event data)
 ```
+
+## Licence
+
+Code: MIT (see `LICENSE`). SPRSound data and HeAR weights are governed by their own terms.
