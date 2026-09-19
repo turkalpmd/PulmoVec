@@ -34,3 +34,4 @@ xgboost
 catboost
 statsmodels
 huggingface_hub
+safetensors
