@@ -1,0 +1,36 @@
+# PulmoVec: Pediatric Lung Sounds at Home Pipeline Requirements
+# Python 3.10+ recommended
+
+# PyTorch and Foundations
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+transformers==4.50.3
+huggingface-hub>=0.19.0
+
+# Audio Processing
+librosa>=0.10.0
+soundfile>=0.12.0
+scipy>=1.10.0
+
+# Tabular, Stacking Meta-Learner & Machine Learning
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+lightgbm>=4.0.0
+optuna>=3.0.0
+
+# Visualization & Reporting
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+
+# analysis (run_clean_* scripts)
+shap
+xgboost
+catboost
+statsmodels
+huggingface_hub

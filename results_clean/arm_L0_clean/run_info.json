@@ -1,0 +1,35 @@
+{
+  "args": {
+    "epochs": 25,
+    "patience": 6,
+    "lr": 0.0002,
+    "batch_size": 32,
+    "workers": 4,
+    "folds": 5,
+    "backbone": "/home/izzet/Desktop/PulmoVec/models/hear_pristine_encoder.pth",
+    "results_dir": "results_clean/arm_L0_clean",
+    "seed": 42,
+    "split": "patient",
+    "oof_early_stop": "hold",
+    "split_from": "results_clean"
+  },
+  "backbone": "/home/izzet/Desktop/PulmoVec/models/hear_pristine_encoder.pth",
+  "backbone_sha256": "b2e98037c724eb8b933892617512cdcacb86e66cdbcd6c6ff608e16c41b25213",
+  "env": {
+    "python": "3.12.12",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "git_commit": "27fbc621cd6d196686fdfae2483367d4139196b3",
+    "git_branch": "main",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "sklearn": "1.8.0",
+    "lightgbm": "4.7.0",
+    "optuna": "5.0.0",
+    "transformers": "4.50.3",
+    "librosa": "0.11.0",
+    "shap": "0.52.0"
+  }
+}

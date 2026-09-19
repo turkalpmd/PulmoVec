@@ -1,0 +1,3181 @@
+{
+ "_git_commit": "27fbc621",
+ "numbers": {
+  "l1.n_events": {
+   "value": 1903,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.n_patients": {
+   "value": 74,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.n_recordings": {
+   "value": 530,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.n_boot": {
+   "value": 2000,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.majority_accuracy": {
+   "value": 0.861271676300578,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.n_events.normal": {
+   "value": 1639,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.n_events.abnormal": {
+   "value": 264,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.duration_only.accuracy": {
+   "value": 0.7756174461376774,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.706488066231827,
+    0.8394062616160207
+   ]
+  },
+  "l1.screen.duration_only.balanced_accuracy": {
+   "value": 0.7378609924750864,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6390676669516561,
+    0.781640347907451
+   ]
+  },
+  "l1.screen.duration_only.macro_f1": {
+   "value": 0.6586386479993178,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5679627900023718,
+    0.6977512821263842
+   ]
+  },
+  "l1.screen.duration_only.weighted_f1": {
+   "value": 0.8030245074609376,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7296557185753795,
+    0.8688912029653167
+   ]
+  },
+  "l1.screen.duration_only.mcc": {
+   "value": 0.36790899162998186,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.19383033735991217,
+    0.43858242699500505
+   ]
+  },
+  "l1.screen.duration_only.auc": {
+   "value": 0.8181783515447335,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7038967216992797,
+    0.8645812876697933
+   ]
+  },
+  "l1.screen.duration_only.auprc": {
+   "value": 0.48849336485578526,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.21670675180374116,
+    0.6310988497237062
+   ]
+  },
+  "l1.screen.duration_only.brier": {
+   "value": 0.3492802465819689,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.29027406475123874,
+    0.41267620364505964
+   ]
+  },
+  "l1.screen.duration_only.ece": {
+   "value": 0.08308428861794101,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.0497709792270108,
+    0.12417260781336693
+   ]
+  },
+  "l1.screen.demographics_only.accuracy": {
+   "value": 0.6925906463478718,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5817492097373395,
+    0.8004635938588951
+   ]
+  },
+  "l1.screen.demographics_only.balanced_accuracy": {
+   "value": 0.4799293268253,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4051309501865119,
+    0.6263272834157996
+   ]
+  },
+  "l1.screen.demographics_only.macro_f1": {
+   "value": 0.47808237096046013,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4107961308742401,
+    0.5540463618508568
+   ]
+  },
+  "l1.screen.demographics_only.weighted_f1": {
+   "value": 0.7198437469093872,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6051659978260875,
+    0.8264962465397218
+   ]
+  },
+  "l1.screen.demographics_only.mcc": {
+   "value": -0.0334857023855231,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.1666187355764934,
+    0.15576122286400054
+   ]
+  },
+  "l1.screen.demographics_only.auc": {
+   "value": 0.6291380091334332,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5048541458660728,
+    0.7361137549146907
+   ]
+  },
+  "l1.screen.demographics_only.auprc": {
+   "value": 0.191805079479166,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.08520016507754628,
+    0.30186445055940003
+   ]
+  },
+  "l1.screen.demographics_only.brier": {
+   "value": 0.3932636649564542,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3194049555852639,
+    0.46737265584095516
+   ]
+  },
+  "l1.screen.demographics_only.ece": {
+   "value": 0.06564379935764307,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.03470230663069966,
+    0.15045960988421947
+   ]
+  },
+  "l1.screen.duration_demographics.accuracy": {
+   "value": 0.7498686284813453,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6606856555140422,
+    0.8353548252202435
+   ]
+  },
+  "l1.screen.duration_demographics.balanced_accuracy": {
+   "value": 0.6450579621720561,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5710861443029092,
+    0.7263648366881488
+   ]
+  },
+  "l1.screen.duration_demographics.macro_f1": {
+   "value": 0.6007528076021227,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5181176427062628,
+    0.6587800069970183
+   ]
+  },
+  "l1.screen.duration_demographics.weighted_f1": {
+   "value": 0.7770505322013755,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6923900859293367,
+    0.8609044085406222
+   ]
+  },
+  "l1.screen.duration_demographics.mcc": {
+   "value": 0.2315514713632014,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.10003834370334827,
+    0.33856261388890296
+   ]
+  },
+  "l1.screen.duration_demographics.auc": {
+   "value": 0.7624082496718251,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6804352838808957,
+    0.8239676197868872
+   ]
+  },
+  "l1.screen.duration_demographics.auprc": {
+   "value": 0.2993060815741902,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.15215813187238458,
+    0.41571098640443227
+   ]
+  },
+  "l1.screen.duration_demographics.brier": {
+   "value": 0.3258022170503724,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.2571387088092398,
+    0.3932316600781989
+   ]
+  },
+  "l1.screen.duration_demographics.ece": {
+   "value": 0.08217844793561929,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.05342707029241534,
+    0.12314530814780085
+   ]
+  },
+  "l1.screen.own_task_base.accuracy": {
+   "value": 0.8917498686284814,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8609379707393574,
+    0.9205614348543156
+   ]
+  },
+  "l1.screen.own_task_base.balanced_accuracy": {
+   "value": 0.9053792963188936,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8711844232706467,
+    0.9232444093655459
+   ]
+  },
+  "l1.screen.own_task_base.macro_f1": {
+   "value": 0.8184873280339006,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7335671689948441,
+    0.8500073457694517
+   ]
+  },
+  "l1.screen.own_task_base.weighted_f1": {
+   "value": 0.9018090760219474,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8708751824116432,
+    0.9306834930272718
+   ]
+  },
+  "l1.screen.own_task_base.mcc": {
+   "value": 0.6701120062246435,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5258018285913365,
+    0.7213974863373325
+   ]
+  },
+  "l1.screen.own_task_base.auc": {
+   "value": 0.9648332778671401,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9342012482751906,
+    0.9783779002675024
+   ]
+  },
+  "l1.screen.own_task_base.auprc": {
+   "value": 0.8640680440909332,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6917927237741316,
+    0.9185013296091669
+   ]
+  },
+  "l1.screen.own_task_base.brier": {
+   "value": 0.1778933080474832,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.135701837472831,
+    0.2231539009449548
+   ]
+  },
+  "l1.screen.own_task_base.ece": {
+   "value": 0.02572190380212426,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.014899426575361108,
+    0.05545198647914345
+   ]
+  },
+  "l1.screen.acoustic_only.accuracy": {
+   "value": 0.8991066736731477,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8699180842035349,
+    0.9272288779721768
+   ]
+  },
+  "l1.screen.acoustic_only.balanced_accuracy": {
+   "value": 0.9017058165548097,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8583798477367753,
+    0.9223672130126671
+   ]
+  },
+  "l1.screen.acoustic_only.macro_f1": {
+   "value": 0.8261041730124886,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7484647026338179,
+    0.8528922988303799
+   ]
+  },
+  "l1.screen.acoustic_only.weighted_f1": {
+   "value": 0.9075140987289576,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8775336172151251,
+    0.9355661958490206
+   ]
+  },
+  "l1.screen.acoustic_only.mcc": {
+   "value": 0.6778843991011075,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5406098069673034,
+    0.7251094897545963
+   ]
+  },
+  "l1.screen.acoustic_only.auc": {
+   "value": 0.9614625510751197,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9327891640811349,
+    0.975025497629993
+   ]
+  },
+  "l1.screen.acoustic_only.auprc": {
+   "value": 0.8427158373069381,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6598302387731776,
+    0.9053474115947318
+   ]
+  },
+  "l1.screen.acoustic_only.brier": {
+   "value": 0.15698878115558,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.11589950694034815,
+    0.20094365754752008
+   ]
+  },
+  "l1.screen.acoustic_only.ece": {
+   "value": 0.021139866449713097,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.009598442444676718,
+    0.04498262234772801
+   ]
+  },
+  "l1.screen.full_stack.accuracy": {
+   "value": 0.9043615344193379,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8711393207902263,
+    0.9350159728436661
+   ]
+  },
+  "l1.screen.full_stack.balanced_accuracy": {
+   "value": 0.9015787065283709,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8568101896368615,
+    0.9207653817048583
+   ]
+  },
+  "l1.screen.full_stack.macro_f1": {
+   "value": 0.8323915989159891,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7470617847436719,
+    0.865666015919815
+   ]
+  },
+  "l1.screen.full_stack.weighted_f1": {
+   "value": 0.9117489856979494,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8799555140326593,
+    0.9412484045342638
+   ]
+  },
+  "l1.screen.full_stack.mcc": {
+   "value": 0.6864625460242011,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5320518949425456,
+    0.7435080477352133
+   ]
+  },
+  "l1.screen.full_stack.auc": {
+   "value": 0.9625325863885962,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9330220207581875,
+    0.9760538926645439
+   ]
+  },
+  "l1.screen.full_stack.auprc": {
+   "value": 0.851105367967111,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6611215700880669,
+    0.9132184441192238
+   ]
+  },
+  "l1.screen.full_stack.brier": {
+   "value": 0.14383947370377614,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.10181290159260761,
+    0.1887518771153634
+   ]
+  },
+  "l1.screen.full_stack.ece": {
+   "value": 0.009590538396554545,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.007836884056633837,
+    0.03519410849023659
+   ]
+  },
+  "l1.screen.full_stack.normal.sensitivity": {
+   "value": 0.9054301403294692,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8560090170595187,
+    0.9436704225352112
+   ]
+  },
+  "l1.screen.full_stack.normal.specificity": {
+   "value": 0.8977272727272727,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7878693181818182,
+    0.9455931948208371
+   ]
+  },
+  "l1.screen.full_stack.normal.ppv": {
+   "value": 0.9821310390469887,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9722792992770796,
+    0.9904315866646087
+   ]
+  },
+  "l1.screen.full_stack.normal.npv": {
+   "value": 0.6045918367346939,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4103588883837236,
+    0.6987392703862659
+   ]
+  },
+  "l1.screen.full_stack.normal.f1": {
+   "value": 0.9422222222222222,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9131837727167239,
+    0.9638209275955107
+   ]
+  },
+  "l1.screen.full_stack.normal.mcc": {
+   "value": 0.6864625460242011,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5320518949425456,
+    0.7435080477352133
+   ]
+  },
+  "l1.screen.full_stack.normal.auc": {
+   "value": 0.9625325863885961,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9330220207581876,
+    0.9760538926645439
+   ]
+  },
+  "l1.screen.full_stack.abnormal.sensitivity": {
+   "value": 0.8977272727272727,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7878693181818182,
+    0.9455931948208371
+   ]
+  },
+  "l1.screen.full_stack.abnormal.specificity": {
+   "value": 0.9054301403294692,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8560090170595187,
+    0.9436704225352112
+   ]
+  },
+  "l1.screen.full_stack.abnormal.ppv": {
+   "value": 0.6045918367346939,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4103588883837236,
+    0.6987392703862659
+   ]
+  },
+  "l1.screen.full_stack.abnormal.npv": {
+   "value": 0.9821310390469887,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9722792992770796,
+    0.9904315866646087
+   ]
+  },
+  "l1.screen.full_stack.abnormal.f1": {
+   "value": 0.7225609756097561,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.540680372461074,
+    0.7922905143516603
+   ]
+  },
+  "l1.screen.full_stack.abnormal.mcc": {
+   "value": 0.6864625460242011,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5320518949425456,
+    0.7435080477352133
+   ]
+  },
+  "l1.screen.full_stack.abnormal.auc": {
+   "value": 0.9625325863885962,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9330220207581875,
+    0.9760538926645439
+   ]
+  },
+  "l1.screen.delta_auc.full_stack_vs_acoustic_only": {
+   "value": 0.0010700353134764917,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.003701297481761845,
+    0.005846915148229243
+   ]
+  },
+  "l1.screen.delta_auc.full_stack_vs_acoustic_only.p_holm": {
+   "value": 0.83,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.delta_auc.full_stack_vs_demographics_only": {
+   "value": 0.33339457725516297,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.21688624523078848,
+    0.4543730115860778
+   ]
+  },
+  "l1.screen.delta_auc.full_stack_vs_demographics_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.delta_auc.acoustic_only_vs_demographics_only": {
+   "value": 0.3323245419416865,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.2170616388180342,
+    0.452005411552987
+   ]
+  },
+  "l1.screen.delta_auc.acoustic_only_vs_demographics_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.delta_auc.full_stack_vs_own_task_base": {
+   "value": -0.002300691478543948,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.007662643051237419,
+    0.0030354551989320356
+   ]
+  },
+  "l1.screen.delta_auc.full_stack_vs_own_task_base.p_holm": {
+   "value": 0.83,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.delta_auc.acoustic_only_vs_duration_only": {
+   "value": 0.14328419953038618,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.10114610707647059,
+    0.24478331034843795
+   ]
+  },
+  "l1.screen.delta_auc.acoustic_only_vs_duration_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.delta_accuracy.full_stack_vs_acoustic_only": {
+   "value": 0.005254860746190193,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.005140214259772094,
+    0.015229395125353517
+   ]
+  },
+  "l1.screen.delta_accuracy.full_stack_vs_acoustic_only.p_holm": {
+   "value": 0.334,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.delta_accuracy.full_stack_vs_demographics_only": {
+   "value": 0.21177088807146605,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.11856742054857608,
+    0.3119200970843607
+   ]
+  },
+  "l1.screen.delta_accuracy.full_stack_vs_demographics_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.delta_accuracy.acoustic_only_vs_demographics_only": {
+   "value": 0.20651602732527585,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.1116548166736372,
+    0.3103073705582702
+   ]
+  },
+  "l1.screen.delta_accuracy.acoustic_only_vs_demographics_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.delta_accuracy.full_stack_vs_own_task_base": {
+   "value": 0.012611665790856486,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.002619886031929278,
+    0.022124183006535965
+   ]
+  },
+  "l1.screen.delta_accuracy.full_stack_vs_own_task_base.p_holm": {
+   "value": 0.022,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.delta_accuracy.acoustic_only_vs_duration_only": {
+   "value": 0.12348922753547031,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.07722120298781293,
+    0.17305450984523627
+   ]
+  },
+  "l1.screen.delta_accuracy.acoustic_only_vs_duration_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.agg.recording.confweighted.n_units": {
+   "value": 530,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.agg.recording.confweighted.majority_accuracy": {
+   "value": 0.7566037735849057,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.agg.recording.confweighted.accuracy": {
+   "value": 0.8905660377358491,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8551412443531485,
+    0.9295825802271254
+   ]
+  },
+  "l1.screen.agg.recording.confweighted.balanced_accuracy": {
+   "value": 0.8461791258288387,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7498757894722445,
+    0.8902903982265309
+   ]
+  },
+  "l1.screen.agg.recording.confweighted.macro_f1": {
+   "value": 0.8498466227701686,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.763405763837127,
+    0.8883042389695799
+   ]
+  },
+  "l1.screen.agg.recording.confweighted.weighted_f1": {
+   "value": 0.889975901287071,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8534896428016109,
+    0.929529062419905
+   ]
+  },
+  "l1.screen.agg.recording.confweighted.mcc": {
+   "value": 0.6998668061375887,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5306334790041521,
+    0.7769012856920544
+   ]
+  },
+  "l1.screen.agg.recording.confweighted.auc": {
+   "value": 0.9444798855574242,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8996763536788638,
+    0.9648497854742686
+   ]
+  },
+  "l1.screen.agg.recording.confweighted.auprc": {
+   "value": 0.8702881509144105,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6966679849336008,
+    0.9298690854128802
+   ]
+  },
+  "l1.screen.agg.recording.confweighted.brier": {
+   "value": 0.15384040407089314,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.1091007104196871,
+    0.19228424413042663
+   ]
+  },
+  "l1.screen.agg.recording.confweighted.ece": {
+   "value": 0.03496993273539305,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.021561502296786276,
+    0.06161002577544712
+   ]
+  },
+  "l1.screen.agg.recording.mean.n_units": {
+   "value": 530,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.agg.recording.mean.majority_accuracy": {
+   "value": 0.7566037735849057,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.agg.recording.mean.accuracy": {
+   "value": 0.8905660377358491,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8551412443531485,
+    0.9295825802271254
+   ]
+  },
+  "l1.screen.agg.recording.mean.balanced_accuracy": {
+   "value": 0.8461791258288387,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7498757894722445,
+    0.8902903982265309
+   ]
+  },
+  "l1.screen.agg.recording.mean.macro_f1": {
+   "value": 0.8498466227701686,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.763405763837127,
+    0.8883042389695799
+   ]
+  },
+  "l1.screen.agg.recording.mean.weighted_f1": {
+   "value": 0.889975901287071,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8534896428016109,
+    0.929529062419905
+   ]
+  },
+  "l1.screen.agg.recording.mean.mcc": {
+   "value": 0.6998668061375887,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5306334790041521,
+    0.7769012856920544
+   ]
+  },
+  "l1.screen.agg.recording.mean.auc": {
+   "value": 0.9442092443310328,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8990517639459207,
+    0.9652656135043387
+   ]
+  },
+  "l1.screen.agg.recording.mean.auprc": {
+   "value": 0.8691904957278109,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6941027151686078,
+    0.9291722393913734
+   ]
+  },
+  "l1.screen.agg.recording.mean.brier": {
+   "value": 0.15656316374219195,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.11208155177831447,
+    0.19470138154993755
+   ]
+  },
+  "l1.screen.agg.recording.mean.ece": {
+   "value": 0.04248266657302257,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.024665726676694897,
+    0.06904480659897326
+   ]
+  },
+  "l1.screen.agg.patient.confweighted.n_units": {
+   "value": 74,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.agg.patient.confweighted.majority_accuracy": {
+   "value": 0.6756756756756757,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.agg.patient.confweighted.accuracy": {
+   "value": 0.7702702702702703,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6756756756756757,
+    0.8648648648648649
+   ]
+  },
+  "l1.screen.agg.patient.confweighted.balanced_accuracy": {
+   "value": 0.6458333333333334,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5576923076923077,
+    0.74
+   ]
+  },
+  "l1.screen.agg.patient.confweighted.macro_f1": {
+   "value": 0.6531568789633305,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5124774703557313,
+    0.7755720981527433
+   ]
+  },
+  "l1.screen.agg.patient.confweighted.weighted_f1": {
+   "value": 0.7239696271954336,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5959729651413223,
+    0.8444156640877953
+   ]
+  },
+  "l1.screen.agg.patient.confweighted.mcc": {
+   "value": 0.4665422719778869,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.28153627263828707,
+    0.6279723402841427
+   ]
+  },
+  "l1.screen.agg.patient.confweighted.auc": {
+   "value": 0.8841666666666667,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7945795067038672,
+    0.9555753968253966
+   ]
+  },
+  "l1.screen.agg.patient.confweighted.auprc": {
+   "value": 0.8258578888965242,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6769517064172771,
+    0.9305740363317283
+   ]
+  },
+  "l1.screen.agg.patient.confweighted.brier": {
+   "value": 0.3171808745124172,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.1953707188744775,
+    0.44467797148861365
+   ]
+  },
+  "l1.screen.agg.patient.confweighted.ece": {
+   "value": 0.11067237924322135,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.056157016590986306,
+    0.2056313019662109
+   ]
+  },
+  "l1.screen.agg.patient.mean.n_units": {
+   "value": 74,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.agg.patient.mean.majority_accuracy": {
+   "value": 0.6756756756756757,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.agg.patient.mean.accuracy": {
+   "value": 0.7837837837837838,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6891891891891891,
+    0.8783783783783784
+   ]
+  },
+  "l1.screen.agg.patient.mean.balanced_accuracy": {
+   "value": 0.6666666666666666,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5734768907563025,
+    0.7692307692307692
+   ]
+  },
+  "l1.screen.agg.patient.mean.macro_f1": {
+   "value": 0.6810344827586207,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5417535988525651,
+    0.8057742782152231
+   ]
+  },
+  "l1.screen.agg.patient.mean.weighted_f1": {
+   "value": 0.7446411929170549,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6144144144144145,
+    0.8589612220916569
+   ]
+  },
+  "l1.screen.agg.patient.mean.mcc": {
+   "value": 0.502518907629606,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.31732387941099616,
+    0.6691496051182059
+   ]
+  },
+  "l1.screen.agg.patient.mean.auc": {
+   "value": 0.8866666666666666,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7981245143745144,
+    0.9575946969696969
+   ]
+  },
+  "l1.screen.agg.patient.mean.auprc": {
+   "value": 0.8273201738770697,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6832690987198636,
+    0.9319466989644706
+   ]
+  },
+  "l1.screen.agg.patient.mean.brier": {
+   "value": 0.3116131791131004,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.1955079107787406,
+    0.4351940717244229
+   ]
+  },
+  "l1.screen.agg.patient.mean.ece": {
+   "value": 0.09536835444529305,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.057212454535454545,
+    0.20597412797206124
+   ]
+  },
+  "l1.screen.cal_slope": {
+   "value": 1.02325769548367,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.screen.cal_intercept": {
+   "value": -1.8134249506865512,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.majority_accuracy": {
+   "value": 0.861271676300578,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.n_events.normal": {
+   "value": 1639,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.n_events.crackles": {
+   "value": 135,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.n_events.rhonchi": {
+   "value": 129,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.duration_only.accuracy": {
+   "value": 0.7314766158696795,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6492046218607898,
+    0.8081951941669352
+   ]
+  },
+  "l1.pattern.duration_only.balanced_accuracy": {
+   "value": 0.6337275955714122,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5171230132677435,
+    0.6854263758000788
+   ]
+  },
+  "l1.pattern.duration_only.macro_f1": {
+   "value": 0.5508222782818964,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4488125303259822,
+    0.5915461532691482
+   ]
+  },
+  "l1.pattern.duration_only.weighted_f1": {
+   "value": 0.7802231488615843,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6994501178875715,
+    0.8532928954399132
+   ]
+  },
+  "l1.pattern.duration_only.mcc": {
+   "value": 0.3414892192135696,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.1752493976394059,
+    0.4094573834434853
+   ]
+  },
+  "l1.pattern.duration_only.auc": {
+   "value": 0.7974847663075888,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6760486322183372,
+    0.8459407884333673
+   ]
+  },
+  "l1.pattern.duration_only.auprc": {
+   "value": 0.5606665813346735,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4374006345735365,
+    0.6231816705089195
+   ]
+  },
+  "l1.pattern.duration_only.brier": {
+   "value": 0.45772115177592704,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.39764419945780954,
+    0.5203128800335673
+   ]
+  },
+  "l1.pattern.duration_only.ece": {
+   "value": 0.15142539663097107,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.07027879751410608,
+    0.22516759575384318
+   ]
+  },
+  "l1.pattern.demographics_only.accuracy": {
+   "value": 0.6473988439306358,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5344006331183951,
+    0.7596767955801105
+   ]
+  },
+  "l1.pattern.demographics_only.balanced_accuracy": {
+   "value": 0.30743296517189656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.2601397366868262,
+    0.415460888692944
+   ]
+  },
+  "l1.pattern.demographics_only.macro_f1": {
+   "value": 0.3004179943125364,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.26026523235315074,
+    0.3460014865713826
+   ]
+  },
+  "l1.pattern.demographics_only.weighted_f1": {
+   "value": 0.6873732107534035,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5728516403280091,
+    0.8016185596272724
+   ]
+  },
+  "l1.pattern.demographics_only.mcc": {
+   "value": -0.042368179822376145,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.13196461448204685,
+    0.09921999228926554
+   ]
+  },
+  "l1.pattern.demographics_only.auc": {
+   "value": 0.5458385705751442,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4566964814659202,
+    0.6606468871948232
+   ]
+  },
+  "l1.pattern.demographics_only.auprc": {
+   "value": 0.3535654991483515,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.33428228858937475,
+    0.37879525757211696
+   ]
+  },
+  "l1.pattern.demographics_only.brier": {
+   "value": 0.5122296949111548,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.43089745657537437,
+    0.5912044655453831
+   ]
+  },
+  "l1.pattern.demographics_only.ece": {
+   "value": 0.10856390743543112,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.06320905082828585,
+    0.20759449358844448
+   ]
+  },
+  "l1.pattern.duration_demographics.accuracy": {
+   "value": 0.7314766158696795,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6422763037642086,
+    0.8104431200861628
+   ]
+  },
+  "l1.pattern.duration_demographics.balanced_accuracy": {
+   "value": 0.6076558029526137,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4783426801680933,
+    0.6611518284198403
+   ]
+  },
+  "l1.pattern.duration_demographics.macro_f1": {
+   "value": 0.5165374926487942,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.40136518031279933,
+    0.577510566312906
+   ]
+  },
+  "l1.pattern.duration_demographics.weighted_f1": {
+   "value": 0.7751536049015749,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6910249475798583,
+    0.8499900037673069
+   ]
+  },
+  "l1.pattern.duration_demographics.mcc": {
+   "value": 0.3209881367319524,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.14466880844749744,
+    0.3999162540636643
+   ]
+  },
+  "l1.pattern.duration_demographics.auc": {
+   "value": 0.785522926044257,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6785546160711795,
+    0.8340478601833051
+   ]
+  },
+  "l1.pattern.duration_demographics.auprc": {
+   "value": 0.48202115848700594,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.41012486635404355,
+    0.5518535901388625
+   ]
+  },
+  "l1.pattern.duration_demographics.brier": {
+   "value": 0.41446798362179155,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3459626180639553,
+    0.4888827944532697
+   ]
+  },
+  "l1.pattern.duration_demographics.ece": {
+   "value": 0.1419662577852222,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.08747098551079752,
+    0.2100176777442032
+   ]
+  },
+  "l1.pattern.own_task_base.accuracy": {
+   "value": 0.8455070940620073,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8060745765028706,
+    0.8797937891261025
+   ]
+  },
+  "l1.pattern.own_task_base.balanced_accuracy": {
+   "value": 0.8484286178995091,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7980503401958104,
+    0.8765623170306075
+   ]
+  },
+  "l1.pattern.own_task_base.macro_f1": {
+   "value": 0.7155898735360869,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6160050760632948,
+    0.7541718526630836
+   ]
+  },
+  "l1.pattern.own_task_base.weighted_f1": {
+   "value": 0.8690397632763793,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8297164157010353,
+    0.9049779156887082
+   ]
+  },
+  "l1.pattern.own_task_base.mcc": {
+   "value": 0.5937137492310554,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.45677208913118705,
+    0.6473800350308628
+   ]
+  },
+  "l1.pattern.own_task_base.auc": {
+   "value": 0.9527548465396617,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9395585327905819,
+    0.9653487633839523
+   ]
+  },
+  "l1.pattern.own_task_base.auprc": {
+   "value": 0.8256954453670202,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7467531737760517,
+    0.864165007604711
+   ]
+  },
+  "l1.pattern.own_task_base.brier": {
+   "value": 0.2266414937568709,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.17658348616305689,
+    0.284081626870724
+   ]
+  },
+  "l1.pattern.own_task_base.ece": {
+   "value": 0.06801430606623395,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.03742043108028896,
+    0.10313507893657614
+   ]
+  },
+  "l1.pattern.acoustic_only.accuracy": {
+   "value": 0.882816605359958,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8445389383096082,
+    0.916240041769969
+   ]
+  },
+  "l1.pattern.acoustic_only.balanced_accuracy": {
+   "value": 0.8513098310507394,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7990879952092912,
+    0.8836526748384838
+   ]
+  },
+  "l1.pattern.acoustic_only.macro_f1": {
+   "value": 0.7556043233689401,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.668418117527881,
+    0.7903915554013382
+   ]
+  },
+  "l1.pattern.acoustic_only.weighted_f1": {
+   "value": 0.8965474399914305,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8594579473831724,
+    0.9294251221459008
+   ]
+  },
+  "l1.pattern.acoustic_only.mcc": {
+   "value": 0.6450387232707262,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.507989135388411,
+    0.6925576070408488
+   ]
+  },
+  "l1.pattern.acoustic_only.auc": {
+   "value": 0.9531401347973096,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9311107612353252,
+    0.9672340223233753
+   ]
+  },
+  "l1.pattern.acoustic_only.auprc": {
+   "value": 0.8320280904426304,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7506751805974835,
+    0.8710179089757187
+   ]
+  },
+  "l1.pattern.acoustic_only.brier": {
+   "value": 0.1826300893742839,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.1303886605672055,
+    0.24208729651407496
+   ]
+  },
+  "l1.pattern.acoustic_only.ece": {
+   "value": 0.0517375197584015,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.028003191978873947,
+    0.08294474172815793
+   ]
+  },
+  "l1.pattern.full_stack.accuracy": {
+   "value": 0.8912243825538623,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8497463156328442,
+    0.9279051798464968
+   ]
+  },
+  "l1.pattern.full_stack.balanced_accuracy": {
+   "value": 0.8542193171504863,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8182901918614788,
+    0.8784164612482643
+   ]
+  },
+  "l1.pattern.full_stack.macro_f1": {
+   "value": 0.7678637880688157,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6922827735953583,
+    0.8014984752797355
+   ]
+  },
+  "l1.pattern.full_stack.weighted_f1": {
+   "value": 0.9034201443197193,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8658239595752388,
+    0.9377763634205425
+   ]
+  },
+  "l1.pattern.full_stack.mcc": {
+   "value": 0.6614513504993899,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5416931580657537,
+    0.7063588843974518
+   ]
+  },
+  "l1.pattern.full_stack.auc": {
+   "value": 0.9603143662450844,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9381547248941855,
+    0.9731705365872553
+   ]
+  },
+  "l1.pattern.full_stack.auprc": {
+   "value": 0.8320677304725203,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7404980676081601,
+    0.8788392789095342
+   ]
+  },
+  "l1.pattern.full_stack.brier": {
+   "value": 0.16877918693070937,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.11583560137242821,
+    0.22547670865145986
+   ]
+  },
+  "l1.pattern.full_stack.ece": {
+   "value": 0.035957974057116995,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.01705727614643365,
+    0.0636905719659297
+   ]
+  },
+  "l1.pattern.full_stack.normal.sensitivity": {
+   "value": 0.9011592434411226,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8509055195980237,
+    0.9407973076638935
+   ]
+  },
+  "l1.pattern.full_stack.normal.specificity": {
+   "value": 0.8939393939393939,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7910447761194029,
+    0.9471514409702904
+   ]
+  },
+  "l1.pattern.full_stack.normal.ppv": {
+   "value": 0.9813953488372092,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9680410558260557,
+    0.9911924989114161
+   ]
+  },
+  "l1.pattern.full_stack.normal.npv": {
+   "value": 0.592964824120603,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4057712215320911,
+    0.6819528598099117
+   ]
+  },
+  "l1.pattern.full_stack.normal.f1": {
+   "value": 0.9395674300254453,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9101714387047214,
+    0.9619685307557745
+   ]
+  },
+  "l1.pattern.full_stack.normal.mcc": {
+   "value": 0.6757758436674061,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5427672001160696,
+    0.7248236565437813
+   ]
+  },
+  "l1.pattern.full_stack.normal.auc": {
+   "value": 0.9597823876347366,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9304356430256936,
+    0.9739399309595719
+   ]
+  },
+  "l1.pattern.full_stack.crackles.sensitivity": {
+   "value": 0.7777777777777778,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6666666666666666,
+    0.8571428571428571
+   ]
+  },
+  "l1.pattern.full_stack.crackles.specificity": {
+   "value": 0.919683257918552,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8778173260125643,
+    0.9545711967271313
+   ]
+  },
+  "l1.pattern.full_stack.crackles.ppv": {
+   "value": 0.4251012145748988,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.2582781456953642,
+    0.5447061274373645
+   ]
+  },
+  "l1.pattern.full_stack.crackles.npv": {
+   "value": 0.9818840579710145,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9699282637166643,
+    0.9923100063331223
+   ]
+  },
+  "l1.pattern.full_stack.crackles.f1": {
+   "value": 0.5497382198952879,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.38038983569752016,
+    0.6465981573352232
+   ]
+  },
+  "l1.pattern.full_stack.crackles.mcc": {
+   "value": 0.5327817280115993,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.39784876162983207,
+    0.6237714762649627
+   ]
+  },
+  "l1.pattern.full_stack.crackles.auc": {
+   "value": 0.9289257583375229,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8885704384541099,
+    0.9564677643147049
+   ]
+  },
+  "l1.pattern.full_stack.rhonchi.sensitivity": {
+   "value": 0.8837209302325582,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8225716845878137,
+    0.9166666666666666
+   ]
+  },
+  "l1.pattern.full_stack.rhonchi.specificity": {
+   "value": 0.9791431792559189,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9678486326018595,
+    0.9887640449438202
+   ]
+  },
+  "l1.pattern.full_stack.rhonchi.ppv": {
+   "value": 0.7549668874172185,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5872929606625259,
+    0.8216378925019555
+   ]
+  },
+  "l1.pattern.full_stack.rhonchi.npv": {
+   "value": 0.9914383561643836,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9855678028842658,
+    0.9968117045748568
+   ]
+  },
+  "l1.pattern.full_stack.rhonchi.f1": {
+   "value": 0.8142857142857143,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6981132075471698,
+    0.8543707673389982
+   ]
+  },
+  "l1.pattern.full_stack.rhonchi.mcc": {
+   "value": 0.8025249502791604,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.700832347794366,
+    0.8406967617207484
+   ]
+  },
+  "l1.pattern.full_stack.rhonchi.auc": {
+   "value": 0.9922349527629934,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9889278399873362,
+    0.9959421394645351
+   ]
+  },
+  "l1.pattern.delta_auc.full_stack_vs_acoustic_only": {
+   "value": 0.007174231447774737,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.0010653471252558195,
+    0.012549038304091072
+   ]
+  },
+  "l1.pattern.delta_auc.full_stack_vs_acoustic_only.p_holm": {
+   "value": 0.06,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.delta_auc.full_stack_vs_demographics_only": {
+   "value": 0.4144757956699402,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.29786179770468446,
+    0.4990422471033122
+   ]
+  },
+  "l1.pattern.delta_auc.full_stack_vs_demographics_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.delta_auc.acoustic_only_vs_demographics_only": {
+   "value": 0.40730156422216546,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.2904453797442823,
+    0.493812012973545
+   ]
+  },
+  "l1.pattern.delta_auc.acoustic_only_vs_demographics_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.delta_auc.full_stack_vs_own_task_base": {
+   "value": 0.007559519705422679,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.0070604976950136514,
+    0.014105076507393852
+   ]
+  },
+  "l1.pattern.delta_auc.full_stack_vs_own_task_base.p_holm": {
+   "value": 0.198,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.delta_auc.acoustic_only_vs_duration_only": {
+   "value": 0.15565536848972084,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.10876779555971765,
+    0.2643715379124804
+   ]
+  },
+  "l1.pattern.delta_auc.acoustic_only_vs_duration_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.delta_accuracy.full_stack_vs_acoustic_only": {
+   "value": 0.008407777193904287,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.0016506471181341493,
+    0.01860119211248494
+   ]
+  },
+  "l1.pattern.delta_accuracy.full_stack_vs_acoustic_only.p_holm": {
+   "value": 0.114,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.delta_accuracy.full_stack_vs_demographics_only": {
+   "value": 0.24382553862322642,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.1449873429734191,
+    0.34948449520184
+   ]
+  },
+  "l1.pattern.delta_accuracy.full_stack_vs_demographics_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.delta_accuracy.acoustic_only_vs_demographics_only": {
+   "value": 0.23541776142932214,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.13475122302708903,
+    0.342433008820208
+   ]
+  },
+  "l1.pattern.delta_accuracy.acoustic_only_vs_demographics_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.delta_accuracy.full_stack_vs_own_task_base": {
+   "value": 0.04571728849185497,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.031750695285604986,
+    0.06024229270021269
+   ]
+  },
+  "l1.pattern.delta_accuracy.full_stack_vs_own_task_base.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.delta_accuracy.acoustic_only_vs_duration_only": {
+   "value": 0.1513399894902785,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.09832823173690695,
+    0.20677249799307565
+   ]
+  },
+  "l1.pattern.delta_accuracy.acoustic_only_vs_duration_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.agg.recording.confweighted.n_units": {
+   "value": 530,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.agg.recording.confweighted.majority_accuracy": {
+   "value": 0.7566037735849057,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.agg.recording.confweighted.accuracy": {
+   "value": 0.8603773584905661,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8145305788788206,
+    0.9154945226917058
+   ]
+  },
+  "l1.pattern.agg.recording.confweighted.balanced_accuracy": {
+   "value": 0.7395388235065358,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6242299759047588,
+    0.7885924587996881
+   ]
+  },
+  "l1.pattern.agg.recording.confweighted.macro_f1": {
+   "value": 0.7566784902938739,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6627076177151084,
+    0.7903713522758364
+   ]
+  },
+  "l1.pattern.agg.recording.confweighted.weighted_f1": {
+   "value": 0.8594211717205829,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8125419499378257,
+    0.9137616640394847
+   ]
+  },
+  "l1.pattern.agg.recording.confweighted.mcc": {
+   "value": 0.6420367423539176,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4939341775560909,
+    0.7013184415450109
+   ]
+  },
+  "l1.pattern.agg.recording.confweighted.auc": {
+   "value": 0.9411691593490795,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9078698480801588,
+    0.9603992743418924
+   ]
+  },
+  "l1.pattern.agg.recording.confweighted.auprc": {
+   "value": 0.8162872380555526,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7217469154470575,
+    0.8652051089357676
+   ]
+  },
+  "l1.pattern.agg.recording.confweighted.brier": {
+   "value": 0.19488239532039545,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.13054081625758257,
+    0.24767395663955788
+   ]
+  },
+  "l1.pattern.agg.recording.confweighted.ece": {
+   "value": 0.019670253081887593,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.014560544882687675,
+    0.0531597545023435
+   ]
+  },
+  "l1.pattern.agg.recording.mean.n_units": {
+   "value": 530,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.agg.recording.mean.majority_accuracy": {
+   "value": 0.7566037735849057,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.agg.recording.mean.accuracy": {
+   "value": 0.8566037735849057,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8088445705192514,
+    0.9123311194179293
+   ]
+  },
+  "l1.pattern.agg.recording.mean.balanced_accuracy": {
+   "value": 0.7328596150948167,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.624221712678996,
+    0.781112122630938
+   ]
+  },
+  "l1.pattern.agg.recording.mean.macro_f1": {
+   "value": 0.7489474909029364,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6596235412797762,
+    0.7825225047802314
+   ]
+  },
+  "l1.pattern.agg.recording.mean.weighted_f1": {
+   "value": 0.8558233880354653,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8081057110971105,
+    0.9119755278842196
+   ]
+  },
+  "l1.pattern.agg.recording.mean.mcc": {
+   "value": 0.6335080937965902,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4871381051663955,
+    0.6923182035161172
+   ]
+  },
+  "l1.pattern.agg.recording.mean.auc": {
+   "value": 0.9399903829807855,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.9066712894456286,
+    0.9592901670556512
+   ]
+  },
+  "l1.pattern.agg.recording.mean.auprc": {
+   "value": 0.8103573398359755,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7125592030240252,
+    0.8593599770580235
+   ]
+  },
+  "l1.pattern.agg.recording.mean.brier": {
+   "value": 0.19813589272490204,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.13342726789845713,
+    0.25076249554920027
+   ]
+  },
+  "l1.pattern.agg.recording.mean.ece": {
+   "value": 0.009279744592234906,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.013543762856437507,
+    0.05215103054405929
+   ]
+  },
+  "l1.pattern.agg.patient.confweighted.n_units": {
+   "value": 74,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.agg.patient.confweighted.majority_accuracy": {
+   "value": 0.6756756756756757,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.agg.patient.confweighted.accuracy": {
+   "value": 0.7432432432432432,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6351351351351351,
+    0.8378378378378378
+   ]
+  },
+  "l1.pattern.agg.patient.confweighted.balanced_accuracy": {
+   "value": 0.4619047619047619,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3703703703703704,
+    0.5762037037037037
+   ]
+  },
+  "l1.pattern.agg.patient.confweighted.macro_f1": {
+   "value": 0.4788396788396789,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3349420963153731,
+    0.6208229329281117
+   ]
+  },
+  "l1.pattern.agg.patient.confweighted.weighted_f1": {
+   "value": 0.6777462777462777,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5430663894914143,
+    0.8018148869694595
+   ]
+  },
+  "l1.pattern.agg.patient.confweighted.mcc": {
+   "value": 0.3923242322629822,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.20880414888019797,
+    0.5583314282545333
+   ]
+  },
+  "l1.pattern.agg.patient.confweighted.auc": {
+   "value": 0.8311160714285714,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7449906167957072,
+    0.9108967687684643
+   ]
+  },
+  "l1.pattern.agg.patient.confweighted.auprc": {
+   "value": 0.6546975526604123,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5759132684986927,
+    0.77506551513438
+   ]
+  },
+  "l1.pattern.agg.patient.confweighted.brier": {
+   "value": 0.39129118938921165,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.2541669736148472,
+    0.535626307810571
+   ]
+  },
+  "l1.pattern.agg.patient.confweighted.ece": {
+   "value": 0.1483564754648003,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.08779983441532717,
+    0.25491964122285343
+   ]
+  },
+  "l1.pattern.agg.patient.mean.n_units": {
+   "value": 74,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.agg.patient.mean.majority_accuracy": {
+   "value": 0.6756756756756757,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.pattern.agg.patient.mean.accuracy": {
+   "value": 0.7432432432432432,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6351351351351351,
+    0.8378378378378378
+   ]
+  },
+  "l1.pattern.agg.patient.mean.balanced_accuracy": {
+   "value": 0.4619047619047619,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3703703703703704,
+    0.5762037037037037
+   ]
+  },
+  "l1.pattern.agg.patient.mean.macro_f1": {
+   "value": 0.4788396788396789,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3349420963153731,
+    0.6208229329281117
+   ]
+  },
+  "l1.pattern.agg.patient.mean.weighted_f1": {
+   "value": 0.6777462777462777,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5430663894914143,
+    0.8018148869694595
+   ]
+  },
+  "l1.pattern.agg.patient.mean.mcc": {
+   "value": 0.3923242322629822,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.20880414888019797,
+    0.5583314282545333
+   ]
+  },
+  "l1.pattern.agg.patient.mean.auc": {
+   "value": 0.8279960317460318,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7411748118601247,
+    0.9078383002186792
+   ]
+  },
+  "l1.pattern.agg.patient.mean.auprc": {
+   "value": 0.6491508822433327,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5646714729189686,
+    0.7741862515600951
+   ]
+  },
+  "l1.pattern.agg.patient.mean.brier": {
+   "value": 0.38778494751836906,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.25472250456863565,
+    0.5269254721662813
+   ]
+  },
+  "l1.pattern.agg.patient.mean.ece": {
+   "value": 0.11918577053082295,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.0726173642196347,
+    0.2347646683331634
+   ]
+  },
+  "l1.disease.majority_accuracy": {
+   "value": 0.7193904361534419,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.n_events.pneumonia": {
+   "value": 1369,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.n_events.bronchial": {
+   "value": 266,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.n_events.normal_other": {
+   "value": 268,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.duration_only.accuracy": {
+   "value": 0.48712559117183396,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.38825324387673005,
+    0.5800126926394457
+   ]
+  },
+  "l1.disease.duration_only.balanced_accuracy": {
+   "value": 0.38948026389906604,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3258416360961006,
+    0.44390908943287455
+   ]
+  },
+  "l1.disease.duration_only.macro_f1": {
+   "value": 0.3659864024182679,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.29603698716571125,
+    0.4185663000215951
+   ]
+  },
+  "l1.disease.duration_only.weighted_f1": {
+   "value": 0.5389477996089059,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.433400121808686,
+    0.6474281111798936
+   ]
+  },
+  "l1.disease.duration_only.mcc": {
+   "value": 0.12077916748876712,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.02254885648771268,
+    0.21190670466583678
+   ]
+  },
+  "l1.disease.duration_only.auc": {
+   "value": 0.5990010872123008,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5182420919157839,
+    0.665305157258405
+   ]
+  },
+  "l1.disease.duration_only.auprc": {
+   "value": 0.38352478093567455,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.348834406742222,
+    0.4296433312605039
+   ]
+  },
+  "l1.disease.duration_only.brier": {
+   "value": 0.648299175942365,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6265938457084145,
+    0.6721551005382235
+   ]
+  },
+  "l1.disease.duration_only.ece": {
+   "value": 0.10691143885848621,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.02824551177986863,
+    0.19734127490269346
+   ]
+  },
+  "l1.disease.demographics_only.accuracy": {
+   "value": 0.5528113504992118,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3726759916207962,
+    0.7423590268384392
+   ]
+  },
+  "l1.disease.demographics_only.balanced_accuracy": {
+   "value": 0.4575535630502616,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3198012877964801,
+    0.6407969802870268
+   ]
+  },
+  "l1.disease.demographics_only.macro_f1": {
+   "value": 0.432212327779518,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.2964798765067396,
+    0.5971568973220238
+   ]
+  },
+  "l1.disease.demographics_only.weighted_f1": {
+   "value": 0.5791851621249678,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.40335136804734506,
+    0.7590779177066723
+   ]
+  },
+  "l1.disease.demographics_only.mcc": {
+   "value": 0.14610169881080906,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.09769370539320872,
+    0.44640876709328386
+   ]
+  },
+  "l1.disease.demographics_only.auc": {
+   "value": 0.5656271800419287,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4362739592896308,
+    0.7109088127585771
+   ]
+  },
+  "l1.disease.demographics_only.auprc": {
+   "value": 0.41062127451152336,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.34210714396637437,
+    0.5420799613352604
+   ]
+  },
+  "l1.disease.demographics_only.brier": {
+   "value": 0.6413502943901535,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.618857954559282,
+    0.6622186454355439
+   ]
+  },
+  "l1.disease.demographics_only.ece": {
+   "value": 0.18265107764569521,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.02748380682483863,
+    0.36971075188618646
+   ]
+  },
+  "l1.disease.duration_demographics.accuracy": {
+   "value": 0.5202312138728323,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.39060772822565276,
+    0.6494198541367687
+   ]
+  },
+  "l1.disease.duration_demographics.balanced_accuracy": {
+   "value": 0.39003060238278175,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.29390926101574116,
+    0.5252039527068892
+   ]
+  },
+  "l1.disease.duration_demographics.macro_f1": {
+   "value": 0.3727589170353009,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.28174828442737515,
+    0.4788342597024774
+   ]
+  },
+  "l1.disease.duration_demographics.weighted_f1": {
+   "value": 0.5691696484289739,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4339747271288049,
+    0.6974634444779204
+   ]
+  },
+  "l1.disease.duration_demographics.mcc": {
+   "value": 0.14757659627421238,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.026332354205995667,
+    0.2963118768427506
+   ]
+  },
+  "l1.disease.duration_demographics.auc": {
+   "value": 0.6357303810381735,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5498771903474531,
+    0.7453179095916036
+   ]
+  },
+  "l1.disease.duration_demographics.auprc": {
+   "value": 0.4014486705511449,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.360693770338095,
+    0.4919915285178686
+   ]
+  },
+  "l1.disease.duration_demographics.brier": {
+   "value": 0.5927183783394054,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5369280965764165,
+    0.6490808307478088
+   ]
+  },
+  "l1.disease.duration_demographics.ece": {
+   "value": 0.08962768386459155,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.030447712558970566,
+    0.21284958293718886
+   ]
+  },
+  "l1.disease.own_task_base.accuracy": {
+   "value": 0.3583815028901734,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.25718620867768593,
+    0.4458401468396737
+   ]
+  },
+  "l1.disease.own_task_base.balanced_accuracy": {
+   "value": 0.39596701570438864,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.2845254751756121,
+    0.4596072330243796
+   ]
+  },
+  "l1.disease.own_task_base.macro_f1": {
+   "value": 0.31742928768532147,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.2237597594729141,
+    0.39645366758556233
+   ]
+  },
+  "l1.disease.own_task_base.weighted_f1": {
+   "value": 0.4146470933943257,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3073498284467917,
+    0.5138271700655854
+   ]
+  },
+  "l1.disease.own_task_base.mcc": {
+   "value": 0.1237159129344463,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.015705678128702553,
+    0.2176378942438598
+   ]
+  },
+  "l1.disease.own_task_base.auc": {
+   "value": 0.5998632835501424,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5016165312815036,
+    0.6640379160849136
+   ]
+  },
+  "l1.disease.own_task_base.auprc": {
+   "value": 0.39071606866987746,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3485556023548805,
+    0.44923625602612577
+   ]
+  },
+  "l1.disease.own_task_base.brier": {
+   "value": 0.6625611717865759,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6558418947385233,
+    0.6703082619021552
+   ]
+  },
+  "l1.disease.own_task_base.ece": {
+   "value": 0.0073093627162416075,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.0018289653634973215,
+    0.10522252175042035
+   ]
+  },
+  "l1.disease.acoustic_only.accuracy": {
+   "value": 0.32527588018917497,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.23659874199629896,
+    0.41253309532701876
+   ]
+  },
+  "l1.disease.acoustic_only.balanced_accuracy": {
+   "value": 0.3734102012004817,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.2675167677841216,
+    0.4353708176113131
+   ]
+  },
+  "l1.disease.acoustic_only.macro_f1": {
+   "value": 0.28933914842700686,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.20397582877727713,
+    0.3704806530294849
+   ]
+  },
+  "l1.disease.acoustic_only.weighted_f1": {
+   "value": 0.37546061217435056,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.2856570570171222,
+    0.46480698618522814
+   ]
+  },
+  "l1.disease.acoustic_only.mcc": {
+   "value": 0.09328510347236851,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.006127768052931678,
+    0.19724187535495938
+   ]
+  },
+  "l1.disease.acoustic_only.auc": {
+   "value": 0.5726065512722881,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.476531589610745,
+    0.6352526783049357
+   ]
+  },
+  "l1.disease.acoustic_only.auprc": {
+   "value": 0.3795632386782469,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.33995286714904976,
+    0.4396356433171289
+   ]
+  },
+  "l1.disease.acoustic_only.brier": {
+   "value": 0.6598241086071498,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6470960335320788,
+    0.674399381761118
+   ]
+  },
+  "l1.disease.acoustic_only.ece": {
+   "value": 0.05825434705511363,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.008832808139156302,
+    0.1383823400155883
+   ]
+  },
+  "l1.disease.full_stack.accuracy": {
+   "value": 0.5501839201261166,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.42680921452723247,
+    0.6583727661765055
+   ]
+  },
+  "l1.disease.full_stack.balanced_accuracy": {
+   "value": 0.47906234765855576,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3520861779869588,
+    0.5920252902378925
+   ]
+  },
+  "l1.disease.full_stack.macro_f1": {
+   "value": 0.4359851807641953,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3234210743546586,
+    0.5248148197875743
+   ]
+  },
+  "l1.disease.full_stack.weighted_f1": {
+   "value": 0.6009708287612152,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4732602841877229,
+    0.7090095462156926
+   ]
+  },
+  "l1.disease.full_stack.mcc": {
+   "value": 0.2469265299155412,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.09241182647999799,
+    0.36934761770213975
+   ]
+  },
+  "l1.disease.full_stack.auc": {
+   "value": 0.6795622325834335,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5533273448993837,
+    0.7696029822404648
+   ]
+  },
+  "l1.disease.full_stack.auprc": {
+   "value": 0.45074736751199224,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.37254313196539207,
+    0.5597563549446458
+   ]
+  },
+  "l1.disease.full_stack.brier": {
+   "value": 0.5841854482075937,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5280965007371063,
+    0.6456858885025502
+   ]
+  },
+  "l1.disease.full_stack.ece": {
+   "value": 0.06918464987192009,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.03132657427376555,
+    0.17469780826414616
+   ]
+  },
+  "l1.disease.full_stack.pneumonia.sensitivity": {
+   "value": 0.6018991964937911,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.44931754624326764,
+    0.7274994034279548
+   ]
+  },
+  "l1.disease.full_stack.pneumonia.specificity": {
+   "value": 0.8258426966292135,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6417694346798825,
+    0.9274203994651512
+   ]
+  },
+  "l1.disease.full_stack.pneumonia.ppv": {
+   "value": 0.8985823336968375,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7813669748611757,
+    0.9604224008655872
+   ]
+  },
+  "l1.disease.full_stack.pneumonia.npv": {
+   "value": 0.44726166328600403,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.24962608283240803,
+    0.6366890645996874
+   ]
+  },
+  "l1.disease.full_stack.pneumonia.f1": {
+   "value": 0.7209098862642169,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5798649750388098,
+    0.8148447986719827
+   ]
+  },
+  "l1.disease.full_stack.pneumonia.mcc": {
+   "value": 0.38461924808135556,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.16900944767302017,
+    0.5533062477666825
+   ]
+  },
+  "l1.disease.full_stack.pneumonia.auc": {
+   "value": 0.7821477718228401,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6320424388199445,
+    0.8822921434912752
+   ]
+  },
+  "l1.disease.full_stack.bronchial.sensitivity": {
+   "value": 0.42857142857142855,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.12357870052619538,
+    0.6898884870403857
+   ]
+  },
+  "l1.disease.full_stack.bronchial.specificity": {
+   "value": 0.7727550397067807,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6777922077922078,
+    0.8678594322344323
+   ]
+  },
+  "l1.disease.full_stack.bronchial.ppv": {
+   "value": 0.2345679012345679,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.04759361997226075,
+    0.49334756097560967
+   ]
+  },
+  "l1.disease.full_stack.bronchial.npv": {
+   "value": 0.8927311220889202,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.8006853936126612,
+    0.9561155995737421
+   ]
+  },
+  "l1.disease.full_stack.bronchial.f1": {
+   "value": 0.30319148936170215,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.06850163039382916,
+    0.5381165413533833
+   ]
+  },
+  "l1.disease.full_stack.bronchial.mcc": {
+   "value": 0.1600895461327293,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.08114746256487687,
+    0.40898862837204997
+   ]
+  },
+  "l1.disease.full_stack.bronchial.auc": {
+   "value": 0.6147649974049356,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.41762208676715085,
+    0.7870444925714982
+   ]
+  },
+  "l1.disease.full_stack.normal_other.sensitivity": {
+   "value": 0.40671641791044777,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.19274632777686088,
+    0.5833552631578947
+   ]
+  },
+  "l1.disease.full_stack.normal_other.specificity": {
+   "value": 0.7608562691131499,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.6444957160313111,
+    0.8517247554817895
+   ]
+  },
+  "l1.disease.full_stack.normal_other.ppv": {
+   "value": 0.218,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.052861201298701296,
+    0.42948304747841864
+   ]
+  },
+  "l1.disease.full_stack.normal_other.npv": {
+   "value": 0.8866714183891661,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.7581332072180526,
+    0.9705260731848849
+   ]
+  },
+  "l1.disease.full_stack.normal_other.f1": {
+   "value": 0.2838541666666667,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.08559621295666252,
+    0.43461815511574226
+   ]
+  },
+  "l1.disease.full_stack.normal_other.mcc": {
+   "value": 0.1324389324709459,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.04395061909640736,
+    0.28045068740859624
+   ]
+  },
+  "l1.disease.full_stack.normal_other.auc": {
+   "value": 0.641773928522525,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.422515852022601,
+    0.7614277442184401
+   ]
+  },
+  "l1.disease.delta_auc.full_stack_vs_acoustic_only": {
+   "value": 0.10695568131114541,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.004898018802013227,
+    0.21313321208499497
+   ]
+  },
+  "l1.disease.delta_auc.full_stack_vs_acoustic_only.p_holm": {
+   "value": 0.21999999999999997,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.delta_auc.full_stack_vs_demographics_only": {
+   "value": 0.11393505254150482,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.05113445100540969,
+    0.2293738325017084
+   ]
+  },
+  "l1.disease.delta_auc.full_stack_vs_demographics_only.p_holm": {
+   "value": 0.7,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.delta_auc.acoustic_only_vs_demographics_only": {
+   "value": 0.00697937123035941,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.19848582474263468,
+    0.17741224162787234
+   ]
+  },
+  "l1.disease.delta_auc.acoustic_only_vs_demographics_only.p_holm": {
+   "value": 0.929,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.delta_auc.full_stack_vs_own_task_base": {
+   "value": 0.07969894903329111,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.03135174283613801,
+    0.19419136883403412
+   ]
+  },
+  "l1.disease.delta_auc.full_stack_vs_own_task_base.p_holm": {
+   "value": 0.7,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.delta_auc.acoustic_only_vs_duration_only": {
+   "value": -0.02639453594001273,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.09717276353408792,
+    0.03169787733324839
+   ]
+  },
+  "l1.disease.delta_auc.acoustic_only_vs_duration_only.p_holm": {
+   "value": 0.7,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.delta_accuracy.full_stack_vs_acoustic_only": {
+   "value": 0.22490803993694164,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.08157953347191427,
+    0.3672777274882538
+   ]
+  },
+  "l1.disease.delta_accuracy.full_stack_vs_acoustic_only.p_holm": {
+   "value": 0.002498750624687656,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.delta_accuracy.full_stack_vs_demographics_only": {
+   "value": -0.0026274303730952075,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.1908013132926159,
+    0.1815790946467719
+   ]
+  },
+  "l1.disease.delta_accuracy.full_stack_vs_demographics_only.p_holm": {
+   "value": 0.913,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.delta_accuracy.acoustic_only_vs_demographics_only": {
+   "value": -0.22753547031003685,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.47806899807478564,
+    0.011458915797825726
+   ]
+  },
+  "l1.disease.delta_accuracy.acoustic_only_vs_demographics_only.p_holm": {
+   "value": 0.128,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.delta_accuracy.full_stack_vs_own_task_base": {
+   "value": 0.1918024172359432,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.06132877697841728,
+    0.33491037193653656
+   ]
+  },
+  "l1.disease.delta_accuracy.full_stack_vs_own_task_base.p_holm": {
+   "value": 0.004,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.delta_accuracy.acoustic_only_vs_duration_only": {
+   "value": -0.161849710982659,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.2456164399472364,
+    -0.05886723936060474
+   ]
+  },
+  "l1.disease.delta_accuracy.acoustic_only_vs_duration_only.p_holm": {
+   "value": 0.004,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.agg.recording.confweighted.n_units": {
+   "value": 530,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.agg.recording.confweighted.majority_accuracy": {
+   "value": 0.730188679245283,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.agg.recording.confweighted.accuracy": {
+   "value": 0.5528301886792453,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.41448189134808855,
+    0.6719901240842651
+   ]
+  },
+  "l1.disease.agg.recording.confweighted.balanced_accuracy": {
+   "value": 0.45397969210612504,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3371132929603159,
+    0.5818041982654368
+   ]
+  },
+  "l1.disease.agg.recording.confweighted.macro_f1": {
+   "value": 0.41834043217082195,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3149089909908308,
+    0.50687118309743
+   ]
+  },
+  "l1.disease.agg.recording.confweighted.weighted_f1": {
+   "value": 0.6061970310518789,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4600206772820375,
+    0.7227769693381317
+   ]
+  },
+  "l1.disease.agg.recording.confweighted.mcc": {
+   "value": 0.22821521656167992,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.08134582266369775,
+    0.3555798774530766
+   ]
+  },
+  "l1.disease.agg.recording.confweighted.auc": {
+   "value": 0.6576489230451101,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.544497881830023,
+    0.75611303600112
+   ]
+  },
+  "l1.disease.agg.recording.confweighted.auprc": {
+   "value": 0.42581045782313615,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3675729408540667,
+    0.5289040257032972
+   ]
+  },
+  "l1.disease.agg.recording.confweighted.brier": {
+   "value": 0.5898107031122655,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5408312284302997,
+    0.646454114001821
+   ]
+  },
+  "l1.disease.agg.recording.confweighted.ece": {
+   "value": 0.08253068986309545,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.033784952894794974,
+    0.20862219859326922
+   ]
+  },
+  "l1.disease.agg.recording.mean.n_units": {
+   "value": 530,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.agg.recording.mean.majority_accuracy": {
+   "value": 0.730188679245283,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.agg.recording.mean.accuracy": {
+   "value": 0.5509433962264151,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4121264688595434,
+    0.6688730468550145
+   ]
+  },
+  "l1.disease.agg.recording.mean.balanced_accuracy": {
+   "value": 0.44935006247649545,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3320072601995127,
+    0.5775266686451002
+   ]
+  },
+  "l1.disease.agg.recording.mean.macro_f1": {
+   "value": 0.41487076783515575,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.31296315028797095,
+    0.5029922351884758
+   ]
+  },
+  "l1.disease.agg.recording.mean.weighted_f1": {
+   "value": 0.6047876703714369,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.45779026338942724,
+    0.7222499605828344
+   ]
+  },
+  "l1.disease.agg.recording.mean.mcc": {
+   "value": 0.224651822978998,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.07564273260624592,
+    0.34958723530126906
+   ]
+  },
+  "l1.disease.agg.recording.mean.auc": {
+   "value": 0.6569267359495713,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5429127897691791,
+    0.7544316105696731
+   ]
+  },
+  "l1.disease.agg.recording.mean.auprc": {
+   "value": 0.4248217546988072,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.36761032821856454,
+    0.5249971179613804
+   ]
+  },
+  "l1.disease.agg.recording.mean.brier": {
+   "value": 0.591435382051914,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5437473936505438,
+    0.6472108829362506
+   ]
+  },
+  "l1.disease.agg.recording.mean.ece": {
+   "value": 0.08395779484173234,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.033884791035583076,
+    0.2101001229460228
+   ]
+  },
+  "l1.disease.agg.patient.confweighted.n_units": {
+   "value": 74,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.agg.patient.confweighted.majority_accuracy": {
+   "value": 0.5945945945945946,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.agg.patient.confweighted.accuracy": {
+   "value": 0.44594594594594594,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.33783783783783783,
+    0.5540540540540541
+   ]
+  },
+  "l1.disease.agg.patient.confweighted.balanced_accuracy": {
+   "value": 0.4166666666666667,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.29055497375896766,
+    0.5543656070584261
+   ]
+  },
+  "l1.disease.agg.patient.confweighted.macro_f1": {
+   "value": 0.39749443859032896,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.28729512735326684,
+    0.5053942667544025
+   ]
+  },
+  "l1.disease.agg.patient.confweighted.weighted_f1": {
+   "value": 0.48104690570444,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.36948779570468226,
+    0.5943407371335298
+   ]
+  },
+  "l1.disease.agg.patient.confweighted.mcc": {
+   "value": 0.15615516850507005,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.006881264771276136,
+    0.325274670882408
+   ]
+  },
+  "l1.disease.agg.patient.confweighted.auc": {
+   "value": 0.6040343915343915,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.4961212002135813,
+    0.7153300259664699
+   ]
+  },
+  "l1.disease.agg.patient.confweighted.auprc": {
+   "value": 0.45677352459506154,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.39099781476667494,
+    0.5881446700213276
+   ]
+  },
+  "l1.disease.agg.patient.confweighted.brier": {
+   "value": 0.6331089486918468,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.5769828943059805,
+    0.6859190353325911
+   ]
+  },
+  "l1.disease.agg.patient.confweighted.ece": {
+   "value": 0.03196196126016872,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.020425561710667273,
+    0.15571135293969793
+   ]
+  },
+  "l1.disease.agg.patient.mean.n_units": {
+   "value": 74,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.agg.patient.mean.majority_accuracy": {
+   "value": 0.5945945945945946,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json"
+  },
+  "l1.disease.agg.patient.mean.accuracy": {
+   "value": 0.44594594594594594,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.33783783783783783,
+    0.5540540540540541
+   ]
+  },
+  "l1.disease.agg.patient.mean.balanced_accuracy": {
+   "value": 0.4166666666666667,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.29055497375896766,
+    0.5543656070584261
+   ]
+  },
+  "l1.disease.agg.patient.mean.macro_f1": {
+   "value": 0.39749443859032896,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.28729512735326684,
+    0.5053942667544025
+   ]
+  },
+  "l1.disease.agg.patient.mean.weighted_f1": {
+   "value": 0.48104690570444,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.36948779570468226,
+    0.5943407371335298
+   ]
+  },
+  "l1.disease.agg.patient.mean.mcc": {
+   "value": 0.15615516850507005,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    -0.006881264771276136,
+    0.325274670882408
+   ]
+  },
+  "l1.disease.agg.patient.mean.auc": {
+   "value": 0.6001863876863877,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.49352167675449116,
+    0.7113068135872885
+   ]
+  },
+  "l1.disease.agg.patient.mean.auprc": {
+   "value": 0.44601739989789063,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.3856737500075551,
+    0.5632919320706132
+   ]
+  },
+  "l1.disease.agg.patient.mean.brier": {
+   "value": 0.6359569050593311,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.581758834454383,
+    0.6877402651565526
+   ]
+  },
+  "l1.disease.agg.patient.mean.ece": {
+   "value": 0.041173265364977944,
+   "source": "results_clean/arm_L1_backbone_leak/metrics/metrics.json",
+   "ci": [
+    0.022059818729645103,
+    0.16208643766833558
+   ]
+  },
+  "cohort.train.events": {
+   "value": 15877,
+   "source": "results_clean/split_summary.json"
+  },
+  "cohort.train.patients": {
+   "value": 588,
+   "source": "results_clean/split_summary.json"
+  },
+  "cohort.train.recordings": {
+   "value": 3932,
+   "source": "results_clean/split_summary.json"
+  },
+  "cohort.val.events": {
+   "value": 1913,
+   "source": "results_clean/split_summary.json"
+  },
+  "cohort.val.patients": {
+   "value": 74,
+   "source": "results_clean/split_summary.json"
+  },
+  "cohort.val.recordings": {
+   "value": 523,
+   "source": "results_clean/split_summary.json"
+  },
+  "cohort.test.events": {
+   "value": 1903,
+   "source": "results_clean/split_summary.json"
+  },
+  "cohort.test.patients": {
+   "value": 74,
+   "source": "results_clean/split_summary.json"
+  },
+  "cohort.test.recordings": {
+   "value": 530,
+   "source": "results_clean/split_summary.json"
+  },
+  "cohort.total.events": {
+   "value": 19693,
+   "source": "results_clean/split_summary.json"
+  },
+  "cohort.total.patients": {
+   "value": 736,
+   "source": "results_clean/split_summary.json"
+  }
+ }
+}

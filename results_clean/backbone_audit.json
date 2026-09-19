@@ -1,0 +1,52 @@
+{
+  "pristine_path": "/home/izzet/Desktop/PulmoVec/models/hear_pristine_encoder.pth",
+  "pristine_sha256": "b2e98037c724eb8b933892617512cdcacb86e66cdbcd6c6ff608e16c41b25213",
+  "source": "google/hear-pytorch",
+  "env": {
+    "python": "3.12.12",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "git_commit": "27fbc621cd6d196686fdfae2483367d4139196b3",
+    "git_branch": "main",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "sklearn": "1.8.0",
+    "lightgbm": "4.7.0",
+    "optuna": "5.0.0",
+    "transformers": "4.50.3",
+    "librosa": "0.11.0",
+    "shap": "0.52.0"
+  },
+  "legacy_path": "/home/izzet/Desktop/PulmoVec/models/hear_sprsound_best.pth",
+  "legacy_meta": {
+    "epoch": 50,
+    "metrics": "<class 'dict'>",
+    "class_names": "<class 'list'>",
+    "config": "<class 'dict'>"
+  },
+  "n_tensors_common": 392,
+  "n_tensors_changed": 392,
+  "max_abs_diff": 0.0018562078475952148,
+  "keys_missing_in_legacy": [],
+  "keys_extra_in_legacy": [],
+  "legacy_is_pristine": false,
+  "largest_changes": {
+    "hear_encoder.encoder.layer.14.intermediate.dense.weight": 0.0018562078475952148,
+    "hear_encoder.encoder.layer.12.intermediate.dense.weight": 0.0017209649085998535,
+    "hear_encoder.encoder.layer.8.attention.attention.query.weight": 0.0017080232501029968,
+    "hear_encoder.encoder.layer.10.attention.attention.key.weight": 0.0016761794686317444,
+    "hear_encoder.encoder.layer.10.intermediate.dense.weight": 0.0016632378101348877,
+    "hear_encoder.encoder.layer.11.output.dense.weight": 0.001659933477640152,
+    "hear_encoder.encoder.layer.17.attention.attention.key.weight": 0.0016455203294754028,
+    "hear_encoder.encoder.layer.11.attention.attention.query.weight": 0.0016276240348815918,
+    "hear_encoder.encoder.layer.13.output.dense.weight": 0.0015882998704910278,
+    "hear_encoder.encoder.layer.6.output.dense.weight": 0.0015836656093597412,
+    "hear_encoder.encoder.layer.11.attention.output.dense.weight": 0.0015765130519866943,
+    "hear_encoder.encoder.layer.9.output.dense.weight": 0.0015733987092971802,
+    "hear_encoder.encoder.layer.11.intermediate.dense.weight": 0.0015551336109638214,
+    "hear_encoder.encoder.layer.18.intermediate.dense.weight": 0.001553267240524292,
+    "hear_encoder.encoder.layer.9.attention.attention.query.weight": 0.0015479624271392822
+  }
+}

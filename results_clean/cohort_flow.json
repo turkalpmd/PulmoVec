@@ -1,0 +1,70 @@
+{
+  "1_annotated_events_with_audio": {
+    "events": 24808,
+    "recordings": 6567,
+    "patients_with_id": 868,
+    "events_without_patient_id": 1388,
+    "recordings_without_patient_id": 390
+  },
+  "1_event_types": {
+    "Normal": 18772,
+    "Fine Crackle": 3530,
+    "Wheeze": 1505,
+    "Wheeze+Crackle": 303,
+    "No Event": 230,
+    "Rhonchi": 217,
+    "Coarse Crackle": 177,
+    "Stridor": 74
+  },
+  "2_after_label_mapping": {
+    "events": 24504,
+    "recordings": 6312,
+    "patients_with_id": 856,
+    "events_without_patient_id": 1377,
+    "recordings_without_patient_id": 385
+  },
+  "2_excluded_no_task_label": 304,
+  "3_excluded_undocumented_diagnosis": {
+    "events": 4802,
+    "recordings": 1324,
+    "patients_with_id": 120,
+    "events_without_patient_id": 1377,
+    "recordings_without_patient_id": 385
+  },
+  "3b_excluded_implausible_age": {
+    "events": 9,
+    "recordings": 3,
+    "patients_with_id": 1,
+    "events_without_patient_id": 0,
+    "recordings_without_patient_id": 0
+  },
+  "4_analysis_cohort": {
+    "events": 19693,
+    "recordings": 4985,
+    "patients_with_id": 736,
+    "events_without_patient_id": 0,
+    "recordings_without_patient_id": 0
+  },
+  "4_by_source_partition": {
+    "Detection-Test-2024": 7186,
+    "Classification-Train": 6641,
+    "Classification-Valid-2023": 2950,
+    "Classification-Valid-2022-Inter": 1429,
+    "Classification-Valid-2022-Intra": 1002,
+    "BioCAS2025-Test": 485
+  },
+  "4_events_per_patient": {
+    "min": 1.0,
+    "25%": 9.0,
+    "50%": 18.0,
+    "75%": 33.0,
+    "max": 254.0
+  },
+  "4_recordings_per_patient": {
+    "min": 1.0,
+    "25%": 3.0,
+    "50%": 5.0,
+    "75%": 8.0,
+    "max": 80.0
+  }
+}

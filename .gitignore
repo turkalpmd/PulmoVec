@@ -1,0 +1,85 @@
+# Environment variables and secrets
+.env
+*.env
+
+# Model weights, checkpoints and serializations
+*.pth
+*.pt
+*.pkl
+*.ptl
+*.pthl
+*.pth.tar*
+*.corrupted_backup
+models/
+models
+
+# Audio data and heavy datasets
+data/wavfiles/
+data/wavfiles
+SPRSound/
+SPRSound
+SPRSound-main/
+SPRSound-main
+hear/.git/
+SPRSound/.git/
+
+# Workspace, staging and backups
+FromMP/
+Manuscript/
+Manuscript
+Development_Phase/
+Project/
+Project.zip
+EventDetect/
+archive/
+temp_fig/
+logs/
+
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# OS and IDE files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+.vsc/
+
+# Manuscript / Office / TIFF documents (tracked in Manuscript folder)
+*.docx
+*.tiff
+*.pdf
+# --- Not part of the public analysis repository -------------------------------------
+# vendored Google HeAR code: clone https://github.com/Google-Health/hear into ./hear
+hear/
+# derived SPRSound tables, split tables and per-event predictions (rebuild locally)
+data/
+results_clean/**/split_*.csv
+results_clean/**/probabilities/
+results_clean/**/checkpoints/
+results_clean/**/*.npy
+results_clean/**/*.npz
+results_clean/**/*.pkl
+results_clean/**/test_index.csv
+results_clean/**/saliency_records_*.csv
+# exploratory material and local utilities
+docs/
+notebooks/
+catboost_info/
+.vsc/
+Disease_Event_Pivot_Analysis.md
+disease_event_*
+*_cache_clean.sh
+clean_cache.sh
+disk_usage.sh
+find_largest_folders.sh
+watch_vram.sh
+requirements_hear.txt

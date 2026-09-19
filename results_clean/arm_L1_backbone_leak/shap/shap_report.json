@@ -1,0 +1,184 @@
+{
+  "model2_label": {
+    "n_test_events": 1903,
+    "feature_share": {
+      "model1_label_p0": 0.1155829211809246,
+      "model1_label_p1": 0.04027834326761513,
+      "model1_label_p2": 0.02956345249853391,
+      "model2_label_p0": 0.23701136868858036,
+      "model2_label_p1": 0.42830627615821665,
+      "model3_label_p0": 0.01790700360765932,
+      "model3_label_p1": 0.01608870794658911,
+      "model3_label_p2": 0.018088808320112355,
+      "age": 0.06617640446453733,
+      "gender_code": 0.006748067752804165,
+      "recording_location": 0.024248646114426953
+    },
+    "group_share": {
+      "age": 0.06617640446453733,
+      "other-task acoustic": 0.23750923682143443,
+      "own-task acoustic": 0.665317644846797,
+      "sex": 0.006748067752804165,
+      "site": 0.024248646114426953
+    },
+    "demographic_share": 0.09717311833176845,
+    "per_class_mean_abs": {
+      "Normal": {
+        "model1_label_p0": 0.2801196942368409,
+        "model1_label_p1": 0.09761612775670993,
+        "model1_label_p2": 0.07164817422733046,
+        "model2_label_p0": 0.5744062483398916,
+        "model2_label_p1": 1.0380168790625806,
+        "model3_label_p0": 0.04339831805620929,
+        "model3_label_p1": 0.038991607969570456,
+        "model3_label_p2": 0.04383892883107839,
+        "age": 0.16038108394304057,
+        "gender_code": 0.016354204031979007,
+        "recording_location": 0.058767534734635626
+      },
+      "Abnormal": {
+        "model1_label_p0": 0.2801196942368409,
+        "model1_label_p1": 0.09761612775670993,
+        "model1_label_p2": 0.07164817422733046,
+        "model2_label_p0": 0.5744062483398916,
+        "model2_label_p1": 1.0380168790625806,
+        "model3_label_p0": 0.04339831805620929,
+        "model3_label_p1": 0.038991607969570456,
+        "model3_label_p2": 0.04383892883107839,
+        "age": 0.16038108394304057,
+        "gender_code": 0.016354204031979007,
+        "recording_location": 0.058767534734635626
+      }
+    }
+  },
+  "model1_label": {
+    "n_test_events": 1903,
+    "feature_share": {
+      "model1_label_p0": 0.10171619548324719,
+      "model1_label_p1": 0.1703161019504759,
+      "model1_label_p2": 0.16078693117303897,
+      "model2_label_p0": 0.18511805849658672,
+      "model2_label_p1": 0.17888588529035324,
+      "model3_label_p0": 0.037552550648130956,
+      "model3_label_p1": 0.023853544638071315,
+      "model3_label_p2": 0.019689074257993846,
+      "age": 0.08736452312822697,
+      "gender_code": 0.012592927840226933,
+      "recording_location": 0.02212420709364798
+    },
+    "group_share": {
+      "age": 0.08736452312822697,
+      "other-task acoustic": 0.44509911333113605,
+      "own-task acoustic": 0.43281922860676203,
+      "sex": 0.012592927840226933,
+      "site": 0.02212420709364798
+    },
+    "demographic_share": 0.12208165806210189,
+    "per_class_mean_abs": {
+      "Normal": {
+        "model1_label_p0": 0.21372329366973078,
+        "model1_label_p1": 0.07759998687636445,
+        "model1_label_p2": 0.06304816191744318,
+        "model2_label_p0": 0.46627372626162183,
+        "model2_label_p1": 0.5978223837733105,
+        "model3_label_p0": 0.04510376327930026,
+        "model3_label_p1": 0.03473884085971885,
+        "model3_label_p2": 0.03102789846466717,
+        "age": 0.20037080411503955,
+        "gender_code": 0.029660056565441097,
+        "recording_location": 0.046247024401186436
+      },
+      "Crackles": {
+        "model1_label_p0": 0.054653810718020536,
+        "model1_label_p1": 0.6257756489961898,
+        "model1_label_p2": 0.1327187118627729,
+        "model2_label_p0": 0.3223182537859671,
+        "model2_label_p1": 0.16226169743498167,
+        "model3_label_p0": 0.095616143359723,
+        "model3_label_p1": 0.03528539537123856,
+        "model3_label_p2": 0.03649063767222133,
+        "age": 0.1466744511114042,
+        "gender_code": 0.019699939366326857,
+        "recording_location": 0.030735670815470753
+      },
+      "Wheeze/Rhonchi": {
+        "model1_label_p0": 0.22925244878028317,
+        "model1_label_p1": 0.1298675394966631,
+        "model1_label_p2": 0.5908564199319148,
+        "model2_label_p0": 0.11706730356337759,
+        "model2_label_p1": 0.11508533249405221,
+        "model3_label_p0": 0.04299969583497248,
+        "model3_label_p1": 0.0466752598849017,
+        "model3_label_p2": 0.028806981925880864,
+        "age": 0.08037113014355764,
+        "gender_code": 0.012248807115152418,
+        "recording_location": 0.03125630485509045
+      }
+    }
+  },
+  "model3_label": {
+    "n_test_events": 1903,
+    "feature_share": {
+      "model1_label_p0": 0.007891259556578661,
+      "model1_label_p1": 0.023075463861271833,
+      "model1_label_p2": 0.0389405815746146,
+      "model2_label_p0": 0.009402310113474492,
+      "model2_label_p1": 0.020148573140207952,
+      "model3_label_p0": 0.16457819157732426,
+      "model3_label_p1": 0.08370638782600102,
+      "model3_label_p2": 0.08102787165818147,
+      "age": 0.43214735052539704,
+      "gender_code": 0.13908201016694866,
+      "recording_location": 0.0
+    },
+    "group_share": {
+      "age": 0.43214735052539704,
+      "other-task acoustic": 0.09945818824614755,
+      "own-task acoustic": 0.32931245106150675,
+      "sex": 0.13908201016694866,
+      "site": 0.0
+    },
+    "demographic_share": 0.5712293606923458,
+    "per_class_mean_abs": {
+      "Pneumonia": {
+        "model1_label_p0": 0.0022320199821118727,
+        "model1_label_p1": 0.027023141267001557,
+        "model1_label_p2": 0.005996968745709068,
+        "model2_label_p0": 0.004388788617008422,
+        "model2_label_p1": 0.00410302543588142,
+        "model3_label_p0": 0.19111229159600962,
+        "model3_label_p1": 0.004274570766271979,
+        "model3_label_p2": 0.005904853008192853,
+        "age": 0.19345334971225434,
+        "gender_code": 0.12320128932279849,
+        "recording_location": 0.0
+      },
+      "Bronchial": {
+        "model1_label_p0": 0.0,
+        "model1_label_p1": 0.007342381794175098,
+        "model1_label_p2": 0.04707131996482256,
+        "model2_label_p0": 0.003758922352887517,
+        "model2_label_p1": 0.0038582673255483867,
+        "model3_label_p0": 0.020191554375325278,
+        "model3_label_p1": 0.12038657661071146,
+        "model3_label_p2": 0.016535178643071736,
+        "age": 0.17746970603288445,
+        "gender_code": 0.047321978951142984,
+        "recording_location": 0.0
+      },
+      "Normal/Other": {
+        "model1_label_p0": 0.009520171172254361,
+        "model1_label_p1": 0.0,
+        "model1_label_p2": 0.004924628015360272,
+        "model2_label_p0": 0.005854837666850385,
+        "model2_label_p1": 0.022045309015348524,
+        "model3_label_p0": 0.033796996725467,
+        "model3_label_p1": 0.0,
+        "model3_label_p2": 0.09823209042645169,
+        "age": 0.27265966179372003,
+        "gender_code": 0.03660695699571842,
+        "recording_location": 0.0
+      }
+    }
+  }
+}
