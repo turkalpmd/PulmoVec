@@ -56,6 +56,7 @@ git clone https://github.com/Google-Health/hear hear         # HeAR preprocessin
 cp .env.example .env                                          # add a Hugging Face token with
                                                               # access to google/hear-pytorch
 python scripts/run_clean_fetch_backbone.py                    # released encoder + audit
+python scripts/build_event_table.py --sprsound-root /path/to/SPRSound   # one row per annotated event
 python scripts/prepare_ensemble_labels.py                     # task labels from the event table
 python scripts/run_clean_pipeline.py --results-dir results_clean/arm_L0_clean      # hold-out
 python scripts/run_clean_nested_cv.py                         # primary analysis (5 x 4 nested CV)

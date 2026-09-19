@@ -30,7 +30,8 @@ AGE_LABELS = ['<3 y', '3-<6 y', '6-<12 y', '>=12 y']
 def subgroup_columns(index):
     out = pd.DataFrame(index=index.index)
     out['age_band'] = pd.cut(index['age'], AGE_BINS, right=False, labels=AGE_LABELS).astype(str)
-    out['sex'] = index['gender_code'].map({0: 'female', 1: 'male'}).fillna('unknown')
+    # SPRSound README: Male 0, Female 1
+    out['sex'] = index['gender_code'].map({0: 'male', 1: 'female'}).fillna('unknown')
     out['site'] = 'p' + index['recording_location'].astype('Int64').astype(str)
     out['duration_tertile'] = pd.qcut(index['event_duration_ms'], 3,
                                       labels=['short', 'medium', 'long']).astype(str)
@@ -48,8 +49,7 @@ def main():
 
     index, proba = load(args.meta_dirs)
     sg = subgroup_columns(index)
-    report, rows = {'sex_coding_note': 'gender_code 0/1 mapping must be confirmed against '
-                                       'the SPRSound documentation before publication'}, []
+    report, rows = {}, []
 
     for target, names in TARGETS.items():
         y, p = index[target].values.astype(int), proba[(target, PRIMARY)]
