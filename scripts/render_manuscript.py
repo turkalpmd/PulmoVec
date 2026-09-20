@@ -9,6 +9,7 @@ and verify that no hand-typed result number slipped in.
   {{key|3}}        value, 3 decimals
   {{key|ci}}       "0.96 (95% CI 0.93 to 0.98)"
   {{key|ci3}}      same, 3 decimals
+  {{key|t}}        compact table form "0.96 (0.93–0.98)"; {{key|t3}} with 3 decimals
   {{key|pct}}      value x 100, 1 decimal, with %
   {{key|p}}        p value ("<0.001" floor)
 
@@ -37,6 +38,9 @@ def fmt(entry, style):
     d = int(style[-1]) if style and style[-1].isdigit() else 2
     if isinstance(v, int) or (isinstance(v, float) and v.is_integer() and abs(v) > 1):
         return str(int(v))
+    if style.startswith('t') and 'ci' in entry:          # compact form for table cells
+        lo, hi = entry['ci']
+        return f'{v:.{d}f} ({lo:.{d}f}\u2013{hi:.{d}f})'
     if style.startswith('ci'):
         lo, hi = entry['ci']
         return f'{v:.{d}f} (95% CI {lo:.{d}f} to {hi:.{d}f})'
