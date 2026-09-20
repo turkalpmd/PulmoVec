@@ -1,0 +1,16 @@
+{
+ "patch_band_upper_edge_hz": [
+  280,
+  620,
+  1100,
+  1780,
+  2680,
+  3920,
+  5620
+ ],
+ "bandpass_hz": [
+  100,
+  1800
+ ],
+ "note": "edges of the 8 mel patch bands of the HeAR input, measured with pure tones"
+}

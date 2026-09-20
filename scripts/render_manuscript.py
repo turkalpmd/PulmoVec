@@ -48,7 +48,7 @@ def stray_numbers(src_text, whitelist):
     for n, line in enumerate(src_text.splitlines(), 1):
         if '<!-- numbers-ok -->' in line or line.lstrip().startswith(('#', '<!--', '![')):
             continue
-        s = PH.sub('', line)
+        s = re.sub(r'\{\{include:[^}]+\}\}', '', PH.sub('', line))
         s = re.sub(r'\[@[^\]]*\]|\[\d+(?:[,–-]\s*\d+)*\]', '', s)            # citations
         s = re.sub(r'(?i)\b(table|figure|fig\.|additional file|fold|phase|stage|layers?|'
                    r'model|arm l|p)\s*\d+[a-z]?', '', s)
@@ -85,7 +85,10 @@ def main():
     if bad and args.check:
         sys.exit(f"{len(bad)} hand-typed numbers found")
 
-    rendered = PH.sub(lambda m: fmt(reg[m.group(1)], m.group(2)), text)
+    rendered = PH.sub(lambda m: fmt(reg[m.group(1)], m.group(2)).replace('-', '\u2212'), text)
+    # {{include:relative/path.md}} - generated tables (numbers come from result files)
+    rendered = re.sub(r'\{\{include:([^}]+)\}\}',
+                      lambda m: (src.parent / m.group(1).strip()).read_text(), rendered)
     out = Path(args.output) if args.output else src.with_name('build') / (src.stem + '_rendered.md')
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(rendered)

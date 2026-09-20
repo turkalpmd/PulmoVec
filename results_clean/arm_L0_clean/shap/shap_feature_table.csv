@@ -1,0 +1,34 @@
+task,feature,group,mean_abs_shap,share
+Screening,Sound pattern: P(Normal),other-task acoustic,0.2796017094589537,0.2702787863465951
+Screening,Sound pattern: P(Crackles),other-task acoustic,0.03267019635228036,0.03158085491281866
+Screening,Sound pattern: P(Wheeze/Rhonchi),other-task acoustic,0.026650196036920655,0.0257615829842241
+Screening,Screening: P(Normal),own-task acoustic,0.319790988245074,0.3091280105358062
+Screening,Screening: P(Abnormal),own-task acoustic,0.3357090500994309,0.32451530715609817
+Screening,Disease group: P(Pneumonia),other-task acoustic,0.0025111612382111154,0.0024274301222895426
+Screening,Disease group: P(Bronchial),other-task acoustic,0.0049468566987097085,0.0047819107663719905
+Screening,Disease group: P(Normal/Other),other-task acoustic,0.0034282248112818916,0.0033139155089914733
+Screening,Age (years),age,0.027584418544497613,0.02666465516505653
+Screening,Sex,sex,0.0,0.0
+Screening,Auscultation site,site,0.0016009271508315146,0.0015475465017483205
+Sound pattern,Sound pattern: P(Normal),own-task acoustic,0.17988431855794537,0.11499122651668041
+Sound pattern,Sound pattern: P(Crackles),own-task acoustic,0.3115128246552675,0.1991348777366931
+Sound pattern,Sound pattern: P(Wheeze/Rhonchi),own-task acoustic,0.2606929342386834,0.1666482130996984
+Sound pattern,Screening: P(Normal),other-task acoustic,0.2536295246650911,0.16213292162366347
+Sound pattern,Screening: P(Abnormal),other-task acoustic,0.28294911147068547,0.180875496155815
+Sound pattern,Disease group: P(Pneumonia),other-task acoustic,0.047236713360903286,0.0301961152007667
+Sound pattern,Disease group: P(Bronchial),other-task acoustic,0.04337157935006489,0.02772532450527607
+Sound pattern,Disease group: P(Normal/Other),other-task acoustic,0.03636447689167296,0.02324602740768621
+Sound pattern,Age (years),age,0.11972184889007342,0.07653230895876853
+Sound pattern,Sex,sex,0.00859911589261241,0.0054969932419765355
+Sound pattern,Auscultation site,site,0.020368362359314406,0.013020495552975466
+Disease group,Sound pattern: P(Normal),other-task acoustic,0.0008105296856971124,0.0014740854108148509
+Disease group,Sound pattern: P(Crackles),other-task acoustic,0.007536749547924028,0.013706854603363496
+Disease group,Sound pattern: P(Wheeze/Rhonchi),other-task acoustic,0.005923595701029032,0.010773061315999092
+Disease group,Screening: P(Normal),other-task acoustic,0.005178577684431069,0.009418119962905126
+Disease group,Screening: P(Abnormal),other-task acoustic,0.011639120897238321,0.02116771120427624
+Disease group,Disease group: P(Pneumonia),own-task acoustic,0.11236494103738691,0.2043546623808415
+Disease group,Disease group: P(Bronchial),own-task acoustic,0.036957073190836576,0.06721269236446786
+Disease group,Disease group: P(Normal/Other),own-task acoustic,0.06444406697938873,0.11720244258072883
+Disease group,Age (years),age,0.24487794196307475,0.4453519816090065
+Disease group,Sex,sex,0.06011999648740425,0.10933838856759644
+Disease group,Auscultation site,site,0.0,0.0

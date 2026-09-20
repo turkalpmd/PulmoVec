@@ -87,6 +87,103 @@ def main():
                 for stat, v in s.items():
                     put(reg, f'{base}.fold_{stat}.{m}', v, path)
 
+    # ---- derived and auxiliary numbers -------------------------------------------------
+    def val(k):
+        return reg[k]['value']
+
+    for task in TASK.values():                      # leakage inflation relative to arm L0
+        for arm in ('l1', 'l2'):
+            for lvl, key in (('event', 'full_stack'), ('patient', 'agg.patient.confweighted')):
+                for m in ('auc', 'accuracy'):
+                    a_, b_ = f'{arm}.{task}.{key}.{m}', f'l0.{task}.{key}.{m}'
+                    if a_ in reg and b_ in reg:
+                        put(reg, f'infl.{arm}.{task}.{lvl}.{m}', val(a_) - val(b_),
+                            ARMS[arm])
+
+    flow_p = RC / 'cohort_flow.json'
+    if flow_p.exists():
+        fl = json.loads(flow_p.read_text())
+        for stage, short in (('1_annotated_events_with_audio', 'raw'),
+                             ('2_after_label_mapping', 'labelled'),
+                             ('3_excluded_undocumented_diagnosis', 'excl_unknown'),
+                             ('3b_excluded_implausible_age', 'excl_age'),
+                             ('4_analysis_cohort', 'cohort')):
+            for k2, v in fl[stage].items():
+                put(reg, f'flow.{short}.{k2}', v, flow_p)
+        put(reg, 'flow.excl_no_label.events', fl['2_excluded_no_task_label'], flow_p)
+        for q, v in fl['4_events_per_patient'].items():
+            put(reg, f"flow.events_per_patient.{q.strip('%')}", v, flow_p)
+        for q, v in fl['4_recordings_per_patient'].items():
+            put(reg, f"flow.recordings_per_patient.{q.strip('%')}", v, flow_p)
+
+    ov_p = RC / 'arm_L2_event_split' / 'overlap.json'
+    if ov_p.exists():
+        for part, d in json.loads(ov_p.read_text()).items():
+            for k2, v in d.items():
+                put(reg, f'l2.overlap.{part}.{k2}', v, ov_p)
+
+    for arm, d in (('l0', 'arm_L0_clean'), ('l1', 'arm_L1_backbone_leak')):
+        sp = RC / d / 'shap' / 'shap_report.json'
+        if sp.exists():
+            for target, r in json.loads(sp.read_text()).items():
+                put(reg, f'shap.{arm}.{TASK[target]}.demographic_share',
+                    r['demographic_share'], sp)
+                for g, v in r['group_share'].items():
+                    put(reg, f'shap.{arm}.{TASK[target]}.share.{slug(g)}', v, sp)
+        bp = RC / d / 'meta_benchmark' / 'meta_benchmark.json'
+        if bp.exists():
+            for target, models in json.loads(bp.read_text()).items():
+                aucs = [m['auc']['value'] for m in models.values()]
+                put(reg, f'bench.{arm}.{TASK[target]}.auc_min', min(aucs), bp)
+                put(reg, f'bench.{arm}.{TASK[target]}.auc_max', max(aucs), bp)
+                put(reg, f'bench.{arm}.{TASK[target]}.n_learners', len(aucs), bp)
+
+    sal_p = RC / 'arm_L0_clean' / 'saliency' / 'saliency_report.json'
+    if sal_p.exists():
+        for target, r in json.loads(sal_p.read_text())['tasks'].items():
+            for k2, v in r.items():
+                if isinstance(v, (int, float)):
+                    put(reg, f'sal.{TASK[target]}.{k2}', v, sal_p)
+            for c, prof in r['mel_band_profile_correct'].items():
+                tot = sum(prof)
+                put(reg, f'sal.{TASK[target]}.band_peak_share.{slug(c)}', max(prof) / tot, sal_p)
+                put(reg, f'sal.{TASK[target]}.band_peak_index.{slug(c)}',
+                    prof.index(max(prof)) + 1, sal_p)
+                # bands 5-8 lie above the 1800 Hz band-pass cut-off (mel_band_edges.json)
+                put(reg, f'sal.{TASK[target]}.above_passband_share.{slug(c)}',
+                    sum(prof[4:]) / tot, sal_p)
+        ed_p = sal_p.with_name('mel_band_edges.json')
+        if ed_p.exists():
+            ed = json.loads(ed_p.read_text())['patch_band_upper_edge_hz']
+            put(reg, 'sal.band2_low_hz', ed[0], ed_p)
+            put(reg, 'sal.band2_high_hz', ed[1], ed_p)
+            put(reg, 'sal.band4_high_hz', ed[3], ed_p)
+
+    l3_p = RC / 'preprint_reported.json'
+    if l3_p.exists():
+        for k2, v in json.loads(l3_p.read_text()).items():
+            if not k2.startswith('_'):
+                put(reg, f'l3.{k2}', v, l3_p)
+
+    for arm, sp in (('ncv', RC / 'metrics' / 'nested_cv_subgroups' / 'subgroups.json'),
+                    ('l0', RC / 'arm_L0_clean' / 'subgroups' / 'subgroups.json')):
+        if sp.exists():
+            for target, cols in json.loads(sp.read_text()).items():
+                if target not in TASK:
+                    continue
+                for col, levels in cols.items():
+                    aucs = [e['auc']['value'] for e in levels.values() if 'auc' in e]
+                    if aucs:
+                        put(reg, f'sub.{arm}.{TASK[target]}.{col}.auc_min', min(aucs), sp)
+                        put(reg, f'sub.{arm}.{TASK[target]}.{col}.auc_max', max(aucs), sp)
+
+    au_p = RC / 'backbone_audit.json'
+    if au_p.exists():
+        au = json.loads(au_p.read_text())
+        for k2 in ('n_tensors_common', 'n_tensors_changed', 'max_abs_diff'):
+            if k2 in au:
+                put(reg, f'audit.{k2}', au[k2], au_p)
+
     split = RC / 'split_summary.json'
     for part, d in json.loads(split.read_text()).items():
         for k, v in d.items():

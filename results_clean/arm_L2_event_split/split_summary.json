@@ -1,0 +1,17 @@
+{
+  "train": {
+    "events": 15754,
+    "patients": 735,
+    "recordings": 4822
+  },
+  "val": {
+    "events": 1969,
+    "patients": 555,
+    "recordings": 1598
+  },
+  "test": {
+    "events": 1970,
+    "patients": 558,
+    "recordings": 1602
+  }
+}

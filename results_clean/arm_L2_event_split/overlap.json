@@ -1,0 +1,16 @@
+{
+  "val": {
+    "events": 1969,
+    "patients": 555,
+    "patients_also_in_train": 554,
+    "events_with_patient_in_train": 1967,
+    "events_with_recording_in_train": 1854
+  },
+  "test": {
+    "events": 1970,
+    "patients": 558,
+    "patients_also_in_train": 558,
+    "events_with_patient_in_train": 1970,
+    "events_with_recording_in_train": 1856
+  }
+}

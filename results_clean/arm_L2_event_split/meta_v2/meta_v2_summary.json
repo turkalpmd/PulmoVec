@@ -1,0 +1,613 @@
+{
+  "model2_label": {
+    "duration_only": {
+      "val_macro_f1": 0.6816992173213371,
+      "best_params": {
+        "n_estimators": 292,
+        "learning_rate": 0.01138225565119546,
+        "num_leaves": 73,
+        "max_depth": 8,
+        "min_child_samples": 17,
+        "subsample": 0.8549251816309534,
+        "colsample_bytree": 0.6259560121733347,
+        "reg_alpha": 0.5047119122396985,
+        "reg_lambda": 4.439692376074856e-07,
+        "objective": "binary",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42
+      },
+      "features": [
+        "event_duration_ms"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.7568527918781726,
+        "macro_f1": 0.6601122573613288,
+        "weighted_f1": 0.7823495835633921,
+        "brier": 0.36105963457868695,
+        "ece": 0.06880219889298356,
+        "roc_auc": 0.777329411386869
+      }
+    },
+    "demographics_only": {
+      "val_macro_f1": 0.7071429717887123,
+      "best_params": {
+        "n_estimators": 690,
+        "learning_rate": 0.044555079715403755,
+        "num_leaves": 38,
+        "max_depth": 11,
+        "min_child_samples": 30,
+        "subsample": 0.9355594517137821,
+        "colsample_bytree": 0.9357795632982884,
+        "reg_alpha": 0.00036583313597099616,
+        "reg_lambda": 0.09719398473072183,
+        "objective": "binary",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42
+      },
+      "features": [
+        "age",
+        "gender_code",
+        "recording_location"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.7807106598984772,
+        "macro_f1": 0.697770782520253,
+        "weighted_f1": 0.8044996169759522,
+        "brier": 0.29676956088674605,
+        "ece": 0.05083099263229714,
+        "roc_auc": 0.8695036546268955
+      }
+    },
+    "duration_demographics": {
+      "val_macro_f1": 0.7824573470188041,
+      "best_params": {
+        "n_estimators": 763,
+        "learning_rate": 0.01069210072375219,
+        "num_leaves": 122,
+        "max_depth": 9,
+        "min_child_samples": 12,
+        "subsample": 0.6675487368499525,
+        "colsample_bytree": 0.7307316886472693,
+        "reg_alpha": 6.622884773048237e-08,
+        "reg_lambda": 0.0008318816606948763,
+        "objective": "binary",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42
+      },
+      "features": [
+        "event_duration_ms",
+        "age",
+        "gender_code",
+        "recording_location"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.8467005076142132,
+        "macro_f1": 0.7649068067726312,
+        "weighted_f1": 0.8583853220201534,
+        "brier": 0.22274403055834796,
+        "ece": 0.017260736025735496,
+        "roc_auc": 0.9050240965448709
+      }
+    },
+    "own_task_base": {
+      "val_macro_f1": 0.8865480921509685,
+      "best_params": {
+        "n_estimators": 659,
+        "learning_rate": 0.01083123289559011,
+        "num_leaves": 110,
+        "max_depth": 8,
+        "min_child_samples": 30,
+        "subsample": 0.6816072389836942,
+        "colsample_bytree": 0.8184853209935001,
+        "reg_alpha": 0.01182407659646881,
+        "reg_lambda": 0.06644468824810221,
+        "objective": "binary",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42
+      },
+      "features": [
+        "model2_label_p0",
+        "model2_label_p1"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.916243654822335,
+        "macro_f1": 0.8634401487223116,
+        "weighted_f1": 0.9206834598250309,
+        "brier": 0.132197600600481,
+        "ece": 0.020126326519173923,
+        "roc_auc": 0.9716849067404205
+      }
+    },
+    "acoustic_only": {
+      "val_macro_f1": 0.8894246726903927,
+      "best_params": {
+        "n_estimators": 181,
+        "learning_rate": 0.2428480272941079,
+        "num_leaves": 88,
+        "max_depth": 11,
+        "min_child_samples": 33,
+        "subsample": 0.6311929895347218,
+        "colsample_bytree": 0.9953831121514893,
+        "reg_alpha": 2.4743179550842775e-07,
+        "reg_lambda": 0.0422689106661526,
+        "objective": "binary",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42
+      },
+      "features": [
+        "model1_label_p0",
+        "model1_label_p1",
+        "model1_label_p2",
+        "model2_label_p0",
+        "model2_label_p1",
+        "model3_label_p0",
+        "model3_label_p1",
+        "model3_label_p2"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.9258883248730965,
+        "macro_f1": 0.8754020128366857,
+        "weighted_f1": 0.9288675809262817,
+        "brier": 0.11592555043787676,
+        "ece": 0.030462975977700694,
+        "roc_auc": 0.9709065628371013
+      }
+    },
+    "full_stack": {
+      "val_macro_f1": 0.911246337615506,
+      "best_params": {
+        "n_estimators": 131,
+        "learning_rate": 0.17583697240034685,
+        "num_leaves": 89,
+        "max_depth": 12,
+        "min_child_samples": 57,
+        "subsample": 0.6138721974756532,
+        "colsample_bytree": 0.8975964280564583,
+        "reg_alpha": 4.020109447303348e-08,
+        "reg_lambda": 0.009613770976834581,
+        "objective": "binary",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42
+      },
+      "features": [
+        "model1_label_p0",
+        "model1_label_p1",
+        "model1_label_p2",
+        "model2_label_p0",
+        "model2_label_p1",
+        "model3_label_p0",
+        "model3_label_p1",
+        "model3_label_p2",
+        "age",
+        "gender_code",
+        "recording_location"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.9416243654822335,
+        "macro_f1": 0.8988588528526893,
+        "weighted_f1": 0.9431934358129038,
+        "brier": 0.09188796184073268,
+        "ece": 0.022387532921246824,
+        "roc_auc": 0.9768877201135778
+      }
+    }
+  },
+  "model1_label": {
+    "duration_only": {
+      "val_macro_f1": 0.534252791188986,
+      "best_params": {
+        "n_estimators": 519,
+        "learning_rate": 0.22999586428143728,
+        "num_leaves": 24,
+        "max_depth": 4,
+        "min_child_samples": 9,
+        "subsample": 0.7301321323053057,
+        "colsample_bytree": 0.7554709158757928,
+        "reg_alpha": 2.7678419414850017e-06,
+        "reg_lambda": 0.28749982347407854,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "event_duration_ms"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.717258883248731,
+        "macro_f1": 0.5269555856750611,
+        "weighted_f1": 0.7581829716350931,
+        "brier": 0.4818035844677109,
+        "ece": 0.1572117983840498,
+        "macro_roc_auc": 0.762439388688955
+      }
+    },
+    "demographics_only": {
+      "val_macro_f1": 0.5545950081081207,
+      "best_params": {
+        "n_estimators": 662,
+        "learning_rate": 0.04294763149181244,
+        "num_leaves": 61,
+        "max_depth": 8,
+        "min_child_samples": 19,
+        "subsample": 0.9779867981916751,
+        "colsample_bytree": 0.9232554775323946,
+        "reg_alpha": 0.0004121602772806991,
+        "reg_lambda": 2.057733689223481e-06,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "age",
+        "gender_code",
+        "recording_location"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.6847715736040609,
+        "macro_f1": 0.518723674015495,
+        "weighted_f1": 0.7338550001646992,
+        "brier": 0.3998200592608496,
+        "ece": 0.073051312088181,
+        "macro_roc_auc": 0.8629521022837269
+      }
+    },
+    "duration_demographics": {
+      "val_macro_f1": 0.6763425115974259,
+      "best_params": {
+        "n_estimators": 503,
+        "learning_rate": 0.1803066752590186,
+        "num_leaves": 38,
+        "max_depth": 9,
+        "min_child_samples": 19,
+        "subsample": 0.6452839247168268,
+        "colsample_bytree": 0.8922443584754606,
+        "reg_alpha": 3.491765671302891e-06,
+        "reg_lambda": 0.004357150541500221,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "event_duration_ms",
+        "age",
+        "gender_code",
+        "recording_location"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.8253807106598985,
+        "macro_f1": 0.6571026529978117,
+        "weighted_f1": 0.8421606744435719,
+        "brier": 0.25113766709963714,
+        "ece": 0.03517112333541372,
+        "macro_roc_auc": 0.9043747411384407
+      }
+    },
+    "own_task_base": {
+      "val_macro_f1": 0.7958054261478021,
+      "best_params": {
+        "n_estimators": 746,
+        "learning_rate": 0.10207737088606754,
+        "num_leaves": 125,
+        "max_depth": 12,
+        "min_child_samples": 7,
+        "subsample": 0.7328268429044106,
+        "colsample_bytree": 0.617374423539959,
+        "reg_alpha": 2.4895543583610615e-07,
+        "reg_lambda": 1.58965545140166e-08,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "model1_label_p0",
+        "model1_label_p1",
+        "model1_label_p2"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.8746192893401015,
+        "macro_f1": 0.7775457923497268,
+        "weighted_f1": 0.8875215205126071,
+        "brier": 0.1910435483413616,
+        "ece": 0.06875207886924428,
+        "macro_roc_auc": 0.9653591859874012
+      }
+    },
+    "acoustic_only": {
+      "val_macro_f1": 0.8372036066522907,
+      "best_params": {
+        "n_estimators": 611,
+        "learning_rate": 0.16776963950143337,
+        "num_leaves": 18,
+        "max_depth": 9,
+        "min_child_samples": 13,
+        "subsample": 0.7098985321964478,
+        "colsample_bytree": 0.6249602784240121,
+        "reg_alpha": 0.0006997020529274251,
+        "reg_lambda": 0.011894220987013482,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "model1_label_p0",
+        "model1_label_p1",
+        "model1_label_p2",
+        "model2_label_p0",
+        "model2_label_p1",
+        "model3_label_p0",
+        "model3_label_p1",
+        "model3_label_p2"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.9187817258883249,
+        "macro_f1": 0.8290557579153824,
+        "weighted_f1": 0.9227781578444577,
+        "brier": 0.12640432935884208,
+        "ece": 0.03523851576399972,
+        "macro_roc_auc": 0.9715704428732895
+      }
+    },
+    "full_stack": {
+      "val_macro_f1": 0.8731485903429692,
+      "best_params": {
+        "n_estimators": 188,
+        "learning_rate": 0.1324607906139708,
+        "num_leaves": 92,
+        "max_depth": 9,
+        "min_child_samples": 24,
+        "subsample": 0.9544843838669366,
+        "colsample_bytree": 0.6141115718967517,
+        "reg_alpha": 0.03615827140558937,
+        "reg_lambda": 6.3581503825961005e-06,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "model1_label_p0",
+        "model1_label_p1",
+        "model1_label_p2",
+        "model2_label_p0",
+        "model2_label_p1",
+        "model3_label_p0",
+        "model3_label_p1",
+        "model3_label_p2",
+        "age",
+        "gender_code",
+        "recording_location"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.9360406091370559,
+        "macro_f1": 0.8597037720377204,
+        "weighted_f1": 0.9381943622355006,
+        "brier": 0.09762370113331215,
+        "ece": 0.02861319787544772,
+        "macro_roc_auc": 0.9799561394510107
+      }
+    }
+  },
+  "model3_label": {
+    "duration_only": {
+      "val_macro_f1": 0.4085736520431094,
+      "best_params": {
+        "n_estimators": 799,
+        "learning_rate": 0.24024984609158817,
+        "num_leaves": 37,
+        "max_depth": 4,
+        "min_child_samples": 60,
+        "subsample": 0.7503935259032498,
+        "colsample_bytree": 0.6055279590239432,
+        "reg_alpha": 1.8163115899636026e-07,
+        "reg_lambda": 0.0617646597560481,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "event_duration_ms"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.45228426395939086,
+        "macro_f1": 0.36687378496217055,
+        "weighted_f1": 0.4728338340680824,
+        "brier": 0.6498490274770128,
+        "ece": 0.0855655720566472,
+        "macro_roc_auc": 0.5860471608150629
+      }
+    },
+    "demographics_only": {
+      "val_macro_f1": 0.673091372561815,
+      "best_params": {
+        "n_estimators": 519,
+        "learning_rate": 0.010008425967945949,
+        "num_leaves": 50,
+        "max_depth": 12,
+        "min_child_samples": 6,
+        "subsample": 0.9510084021091548,
+        "colsample_bytree": 0.8393144612427451,
+        "reg_alpha": 2.1582248451375864e-05,
+        "reg_lambda": 5.147589974498946e-06,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "age",
+        "gender_code",
+        "recording_location"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.6903553299492385,
+        "macro_f1": 0.6628657270314605,
+        "weighted_f1": 0.7024904363887203,
+        "brier": 0.3893918408187519,
+        "ece": 0.033000732803371374,
+        "macro_roc_auc": 0.8897689533805518
+      }
+    },
+    "duration_demographics": {
+      "val_macro_f1": 0.7508462251611515,
+      "best_params": {
+        "n_estimators": 312,
+        "learning_rate": 0.09720892721492871,
+        "num_leaves": 102,
+        "max_depth": 9,
+        "min_child_samples": 24,
+        "subsample": 0.6411376792907763,
+        "colsample_bytree": 0.8956041098848206,
+        "reg_alpha": 0.6197573153718573,
+        "reg_lambda": 0.0867708691170617,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "event_duration_ms",
+        "age",
+        "gender_code",
+        "recording_location"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.76751269035533,
+        "macro_f1": 0.7330517303772307,
+        "weighted_f1": 0.7726417271292435,
+        "brier": 0.314549460875133,
+        "ece": 0.046012891469879004,
+        "macro_roc_auc": 0.9195618519932305
+      }
+    },
+    "own_task_base": {
+      "val_macro_f1": 0.4417894797672297,
+      "best_params": {
+        "n_estimators": 142,
+        "learning_rate": 0.01430045381207424,
+        "num_leaves": 107,
+        "max_depth": 3,
+        "min_child_samples": 65,
+        "subsample": 0.638499388544551,
+        "colsample_bytree": 0.9640454346504966,
+        "reg_alpha": 2.351987274584265,
+        "reg_lambda": 0.0003911555466928171,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "model3_label_p0",
+        "model3_label_p1",
+        "model3_label_p2"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.4365482233502538,
+        "macro_f1": 0.4255892262044987,
+        "weighted_f1": 0.4553335249604242,
+        "brier": 0.6131236522178036,
+        "ece": 0.07482246025829836,
+        "macro_roc_auc": 0.7020956092964488
+      }
+    },
+    "acoustic_only": {
+      "val_macro_f1": 0.4879921855927363,
+      "best_params": {
+        "n_estimators": 393,
+        "learning_rate": 0.10565310400976129,
+        "num_leaves": 124,
+        "max_depth": 11,
+        "min_child_samples": 25,
+        "subsample": 0.7706551165328609,
+        "colsample_bytree": 0.6439695129731979,
+        "reg_alpha": 0.05610167840053809,
+        "reg_lambda": 1.119757999534276,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "model1_label_p0",
+        "model1_label_p1",
+        "model1_label_p2",
+        "model2_label_p0",
+        "model2_label_p1",
+        "model3_label_p0",
+        "model3_label_p1",
+        "model3_label_p2"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.4857868020304569,
+        "macro_f1": 0.4418266127832275,
+        "weighted_f1": 0.5098765462790168,
+        "brier": 0.588305886493056,
+        "ece": 0.09392190869080874,
+        "macro_roc_auc": 0.6798007206870383
+      }
+    },
+    "full_stack": {
+      "val_macro_f1": 0.756445696541884,
+      "best_params": {
+        "n_estimators": 780,
+        "learning_rate": 0.07218502780316809,
+        "num_leaves": 125,
+        "max_depth": 11,
+        "min_child_samples": 30,
+        "subsample": 0.6574007115343776,
+        "colsample_bytree": 0.6148792831315836,
+        "reg_alpha": 0.013873897747736187,
+        "reg_lambda": 0.02992613382011733,
+        "objective": "multiclass",
+        "class_weight": "balanced",
+        "verbose": -1,
+        "random_state": 42,
+        "num_class": 3
+      },
+      "features": [
+        "model1_label_p0",
+        "model1_label_p1",
+        "model1_label_p2",
+        "model2_label_p0",
+        "model2_label_p1",
+        "model3_label_p0",
+        "model3_label_p1",
+        "model3_label_p2",
+        "age",
+        "gender_code",
+        "recording_location"
+      ],
+      "test_quicklook": {
+        "accuracy": 0.7923857868020304,
+        "macro_f1": 0.7519959893876539,
+        "weighted_f1": 0.7953930365232105,
+        "brier": 0.2909051250461282,
+        "ece": 0.041528924965395606,
+        "macro_roc_auc": 0.9238004445603454
+      }
+    }
+  }
+}

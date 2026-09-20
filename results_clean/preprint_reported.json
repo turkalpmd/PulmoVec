@@ -1,0 +1,8 @@
+{
+  "_source": "arXiv:2603.15688v1 abstract (event-level split; uncontrolled comparator, context only)",
+  "screen.event.auc": 0.96,
+  "pattern.event.auc": 0.96,
+  "disease.event.auc": 0.94,
+  "disease.patient.auc": 0.91,
+  "disease.patient.accuracy": 0.74
+}

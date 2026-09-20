@@ -1,0 +1,104 @@
+{
+  "model1_label": {
+    "folds": [
+      {
+        "best_epoch": 3,
+        "best_val_macro_f1": 0.8183217185324735,
+        "fold": 1
+      },
+      {
+        "best_epoch": 3,
+        "best_val_macro_f1": 0.8225743263928399,
+        "fold": 2
+      },
+      {
+        "best_epoch": 5,
+        "best_val_macro_f1": 0.8102566355243505,
+        "fold": 3
+      },
+      {
+        "best_epoch": 10,
+        "best_val_macro_f1": 0.8176305710837836,
+        "fold": 4
+      },
+      {
+        "best_epoch": 12,
+        "best_val_macro_f1": 0.801846980778642,
+        "fold": 5
+      }
+    ],
+    "full": {
+      "best_epoch": 17,
+      "best_val_macro_f1": 0.8132115167688122
+    },
+    "minutes": 62.8
+  },
+  "model2_label": {
+    "folds": [
+      {
+        "best_epoch": 2,
+        "best_val_macro_f1": 0.8380879120096419,
+        "fold": 1
+      },
+      {
+        "best_epoch": 3,
+        "best_val_macro_f1": 0.8770126529005281,
+        "fold": 2
+      },
+      {
+        "best_epoch": 10,
+        "best_val_macro_f1": 0.8838055822062525,
+        "fold": 3
+      },
+      {
+        "best_epoch": 2,
+        "best_val_macro_f1": 0.844459487162996,
+        "fold": 4
+      },
+      {
+        "best_epoch": 10,
+        "best_val_macro_f1": 0.8748466955816118,
+        "fold": 5
+      }
+    ],
+    "full": {
+      "best_epoch": 9,
+      "best_val_macro_f1": 0.8840054098007003
+    },
+    "minutes": 50.7
+  },
+  "model3_label": {
+    "folds": [
+      {
+        "best_epoch": 13,
+        "best_val_macro_f1": 0.46657508554874694,
+        "fold": 1
+      },
+      {
+        "best_epoch": 10,
+        "best_val_macro_f1": 0.45212401172992306,
+        "fold": 2
+      },
+      {
+        "best_epoch": 12,
+        "best_val_macro_f1": 0.461501382185795,
+        "fold": 3
+      },
+      {
+        "best_epoch": 14,
+        "best_val_macro_f1": 0.46586100425970994,
+        "fold": 4
+      },
+      {
+        "best_epoch": 12,
+        "best_val_macro_f1": 0.467743163485337,
+        "fold": 5
+      }
+    ],
+    "full": {
+      "best_epoch": 14,
+      "best_val_macro_f1": 0.4652520869113442
+    },
+    "minutes": 77.5
+  }
+}
