@@ -109,7 +109,7 @@ def main():
     pandoc(ms / 'cover_letter.md', d['cl'] / 'Cover_letter.docx', ms)
 
     # ---- 03 figures --------------------------------------------------------------------
-    for n in range(1, 7):
+    for n in range(1, 6):
         shutil.copy(ms / 'figures' / f'Fig{n}.tiff', d['fig'] / f'Figure_{n}.tiff')
         shutil.copy(ms / 'figures' / f'Fig{n}.pdf', d['fig'] / f'Figure_{n}.pdf')
 
@@ -201,7 +201,7 @@ Table S9 Summary of faithfulness checks (correctly classified events)
     legends = {m[0]: (m[1], m[2]) for m in re.findall(r'\*\*Fig\. (\d) (.+?)\*\* (.+)', rendered)}
     (d['arx'] / 'figures').mkdir()
     paras = body.split('\n\n')
-    for n in map(str, range(1, 7)):
+    for n in map(str, range(1, 6)):
         Image.open(ms / 'figures' / f'Fig{n}.tiff').save(d['arx'] / 'figures' / f'Figure_{n}.png')
         title, text = legends[n]
         fig = f"![**Fig. {n} {title}** {text}](figures/Figure_{n}.png){{width=100%}}"

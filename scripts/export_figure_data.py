@@ -57,7 +57,8 @@ def main():
          'events': fl['2_excluded_no_task_label'], 'detail': ''},
         {'after': 'labelled', 'reason': 'Diagnosis not documented',
          'events': fl['3_excluded_undocumented_diagnosis']['events'],
-         'detail': f"includes all {fl['3_excluded_undocumented_diagnosis']['events_without_patient_id']} events without a participant identifier"},
+         'detail': 'includes all {:,} events without a participant identifier'.format(
+             fl['3_excluded_undocumented_diagnosis']['events_without_patient_id'])},
         {'after': 'labelled', 'reason': 'Implausible encoded age (>18 y)',
          'events': fl['3b_excluded_implausible_age']['events'], 'detail': 'one child'},
     ]).to_csv(out / 'flow_excluded.csv', index=False)

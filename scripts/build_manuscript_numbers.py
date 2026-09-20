@@ -182,6 +182,16 @@ def main():
                     if aucs:
                         put(reg, f'sub.{arm}.{TASK[target]}.{col}.auc_min', min(aucs), sp)
                         put(reg, f'sub.{arm}.{TASK[target]}.{col}.auc_max', max(aucs), sp)
+                demo = [e['auc']['value'] for c in ('age_band', 'sex', 'site')
+                        for e in cols.get(c, {}).values() if 'auc' in e]
+                if demo:   # range across all three participant/recording characteristics
+                    put(reg, f'sub.{arm}.{TASK[target]}.demographic.auc_min', min(demo), sp)
+                    put(reg, f'sub.{arm}.{TASK[target]}.demographic.auc_max', max(demo), sp)
+                sens = [e.get('sensitivity') for e in cols.get('duration_tertile', {}).values()
+                        if isinstance(e.get('sensitivity'), (int, float))]
+                if sens:
+                    put(reg, f'sub.{arm}.{TASK[target]}.duration_tertile.sens_min', min(sens), sp)
+                    put(reg, f'sub.{arm}.{TASK[target]}.duration_tertile.sens_max', max(sens), sp)
 
     ce_p = RC / 'metrics' / 'common_events' / 'common_events.json'
     if ce_p.exists():

@@ -1,4 +1,4 @@
 after,reason,events,detail
 raw,"No usable task label (stridor, 'no event')",304,
-labelled,Diagnosis not documented,4802,includes all 1377 events without a participant identifier
+labelled,Diagnosis not documented,4802,"includes all 1,377 events without a participant identifier"
 labelled,Implausible encoded age (>18 y),9,one child

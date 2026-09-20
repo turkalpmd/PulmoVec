@@ -76,3 +76,9 @@ majority class → duration only → demographics only (age, sex, site) → own-
 * 2026-09-19 — Released HeAR weights could not be downloaded (HF token invalid). CPU analysis
   code is developed and dry-run against the arm-L1 probability tables (same schema); no L1
   number is a headline result.
+* 2026-09-19, later the same day — a valid token was supplied; the released encoder was
+  downloaded, audited against the January checkpoint and used for every reported arm. The
+  earlier entry is retained as a record of the sequence.
+* 2026-09-21 — the pre-specified comparison of the two split designs on the events both held
+  out was run (`scripts/run_clean_common_events.py`) and is reported in the Results. No
+  pre-specified analysis remains un-run.

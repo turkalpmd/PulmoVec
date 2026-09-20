@@ -4,12 +4,11 @@
 # Main-text figures, drawn only from the tidy CSVs written by export_figure_data.py
 # (no number is typed in this file).
 #
-#   Fig 1  pipeline and the three points at which patient information can leak
-#   Fig 2  flow of events, recordings and participants
-#   Fig 3  discrimination and calibration
-#   Fig 4  comparator ladder
-#   Fig 5  leakage experiment
-#   Fig 6  model-derived attribution
+#   Fig 1  flow of events and participants, and why an event-level split leaks
+#   Fig 2  discrimination and calibration
+#   Fig 3  comparator ladder
+#   Fig 4  leakage experiment
+#   Fig 5  model-derived attribution
 #
 # Output: PDF (vector) + 300 dpi LZW TIFF + PNG preview, 170 mm wide.
 # Colour encodes the OUTCOME (Okabe-Ito); arms and classes use shape and line type.
@@ -22,7 +21,7 @@ suppressPackageStartupMessages({
 args <- commandArgs(trailingOnly = TRUE)
 DATA <- if (length(args) > 0) args[1] else "results_clean/figure_data"
 OUT  <- if (length(args) > 1) args[2] else "figures"
-ONLY <- if (length(args) > 2) strsplit(args[3], ",")[[1]] else as.character(1:6)
+ONLY <- if (length(args) > 2) strsplit(args[3], ",")[[1]] else as.character(1:5)
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)
 
 MM <- 1 / 25.4
@@ -93,31 +92,8 @@ arrows <- function(d, colour = MUTED) {
                arrow = arrow(length = unit(1.1, "mm"), type = "closed"))
 }
 
-# ---------------------------------------------------------------- Fig 1: leak points
+# ---------------------------------------------------------------- Fig 1: flow + why it leaks
 fig1 <- function() {
-  step <- data.frame(
-    x = c(0.10, 0.30, 0.50, 0.70, 0.90), y = 0.62, w = 0.185, h = 0.34,
-    label = c("Annotated\nevent",
-              "2 s clip\ncentred,\nband-passed",
-              "Frozen HeAR\n+ LoRA\nadapters",
-              "Three task\nheads",
-              "LightGBM\n+ age, sex,\nsite"))
-  seg <- data.frame(x = c(0.1925, 0.3925, 0.5925, 0.7925), y = 0.62,
-                    xend = c(0.2075, 0.4075, 0.6075, 0.8075), yend = 0.62)
-  leak <- data.frame(x = c(0.20, 0.50, 0.70), lab = c("a", "b", "c"))
-
-  ggplot() +
-    boxes(step, size = 2.3) + arrows(seg) +
-    geom_point(data = leak, aes(x = x, y = 0.40), shape = 25, size = 2.4,
-               fill = RED, colour = RED) +
-    geom_text(data = leak, aes(x = x, y = 0.24, label = lab), size = 3.2,
-              fontface = "bold", colour = RED) +
-    coord_cartesian(xlim = c(0.0, 1.0), ylim = c(0.12, 0.85), expand = FALSE) +
-    theme_blank()
-}
-
-# ---------------------------------------------------------------- Fig 2: flow + why it leaks
-fig2 <- function() {
   m <- rd("flow_main.csv"); ex <- rd("flow_excluded.csv")
   ho <- rd("flow_holdout.csv"); fo <- rd("flow_folds.csv"); per <- rd("events_per_patient.csv")
   lab <- function(i, title) sprintf("%s\n%s events  |  %s recordings  |  %s participants",
@@ -128,28 +104,33 @@ fig2 <- function() {
                                lab(2, "Events with a task label"),
                                lab(3, "Analysis cohort")))
   seg <- data.frame(x = 0.27, y = c(0.828, 0.588), xend = 0.27, yend = c(0.732, 0.492))
-  exy <- c(0.785, 0.565, 0.495)
+  exy <- c(0.790, 0.585, 0.498)
+  spine <- 0.30
+  hx <- hb_x <- 0.075 + (seq_len(nrow(ho)) - 1) * 0.145
+  fx <- 0.585 + (seq_len(nrow(fo)) - 1) * 0.088
   extxt <- sprintf("%s\n%s events%s", ex$reason, comma(ex$events),
                    ifelse(nzchar(ex$detail), paste0("; ", ex$detail), ""))
-  hb <- data.frame(x = 0.075 + (seq_len(nrow(ho)) - 1) * 0.145, y = 0.145, w = 0.135, h = 0.13,
+  hb <- data.frame(x = hx, y = 0.145, w = 0.135, h = 0.13,
                    label = sprintf("%s\n%s participants\n%s events", ho$partition,
                                    comma(ho$patients), comma(ho$events)))
-  fb <- data.frame(x = 0.585 + (seq_len(nrow(fo)) - 1) * 0.088, y = 0.145, w = 0.082, h = 0.13,
+  fb <- data.frame(x = fx, y = 0.145, w = 0.082, h = 0.13,
                    label = sprintf("Fold %d\n%d", fo$fold, fo$patients))
 
   pa <- ggplot() +
     boxes(main[1:2, ]) + boxes(main[3, , drop = FALSE], fill = "white") +
     boxes(hb, fill = "white") + boxes(fb, fill = "white", size = 1.9) +
     arrows(seg) + arrows(data.frame(x = 0.27, y = exy, xend = 0.53, yend = exy)) +
-    arrows(data.frame(x = 0.15, y = 0.355, xend = 0.15, yend = 0.215)) +
-    geom_segment(data = data.frame(x = 0.52, y = 0.42, xend = 0.975, yend = 0.42),
+    geom_segment(data = data.frame(x = c(mean(range(hx)), min(hx), 0.45, 0.45),
+                                   y = c(0.355, spine, 0.355, spine),
+                                   xend = c(mean(range(hx)), max(hx), 0.45, max(fx)),
+                                   yend = c(spine, spine, spine, spine)),
                  aes(x = x, y = y, xend = xend, yend = yend), colour = MUTED, size = 0.3) +
-    arrows(data.frame(x = 0.975, y = 0.42, xend = 0.975, yend = 0.215)) +
+    arrows(data.frame(x = c(hx, fx), y = spine, xend = c(hx, fx), yend = 0.215)) +
     geom_text(data = data.frame(y = exy, label = extxt), aes(x = 0.55, y = y, label = label),
               hjust = 0, size = 2.0, lineheight = 1.15, colour = INK) +
-    annotate("text", x = 0.0075, y = 0.29, hjust = 0, size = 2.2, fontface = "bold",
+    annotate("text", x = 0.0075, y = 0.335, hjust = 0, size = 2.2, fontface = "bold",
              label = "Locked hold-out") +
-    annotate("text", x = 0.544, y = 0.29, hjust = 0, size = 2.2, fontface = "bold",
+    annotate("text", x = 0.455, y = 0.335, hjust = 0, size = 2.2, fontface = "bold",
              label = "Nested cross-validation") +
     coord_cartesian(xlim = c(0.005, 1.0), ylim = c(0.0, 0.99), expand = FALSE) +
     theme_blank() + labs(tag = "a") + tag_theme
@@ -167,8 +148,8 @@ fig2 <- function() {
   (pa / pb) + plot_layout(heights = c(2.5, 1))
 }
 
-# ---------------------------------------------------------------- Fig 3: curves
-fig3 <- function() {
+# ---------------------------------------------------------------- Fig 2: curves
+fig2 <- function() {
   idx <- function(d) d %>% group_by(task) %>%
     mutate(k = as.integer(factor(class, levels = unique(class)))) %>% ungroup()
   roc <- idx(rd("curves_roc.csv") %>% mutate(task = fct(task)))
@@ -213,8 +194,8 @@ fig3 <- function() {
   (p1 / p2 / p3)
 }
 
-# ---------------------------------------------------------------- Fig 4: ladder
-fig4 <- function() {
+# ---------------------------------------------------------------- Fig 3: ladder
+fig3 <- function() {
   lv <- rev(c("Event duration only", "Demographics only", "Own-task base model",
               "All acoustic probabilities", "Full stack"))
   d <- rd("ladder.csv") %>%
@@ -244,8 +225,8 @@ fig4 <- function() {
     theme_pub() + theme(panel.grid.major.y = element_blank())
 }
 
-# ---------------------------------------------------------------- Fig 5: leakage
-fig5 <- function() {
+# ---------------------------------------------------------------- Fig 4: leakage
+fig4 <- function() {
   a <- rd("arms.csv") %>% mutate(task = fct(task),
                                  level = factor(level, c("Event level", "Patient level")))
   wide <- a %>% select(arm, task, level, auc) %>% tidyr::pivot_wider(names_from = arm,
@@ -300,8 +281,8 @@ fig5 <- function() {
   (p1 / p2) + plot_layout(heights = c(1.5, 1))
 }
 
-# ---------------------------------------------------------------- Fig 6: attribution
-fig6 <- function() {
+# ---------------------------------------------------------------- Fig 5: attribution
+fig5 <- function() {
   mp <- rd("saliency_maps.csv") %>% mutate(task = fct(task))
   pf <- rd("saliency_profile.csv") %>% mutate(task = fct(task))
   dl <- rd("saliency_deletion.csv") %>% mutate(task = fct(task))
@@ -355,8 +336,8 @@ fig6 <- function() {
   (p1 / p2 / p3) + plot_layout(heights = c(1.15, 1, 0.72))
 }
 
-FIGS <- list(`1` = list(fig1, 46), `2` = list(fig2, 122), `3` = list(fig3, 168),
-             `4` = list(fig4, 56), `5` = list(fig5, 120), `6` = list(fig6, 150))
+FIGS <- list(`1` = list(fig1, 118), `2` = list(fig2, 168), `3` = list(fig3, 56),
+             `4` = list(fig4, 120), `5` = list(fig5, 150))
 for (n in ONLY) {
   f <- FIGS[[n]]
   save_fig(f[[1]](), paste0("Fig", n), f[[2]])

@@ -1,8 +1,8 @@
 {
- "_git_commit": "31e43ce",
+ "_git_commit": "9f4c8c2",
  "numbers": {
   "repo.commit": {
-   "value": "31e43ce",
+   "value": "9f4c8c2",
    "source": "results_clean/manuscript_numbers.json"
   },
   "l0.n_events": {
@@ -13513,6 +13513,22 @@
    "value": 0.9446963503612869,
    "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
   },
+  "sub.ncv.screen.demographic.auc_min": {
+   "value": 0.9282997762863534,
+   "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
+  },
+  "sub.ncv.screen.demographic.auc_max": {
+   "value": 0.9593684210526314,
+   "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
+  },
+  "sub.ncv.screen.duration_tertile.sens_min": {
+   "value": 0.5258620689655172,
+   "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
+  },
+  "sub.ncv.screen.duration_tertile.sens_max": {
+   "value": 0.8853503184713376,
+   "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
+  },
   "sub.ncv.pattern.age_band.auc_min": {
    "value": 0.9372124256562268,
    "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
@@ -13543,6 +13559,14 @@
   },
   "sub.ncv.pattern.duration_tertile.auc_max": {
    "value": 0.9466678755935881,
+   "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
+  },
+  "sub.ncv.pattern.demographic.auc_min": {
+   "value": 0.9357105890075258,
+   "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
+  },
+  "sub.ncv.pattern.demographic.auc_max": {
+   "value": 0.9646448724235078,
    "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
   },
   "sub.ncv.disease.age_band.auc_min": {
@@ -13577,6 +13601,14 @@
    "value": 0.5835724308178238,
    "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
   },
+  "sub.ncv.disease.demographic.auc_min": {
+   "value": 0.3901422459577539,
+   "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
+  },
+  "sub.ncv.disease.demographic.auc_max": {
+   "value": 0.6447988294936026,
+   "source": "results_clean/metrics/nested_cv_subgroups/subgroups.json"
+  },
   "sub.l0.screen.age_band.auc_min": {
    "value": 0.9499274310595065,
    "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
@@ -13607,6 +13639,22 @@
   },
   "sub.l0.screen.duration_tertile.auc_max": {
    "value": 0.9668672739102147,
+   "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
+  },
+  "sub.l0.screen.demographic.auc_min": {
+   "value": 0.9470619658119658,
+   "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
+  },
+  "sub.l0.screen.demographic.auc_max": {
+   "value": 0.9836947980512337,
+   "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
+  },
+  "sub.l0.screen.duration_tertile.sens_min": {
+   "value": 0.4666666666666667,
+   "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
+  },
+  "sub.l0.screen.duration_tertile.sens_max": {
+   "value": 0.9693877551020408,
    "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
   },
   "sub.l0.pattern.age_band.auc_min": {
@@ -13641,6 +13689,14 @@
    "value": 0.962146116305075,
    "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
   },
+  "sub.l0.pattern.demographic.auc_min": {
+   "value": 0.9487349517119147,
+   "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
+  },
+  "sub.l0.pattern.demographic.auc_max": {
+   "value": 0.9803095200434103,
+   "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
+  },
   "sub.l0.disease.age_band.auc_min": {
    "value": 0.5404001508872591,
    "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
@@ -13671,6 +13727,14 @@
   },
   "sub.l0.disease.duration_tertile.auc_max": {
    "value": 0.7135431428784577,
+   "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
+  },
+  "sub.l0.disease.demographic.auc_min": {
+   "value": 0.5404001508872591,
+   "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
+  },
+  "sub.l0.disease.demographic.auc_max": {
+   "value": 0.7574730816217041,
    "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
   },
   "common.n_events": {
