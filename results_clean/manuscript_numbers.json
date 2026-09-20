@@ -1,6 +1,10 @@
 {
- "_git_commit": "487a34b",
+ "_git_commit": "31e43ce",
  "numbers": {
+  "repo.commit": {
+   "value": "31e43ce",
+   "source": "results_clean/manuscript_numbers.json"
+  },
   "l0.n_events": {
    "value": 1903,
    "source": "results_clean/arm_L0_clean/metrics/metrics.json"
@@ -13668,6 +13672,542 @@
   "sub.l0.disease.duration_tertile.auc_max": {
    "value": 0.7135431428784577,
    "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
+  },
+  "common.n_events": {
+   "value": 191,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.n_patients": {
+   "value": 53,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.n_recordings": {
+   "value": 155,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.patients_also_in_L2_training": {
+   "value": 53,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.screen.majority_accuracy": {
+   "value": 0.8534031413612565,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.screen.l0.accuracy": {
+   "value": 0.93717277486911,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.8986144797477564,
+    0.976474711379879
+   ]
+  },
+  "common.screen.l0.balanced_accuracy": {
+   "value": 0.9484005258545136,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.9105909021817926,
+    0.9865595908205239
+   ]
+  },
+  "common.screen.l0.macro_f1": {
+   "value": 0.8901035673187572,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.8213284368025804,
+    0.9536545290870648
+   ]
+  },
+  "common.screen.l0.weighted_f1": {
+   "value": 0.9409383114731382,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.905676537215319,
+    0.9775599076382696
+   ]
+  },
+  "common.screen.l0.mcc": {
+   "value": 0.7945686266676582,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.6828282611765456,
+    0.9109771886118966
+   ]
+  },
+  "common.screen.l0.auc": {
+   "value": 0.9897020157756353,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.9809057881392615,
+    0.9983811040062138
+   ]
+  },
+  "common.screen.l0.auprc": {
+   "value": 0.9497853132676111,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.8808370925949051,
+    0.9888888888888888
+   ]
+  },
+  "common.screen.l0.brier": {
+   "value": 0.15346495591477066,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.11853741624975407,
+    0.18901693270599954
+   ]
+  },
+  "common.screen.l0.ece": {
+   "value": 0.15939305577121743,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.13709665730888307,
+    0.1962006702642438
+   ]
+  },
+  "common.screen.l2.accuracy": {
+   "value": 0.9424083769633508,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.9090909090909091,
+    0.9791702586206896
+   ]
+  },
+  "common.screen.l2.balanced_accuracy": {
+   "value": 0.9514680105170903,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.8992023720916283,
+    0.9853859018048718
+   ]
+  },
+  "common.screen.l2.macro_f1": {
+   "value": 0.8980344576559087,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.8228031936799641,
+    0.9538514779665114
+   ]
+  },
+  "common.screen.l2.weighted_f1": {
+   "value": 0.9455779426281681,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.915336142178787,
+    0.9799068008731733
+   ]
+  },
+  "common.screen.l2.mcc": {
+   "value": 0.8081064519459696,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.6698368908066641,
+    0.9091882399709436
+   ]
+  },
+  "common.screen.l2.auc": {
+   "value": 0.988387379491674,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.977493029390969,
+    0.9975310521762222
+   ]
+  },
+  "common.screen.l2.auprc": {
+   "value": 0.9407948406727689,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.8692688616049601,
+    0.9831660288182027
+   ]
+  },
+  "common.screen.l2.brier": {
+   "value": 0.0875307069188444,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.03728156310776135,
+    0.1396592882553439
+   ]
+  },
+  "common.screen.l2.ece": {
+   "value": 0.03440590732517354,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.018237214647458307,
+    0.06979447072620819
+   ]
+  },
+  "common.screen.delta_auc": {
+   "value": -0.0013146362839613346,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    -0.010406386470315837,
+    0.006016837491392538
+   ]
+  },
+  "common.screen.delta_auc.p": {
+   "value": 0.819,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.screen.delta_accuracy": {
+   "value": 0.005235602094240788,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    -0.01935483870967736,
+    0.025862068965517238
+   ]
+  },
+  "common.screen.delta_accuracy.p": {
+   "value": 0.804,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.pattern.majority_accuracy": {
+   "value": 0.8534031413612565,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.pattern.l0.accuracy": {
+   "value": 0.9109947643979057,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.847450225741988,
+    0.9687540479274611
+   ]
+  },
+  "common.pattern.l0.balanced_accuracy": {
+   "value": 0.9019256987048397,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.8108017958923721,
+    0.9855967078189302
+   ]
+  },
+  "common.pattern.l0.macro_f1": {
+   "value": 0.8013925058841428,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.6765811783245993,
+    0.9132550982452825
+   ]
+  },
+  "common.pattern.l0.weighted_f1": {
+   "value": 0.9209833828986825,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.8679535177010853,
+    0.9711491671925194
+   ]
+  },
+  "common.pattern.l0.mcc": {
+   "value": 0.7355913484620802,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.6124870510693322,
+    0.8766507563358665
+   ]
+  },
+  "common.pattern.l0.auc": {
+   "value": 0.9854963098787857,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.9721296860354103,
+    0.9959883170519087
+   ]
+  },
+  "common.pattern.l0.auprc": {
+   "value": 0.8704369086535371,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.7496273882722039,
+    0.9753918449006003
+   ]
+  },
+  "common.pattern.l0.brier": {
+   "value": 0.11883124225959966,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.05545403692816933,
+    0.18700708511710876
+   ]
+  },
+  "common.pattern.l0.ece": {
+   "value": 0.02870668685085737,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.017061617020107417,
+    0.07295826479256348
+   ]
+  },
+  "common.pattern.l2.accuracy": {
+   "value": 0.93717277486911,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.8971428571428571,
+    0.9763371394230769
+   ]
+  },
+  "common.pattern.l2.balanced_accuracy": {
+   "value": 0.905206203135651,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.8086706822435904,
+    0.9901267056530214
+   ]
+  },
+  "common.pattern.l2.macro_f1": {
+   "value": 0.8436844863731657,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.71974249888043,
+    0.9298542192487913
+   ]
+  },
+  "common.pattern.l2.weighted_f1": {
+   "value": 0.9443676117093088,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.9084685940693027,
+    0.9792960948705893
+   ]
+  },
+  "common.pattern.l2.mcc": {
+   "value": 0.7955135886212858,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.6749603692465925,
+    0.9065240328216226
+   ]
+  },
+  "common.pattern.l2.auc": {
+   "value": 0.9713948500422435,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.9219209296903732,
+    0.9941409214542207
+   ]
+  },
+  "common.pattern.l2.auprc": {
+   "value": 0.8560994657847911,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.714508825938348,
+    0.9464835945818549
+   ]
+  },
+  "common.pattern.l2.brier": {
+   "value": 0.11347518772253228,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.05382254917763934,
+    0.17588885559848477
+   ]
+  },
+  "common.pattern.l2.ece": {
+   "value": 0.0395969412143174,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.019142415072094483,
+    0.07748333941228487
+   ]
+  },
+  "common.pattern.delta_auc": {
+   "value": -0.014101459836542207,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    -0.05707153067105523,
+    0.0032151505847350446
+   ]
+  },
+  "common.pattern.delta_auc.p": {
+   "value": 0.15807903951975988,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.pattern.delta_accuracy": {
+   "value": 0.02617801047120427,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    -0.006995486782720919,
+    0.06112179487179482
+   ]
+  },
+  "common.pattern.delta_accuracy.p": {
+   "value": 0.191,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.disease.majority_accuracy": {
+   "value": 0.7172774869109948,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.disease.l0.accuracy": {
+   "value": 0.6020942408376964,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.42583654885013117,
+    0.7376355492692126
+   ]
+  },
+  "common.disease.l0.balanced_accuracy": {
+   "value": 0.44831936559430474,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.29404153932104243,
+    0.5866816751292955
+   ]
+  },
+  "common.disease.l0.macro_f1": {
+   "value": 0.4202230914095321,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.2982277136960592,
+    0.5279098579018913
+   ]
+  },
+  "common.disease.l0.weighted_f1": {
+   "value": 0.6389427769851943,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.46710164245511127,
+    0.7735357841118711
+   ]
+  },
+  "common.disease.l0.mcc": {
+   "value": 0.2655244994474417,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.07007589762692126,
+    0.44419141155038067
+   ]
+  },
+  "common.disease.l0.auc": {
+   "value": 0.6754539240445121,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.5156310201592581,
+    0.8038609896348412
+   ]
+  },
+  "common.disease.l0.auprc": {
+   "value": 0.4342404191611266,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.35128150461254615,
+    0.5936765028367113
+   ]
+  },
+  "common.disease.l0.brier": {
+   "value": 0.5667172954967304,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.4914751680985835,
+    0.6667656099350088
+   ]
+  },
+  "common.disease.l0.ece": {
+   "value": 0.11721906937437498,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.05697124065015226,
+    0.2608621189935167
+   ]
+  },
+  "common.disease.l2.accuracy": {
+   "value": 0.7382198952879581,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.6097560975609756,
+    0.8345864661654135
+   ]
+  },
+  "common.disease.l2.balanced_accuracy": {
+   "value": 0.6404433630711003,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.47529414310236223,
+    0.7495177042160739
+   ]
+  },
+  "common.disease.l2.macro_f1": {
+   "value": 0.6243493348756507,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.44444526210624735,
+    0.7308482179653094
+   ]
+  },
+  "common.disease.l2.weighted_f1": {
+   "value": 0.7454283110111162,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.6240496444251697,
+    0.8439011220929157
+   ]
+  },
+  "common.disease.l2.mcc": {
+   "value": 0.44529493193715947,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.19576359637439494,
+    0.617683389086354
+   ]
+  },
+  "common.disease.l2.auc": {
+   "value": 0.8870294542361483,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.8036264788352584,
+    0.9355187798376672
+   ]
+  },
+  "common.disease.l2.auprc": {
+   "value": 0.6779357674344535,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.5259623247052907,
+    0.7946883874528405
+   ]
+  },
+  "common.disease.l2.brier": {
+   "value": 0.33002872867145955,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.2181182084610684,
+    0.4719689187300964
+   ]
+  },
+  "common.disease.l2.ece": {
+   "value": 0.07892972815041177,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.04348001623828368,
+    0.16881029240861609
+   ]
+  },
+  "common.disease.delta_auc": {
+   "value": 0.21157553019163622,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.08529686396289009,
+    0.36371136761171796
+   ]
+  },
+  "common.disease.delta_auc.p": {
+   "value": 0.0004997501249375312,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "common.disease.delta_accuracy": {
+   "value": 0.1361256544502617,
+   "source": "results_clean/metrics/common_events/common_events.json",
+   "ci": [
+    0.021615269115269117,
+    0.2640703262488154
+   ]
+  },
+  "common.disease.delta_accuracy.p": {
+   "value": 0.019,
+   "source": "results_clean/metrics/common_events/common_events.json"
+  },
+  "data.participants_conflicting_diagnosis": {
+   "value": 27,
+   "source": "data/SPRSound_Event_Level_Dataset_CLEAN.diagnosis_conflicts.csv"
   },
   "audit.n_tensors_common": {
    "value": 392,

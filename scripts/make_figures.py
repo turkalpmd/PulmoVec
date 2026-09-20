@@ -200,8 +200,8 @@ def fig3(out):
     save(fig, out, 'Fig3')
 
 
-# --------------------------------------------------------------------------- Fig. 4
-def fig4(out):
+# --------------------------------------------------------------------------- Fig. 4 (ladder) (leakage)
+def fig_leakage(out):   # Fig. 5 in the manuscript
     arms = {'L0': load('arm_L0_clean/metrics/metrics.json')['tasks'],
             'L1': load('arm_L1_backbone_leak/metrics/metrics.json')['tasks'],
             'L2': load('arm_L2_event_split/metrics/metrics.json')['tasks']}
@@ -235,11 +235,11 @@ def fig4(out):
     for hh in h:
         hh.set_color(INK) if hasattr(hh, 'set_color') else None
     fig.legend(h, l_, loc='outside lower center', ncol=2, frameon=False)
-    save(fig, out, 'Fig4')
+    save(fig, out, 'Fig5')
 
 
 # --------------------------------------------------------------------------- Fig. 5
-def fig5(out):
+def fig_ladder(out):    # Fig. 4 in the manuscript
     n = load('metrics/nested_cv/metrics.json')['tasks']
     rungs = [('duration_only', 'Event duration only'), ('demographics_only', 'Demographics only'),
              ('own_task_base', 'Own-task base model'),
@@ -258,7 +258,7 @@ def fig5(out):
         ax.grid(axis='x', color=GRID, lw=0.4); ax.tick_params(axis='y', length=0)
     axes[0].set_yticks(range(len(rungs))); axes[0].set_yticklabels([l for _, l in rungs])
     axes[0].set_ylim(len(rungs) - 0.5, -0.5)
-    save(fig, out, 'Fig5')
+    save(fig, out, 'Fig4')
 
 
 # --------------------------------------------------------------------------- Fig. 6
@@ -334,6 +334,7 @@ if __name__ == '__main__':
     a = ap.parse_args()
     out = Path(a.out_dir)
     out.mkdir(parents=True, exist_ok=True)
-    for name, fn in [('1', fig1), ('2', fig2), ('3', fig3), ('4', fig4), ('5', fig5), ('6', fig6)]:
+    for name, fn in [('1', fig1), ('2', fig2), ('3', fig3), ('4', fig_ladder),
+                     ('5', fig_leakage), ('6', fig6)]:
         if not a.only or name in a.only:
             fn(out)

@@ -1,0 +1,4 @@
+stage,events,recordings,patients_with_id
+raw,24808,6567,868
+labelled,24504,6312,856
+cohort,19693,4985,736

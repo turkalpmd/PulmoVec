@@ -1,0 +1,41 @@
+task,class,band,share
+Screening,Normal,1,0.1317264598794171
+Screening,Normal,2,0.08984808911891634
+Screening,Normal,3,0.0446534911142728
+Screening,Normal,4,0.05508825694631157
+Screening,Normal,5,0.06119658353820161
+Screening,Normal,6,0.20597827071921712
+Screening,Normal,7,0.22606839620254415
+Screening,Normal,8,0.1854404524811193
+Screening,Adventitious,1,0.1857136819556576
+Screening,Adventitious,2,0.40745955638259357
+Screening,Adventitious,3,0.14399672363506733
+Screening,Adventitious,4,0.06257077655229062
+Screening,Adventitious,5,0.05669673414291654
+Screening,Adventitious,6,0.05514168161495443
+Screening,Adventitious,7,0.05011676195352563
+Screening,Adventitious,8,0.038304083762994275
+Sound pattern,Normal,1,0.14967534056201734
+Sound pattern,Normal,2,0.13004818124498518
+Sound pattern,Normal,3,0.07937019556234921
+Sound pattern,Normal,4,0.11217487941574035
+Sound pattern,Normal,5,0.12402922069367706
+Sound pattern,Normal,6,0.11919545033640498
+Sound pattern,Normal,7,0.11894835593171948
+Sound pattern,Normal,8,0.1665583762531064
+Sound pattern,Crackles,1,0.2186247620218949
+Sound pattern,Crackles,2,0.27965910127340426
+Sound pattern,Crackles,3,0.10220035099065251
+Sound pattern,Crackles,4,0.06902346045462221
+Sound pattern,Crackles,5,0.06486357404793308
+Sound pattern,Crackles,6,0.07519110377823807
+Sound pattern,Crackles,7,0.07469558131842666
+Sound pattern,Crackles,8,0.11574206611482829
+Sound pattern,Wheeze/Rhonchi,1,0.1514294425332999
+Sound pattern,Wheeze/Rhonchi,2,0.22843438036213
+Sound pattern,Wheeze/Rhonchi,3,0.1396017805542466
+Sound pattern,Wheeze/Rhonchi,4,0.09750798871224269
+Sound pattern,Wheeze/Rhonchi,5,0.05040666276900619
+Sound pattern,Wheeze/Rhonchi,6,0.1416579304606912
+Sound pattern,Wheeze/Rhonchi,7,0.12810696902448285
+Sound pattern,Wheeze/Rhonchi,8,0.06285484558390053

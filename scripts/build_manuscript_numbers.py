@@ -53,6 +53,12 @@ def add_metric_block(reg, prefix, block, source):
 
 def main():
     reg = {}
+    try:
+        commit = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'],
+                                         cwd=ROOT).decode().strip()
+    except Exception:
+        commit = 'unknown'
+    put(reg, 'repo.commit', commit, RC / 'manuscript_numbers.json')
     for arm, path in ARMS.items():
         if not path.exists():
             print(f"[skip] {arm}: {path.relative_to(ROOT)} not found")
@@ -177,6 +183,28 @@ def main():
                         put(reg, f'sub.{arm}.{TASK[target]}.{col}.auc_min', min(aucs), sp)
                         put(reg, f'sub.{arm}.{TASK[target]}.{col}.auc_max', max(aucs), sp)
 
+    ce_p = RC / 'metrics' / 'common_events' / 'common_events.json'
+    if ce_p.exists():
+        ce = json.loads(ce_p.read_text())
+        for k in ('n_events', 'n_patients', 'n_recordings', 'patients_also_in_L2_training'):
+            put(reg, f'common.{k}', ce[k], ce_p)
+        for target, t in ce['tasks'].items():
+            b = f'common.{TASK[target]}'
+            put(reg, f'{b}.majority_accuracy', t['majority_class_accuracy'], ce_p)
+            for arm in ('L0', 'L2'):
+                add_metric_block(reg, f'{b}.{arm.lower()}', t[arm], ce_p)
+            for m in ('auc', 'accuracy'):
+                d = t[f'delta_{m}_L2_minus_L0']
+                put(reg, f'{b}.delta_{m}', d['delta'], ce_p, d['ci'])
+                put(reg, f'{b}.delta_{m}.p', d['p'], ce_p)
+
+    conf_p = ROOT / 'data' / 'SPRSound_Event_Level_Dataset_CLEAN.diagnosis_conflicts.csv'
+    if conf_p.exists():
+        import csv
+        with open(conf_p) as f:
+            put(reg, 'data.participants_conflicting_diagnosis',
+                len({row['pid'] for row in csv.DictReader(f)}), conf_p)
+
     au_p = RC / 'backbone_audit.json'
     if au_p.exists():
         au = json.loads(au_p.read_text())
@@ -192,11 +220,6 @@ def main():
         put(reg, f'cohort.total.{k}', sum(reg[f'cohort.{p}.{k}']['value']
                                           for p in ('train', 'val', 'test')), split)
 
-    try:
-        commit = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'],
-                                         cwd=ROOT).decode().strip()
-    except Exception:
-        commit = 'unknown'
     out = RC / 'manuscript_numbers.json'
     out.write_text(json.dumps({'_git_commit': commit, 'numbers': reg}, indent=1))
     print(f"{len(reg)} numbers -> {out.relative_to(ROOT)}")

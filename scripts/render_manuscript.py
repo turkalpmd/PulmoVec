@@ -35,6 +35,8 @@ def fmt(entry, style):
         return f'{v * 100:.1f}%'
     if style == 'p':
         return '<0.001' if v < 0.001 else f'{v:.3f}'
+    if isinstance(v, str):
+        return v
     d = int(style[-1]) if style and style[-1].isdigit() else 2
     if isinstance(v, int) or (isinstance(v, float) and v.is_integer() and abs(v) > 1):
         return str(int(v))

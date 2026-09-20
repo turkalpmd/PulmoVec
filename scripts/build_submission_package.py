@@ -125,6 +125,7 @@ def main():
     src = ms / 'additional_files' / 'src'
     render(src / 'additional_file_1.md', build / '_af1.md', strict=False)
     pandoc(build / '_af1.md', d['af'] / 'Additional file 1.docx', ms)
+    pandoc(ms / 'TRIPOD_AI.md', d['af'] / 'Additional file 2.docx', ms)
 
     shap_dir = RC / 'arm_L0_clean' / 'shap'
     ft = pd.read_csv(shap_dir / 'shap_feature_table.csv')
@@ -155,7 +156,7 @@ Table S8 Mean absolute SHAP value and share of attribution per feature
 ![Figure S6. SHAP summary plot, disease group (class: pneumonia).]({shap_dir / 'beeswarm_model3_label.png'}){{width=75%}}
 """
     (build / '_af4.md').write_text(af4)
-    pandoc(build / '_af4.md', d['af'] / 'Additional file 4.docx', ms)
+    pandoc(build / '_af4.md', d['af'] / 'Additional file 6.docx', ms)
 
     img = src / 'img'
     af5_src = src / 'additional_file_5.md'
@@ -185,12 +186,12 @@ Table S9 Summary of faithfulness checks (correctly classified events)
 | Median correlation, occlusion vs integrated gradients | {{{{sal.screen.occ_ig_spearman_median}}}} | {{{{sal.pattern.occ_ig_spearman_median}}}} |
 """)
     render(af5_src, build / '_af5.md', strict=False)   # design constants (150 per class, 12 x 8 grid)
-    pandoc(build / '_af5.md', d['af'] / 'Additional file 5.docx', ms)
+    pandoc(build / '_af5.md', d['af'] / 'Additional file 7.docx', ms)
 
     af = ms / 'additional_files'
-    for n, ext in ((2, 'csv'), (3, 'csv'), (6, 'xlsx'), (8, 'csv')):
-        shutil.copy(af / f'Additional_file_{n}.{ext}', d['af'] / f'Additional file {n}.{ext}')
-    pandoc(ms / 'TRIPOD_AI.md', d['af'] / 'Additional file 7.docx', ms)
+    # built as 2/3/6/8 by build_additional_files.py, renumbered here to citation order
+    for src_n, new_n, ext in ((2, 3, 'csv'), (6, 4, 'xlsx'), (3, 5, 'csv'), (8, 8, 'csv')):
+        shutil.copy(af / f'Additional_file_{src_n}.{ext}', d['af'] / f'Additional file {new_n}.{ext}')
     conflicts = ROOT / 'data' / 'SPRSound_Event_Level_Dataset_CLEAN.diagnosis_conflicts.csv'
     for p in build.glob('_af*.md'):
         p.unlink()
@@ -261,7 +262,7 @@ Article type: Research article. Upload in this order.
 | 1 | 02_Cover_letter/Cover_letter.docx | Cover letter |
 | 2 | 01_Manuscript/Manuscript.docx | Manuscript (double spaced, line and page numbers, tables 1-4 inside, figure legends at the end, no figures embedded) |
 | 3 | 03_Figures/Figure_1.tiff ... Figure_6.tiff | Figure (one file each, in order; 170 mm, 300 dpi, LZW, all < 1 MB). Figure_N.pdf are vector alternatives |
-| 4 | 05_Additional_files/Additional file 1-8 | Additional file (cited in order in the text) |
+| 4 | 05_Additional_files/Additional file 1-8 | Additional file (numbered in order of first citation) |
 
 04_Tables/ holds each table as its own editable Word table object. BMC wants tables inside
 the manuscript (they are); upload the separate files only if the editorial office asks.
