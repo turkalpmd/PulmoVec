@@ -96,3 +96,7 @@ majority class → duration only → demographics only (age, sex, site) → own-
 * 2026-09-22 — child-level aggregation rules (at least one / at least two events predicted
   adventitious) added after review, not pre-specified (`scripts/run_clean_patient_rules.py`).
 
+* 2026-09-23 — recording- and patient-level disease-group models on aggregated outer-test event
+  probabilities, and pneumonia versus other diagnoses as a target, added after the primary
+  results were known; not pre-specified (`scripts/run_clean_disease_posthoc.py`, output in
+  `results_clean/posthoc_disease/`). The pre-specified disease-group conclusion is unchanged.

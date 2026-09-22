@@ -1,0 +1,17 @@
+level,target,contrast,mean,lo,hi,p_le0
+recording,3class,acc-maj ad_lr,-0.015,-0.03,-0.001,0.983
+recording,3class,acc-maj ad_lgbm,0.008,-0.009,0.025,0.18
+recording,3class,dAUC ad_lr-demo_lgbm,0.074,0.026,0.118,0.002
+recording,3class,dAUC ad_lgbm-demo_lgbm,0.088,0.05,0.123,0.0
+recording,pneumonia_vs_rest,acc-maj ad_lr,0.028,-0.006,0.064,0.057
+recording,pneumonia_vs_rest,acc-maj ad_lgbm,0.047,0.008,0.085,0.006
+recording,pneumonia_vs_rest,dAUC ad_lr-demo_lgbm,0.059,-0.001,0.121,0.027
+recording,pneumonia_vs_rest,dAUC ad_lgbm-demo_lgbm,0.079,0.032,0.127,0.0
+patient,3class,acc-maj ad_lr,-0.002,-0.027,0.023,0.59
+patient,3class,acc-maj ad_lgbm,0.004,-0.019,0.027,0.375
+patient,3class,dAUC ad_lr-demo_lgbm,0.029,-0.011,0.071,0.078
+patient,3class,dAUC ad_lgbm-demo_lgbm,0.048,0.009,0.089,0.01
+patient,pneumonia_vs_rest,acc-maj ad_lr,0.055,0.016,0.094,0.005
+patient,pneumonia_vs_rest,acc-maj ad_lgbm,0.039,0.0,0.079,0.029
+patient,pneumonia_vs_rest,dAUC ad_lr-demo_lgbm,0.038,-0.009,0.087,0.052
+patient,pneumonia_vs_rest,dAUC ad_lgbm-demo_lgbm,0.034,-0.015,0.08,0.09
