@@ -62,7 +62,17 @@ def main():
     groups = base['_group_key'].values
     l2_train_patients = set(pd.read_csv(ARMS['L2'] / 'split_train.csv',
                                         usecols=['_group_key'])['_group_key'])
+    l2_train = pd.read_csv(ARMS['L2'] / 'split_train.csv', usecols=KEY + ['_group_key'])
+    rec_in_train = set(l2_train['filename'])
+    # which recordings of each child did L2 train on, excluding the evaluated events' own recordings
+    other_rec = (l2_train.groupby('_group_key')['filename'].apply(set).to_dict())
+    same_rec = base['filename'].isin(rec_in_train)
+    child_other = {g: bool(other_rec.get(g, set()) - set(base.loc[base['_group_key'] == g,
+                                                                    'filename']))
+                   for g in base['_group_key'].unique()}
     report = {
+        'events_whose_recording_was_in_L2_training': int(same_rec.sum()),
+        'patients_with_another_recording_in_L2_training': int(sum(child_other.values())),
         'n_events': int(len(base)), 'n_patients': int(base['_group_key'].nunique()),
         'n_recordings': int(base['filename'].nunique()), 'n_boot': args.boot,
         'patients_also_in_L2_training': int(len(set(groups) & l2_train_patients)),
@@ -83,8 +93,13 @@ def main():
             assert (rows_a[target].values.astype(int) == y).all()
             proba[a] = bundle['model'].predict_proba(rows_a[bundle['features']])
 
+        pat_y = base.groupby('_group_key')[target].agg(lambda v: int(v.max())
+                                                      if target != 'model3_label'
+                                                      else int(v.iloc[0]))
         t = {'classes': names,
              'class_counts': np.bincount(y, minlength=len(names)).tolist(),
+             'patient_class_counts': np.bincount(pat_y.values,
+                                                 minlength=len(names)).tolist(),
              'majority_class_accuracy': float(np.bincount(y).max() / len(y))}
         for a in ARMS:
             point = cs.overall_metrics(y, proba[a])

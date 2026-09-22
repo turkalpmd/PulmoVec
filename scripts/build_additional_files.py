@@ -39,14 +39,26 @@ def main():
     out = Path(ap.parse_args().out_dir)
     out.mkdir(parents=True, exist_ok=True)
 
-    sub = []
+    rows = []
     for design, d in (('Nested CV', RC / 'metrics' / 'nested_cv_subgroups'),
                       ('L0 hold-out', RC / 'arm_L0_clean' / 'subgroups')):
-        t = pd.read_csv(d / 'subgroups.csv')
-        t.insert(0, 'design', design)
-        sub.append(t)
-    sub = pd.concat(sub)
-    sub['task'] = sub['task'].map(NAME)
+        rep = json.loads((d / 'subgroups.json').read_text())
+        for task, cols in rep.items():
+            if task not in NAME:
+                continue
+            for col, levels in cols.items():
+                for level, e in levels.items():
+                    r = {'design': design, 'outcome': NAME[task], 'subgroup': col,
+                         'level': level, 'n_patients': e['n_patients'],
+                         'n_events': e['n_events'], 'suppressed': bool(e.get('suppressed'))}
+                    for m in ('auc', 'accuracy', 'macro_f1'):
+                        if m in e:
+                            r[m], (r[m + '_lo'], r[m + '_hi']) = e[m]['value'], e[m]['ci']
+                    for m in ('sensitivity', 'specificity'):
+                        if m in e:
+                            r[m] = e[m]
+                    rows.append(r)
+    sub = pd.DataFrame(rows)
     sub.to_csv(out / 'Additional_file_2.csv', index=False)
 
     b = pd.read_csv(RC / 'arm_L0_clean' / 'meta_benchmark' / 'meta_benchmark.csv')

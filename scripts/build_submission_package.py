@@ -123,7 +123,15 @@ def main():
 
     # ---- 05 additional files ------------------------------------------------------------
     src = ms / 'additional_files' / 'src'
-    render(src / 'additional_file_1.md', build / '_af1.md', strict=False)
+    # the plan reproduced in Additional file 1 is always the current repository version
+    af1 = (src / 'additional_file_1.md').read_text()
+    plan = (RC / 'ANALYSIS_PLAN.md').read_text()
+    plan = re.sub(r'^# .*\n', '', plan, count=1)
+    plan = re.sub(r'^## ', '### ', plan, flags=re.M)
+    i, j = af1.index('# Pre-specified analysis plan'), af1.index('# Hyper-parameters and software')
+    af1 = af1[:i] + '# Pre-specified analysis plan and deviations\n' + plan + '\n' + af1[j:]
+    (build / '_af1_src.md').write_text(af1)
+    render(build / '_af1_src.md', build / '_af1.md', strict=False)
     pandoc(build / '_af1.md', d['af'] / 'Additional file 1.docx', ms)
     pandoc(ms / 'TRIPOD_AI.md', d['af'] / 'Additional file 2.docx', ms)
 
@@ -134,7 +142,7 @@ def main():
                             'mean_abs_shap': 'Mean |SHAP|', 'share': 'Share (%)'})
     share = lambda t: f"{reg[f'shap.l0.{t}.demographic_share']['value'] * 100:.1f}%"  # noqa: E731
     af4 = f"""---
-title: "Additional file 4. SHAP attribution of the second-stage learners"
+title: "Additional file 6. SHAP attribution of the second-stage learners"
 ---
 
 SHAP values were computed with TreeExplainer for the full-stack LightGBM models of the locked
@@ -161,7 +169,7 @@ Table S8 Mean absolute SHAP value and share of attribution per feature
     img = src / 'img'
     af5_src = src / 'additional_file_5.md'
     af5_src.write_text(f"""---
-title: "Additional file 5. Model-derived attribution: further maps and faithfulness checks"
+title: "Additional file 7. Model-derived attribution: further maps and faithfulness checks"
 ---
 
 Events were sampled from the locked test partition by a fixed seeded rule (up to 150 per true
@@ -261,7 +269,7 @@ Article type: Research article. Upload in this order.
 |---|---|---|
 | 1 | 02_Cover_letter/Cover_letter.docx | Cover letter |
 | 2 | 01_Manuscript/Manuscript.docx | Manuscript (double spaced, line and page numbers, tables 1-4 inside, figure legends at the end, no figures embedded) |
-| 3 | 03_Figures/Figure_1.tiff ... Figure_6.tiff | Figure (one file each, in order; 170 mm, 300 dpi, LZW, all < 1 MB). Figure_N.pdf are vector alternatives |
+| 3 | 03_Figures/Figure_1.tiff ... Figure_5.tiff | Figure (one file each, in order; 170 mm, 300 dpi, LZW, all < 1 MB). Figure_N.pdf are vector alternatives |
 | 4 | 05_Additional_files/Additional file 1-8 | Additional file (numbered in order of first citation) |
 
 04_Tables/ holds each table as its own editable Word table object. BMC wants tables inside
@@ -276,7 +284,7 @@ the manuscript (they are); upload the separate files only if the editorial offic
 - Tables: real table objects, no colour or shading, no thousands separators
 - Figure titles <= 15 words and legends <= 300 words are in the manuscript, not in the graphics
 - Every figure and additional file is cited in sequence in the text
-- TRIPOD+AI checklist: Additional file 7
+- TRIPOD+AI checklist: Additional file 2
 
 ## Still to do by the authors before pressing submit
 """ + '\n'.join(f'- [ ] {t}' for t in todo) + """

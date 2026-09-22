@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 RC = ROOT / 'results_clean'
 TASK = {'model2_label': 'Screening', 'model1_label': 'Sound pattern',
         'model3_label': 'Disease group'}
-CLASS = {'Abnormal': 'Adventitious', 'Rhonchi': 'Wheeze/rhonchi',
+CLASS = {'Abnormal': 'Adventitious', 'Rhonchi': 'Wheeze/rhonchi', 'Wheeze/Rhonchi': 'Wheeze/rhonchi',
          'Normal_Other': 'Normal/other', 'Bronchial': 'Bronchial disease'}
 RUNG = {'duration_only': 'Event duration only', 'demographics_only': 'Demographics only',
         'own_task_base': 'Own-task base model', 'acoustic_only': 'All acoustic probabilities',

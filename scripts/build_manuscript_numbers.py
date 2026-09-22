@@ -187,11 +187,26 @@ def main():
                 if demo:   # range across all three participant/recording characteristics
                     put(reg, f'sub.{arm}.{TASK[target]}.demographic.auc_min', min(demo), sp)
                     put(reg, f'sub.{arm}.{TASK[target]}.demographic.auc_max', max(demo), sp)
+                sa = [e.get('sensitivity') for e in cols.get('age_band', {}).values()
+                      if isinstance(e.get('sensitivity'), (int, float))]
+                if sa:
+                    put(reg, f'sub.{arm}.{TASK[target]}.age_band.sens_min', min(sa), sp)
+                    put(reg, f'sub.{arm}.{TASK[target]}.age_band.sens_max', max(sa), sp)
                 sens = [e.get('sensitivity') for e in cols.get('duration_tertile', {}).values()
                         if isinstance(e.get('sensitivity'), (int, float))]
                 if sens:
                     put(reg, f'sub.{arm}.{TASK[target]}.duration_tertile.sens_min', min(sens), sp)
                     put(reg, f'sub.{arm}.{TASK[target]}.duration_tertile.sens_max', max(sens), sp)
+
+    pr_p = RC / 'metrics' / 'patient_rules' / 'patient_rules.json'
+    if pr_p.exists():
+        for target, t in json.loads(pr_p.read_text())['tasks'].items():
+            b = f'prule.{TASK[target]}'
+            put(reg, f'{b}.n_children', t['n_children'], pr_p)
+            for i, n in enumerate(t['children_by_derived_label']):
+                put(reg, f'{b}.children.class{i}', n, pr_p)
+            for rule, blk in t['rules'].items():
+                add_metric_block(reg, f'{b}.{rule}', blk, pr_p)
 
     ab_p = RC / 'ablations' / 'ablations.json'
     if ab_p.exists():
@@ -211,11 +226,17 @@ def main():
     ce_p = RC / 'metrics' / 'common_events' / 'common_events.json'
     if ce_p.exists():
         ce = json.loads(ce_p.read_text())
-        for k in ('n_events', 'n_patients', 'n_recordings', 'patients_also_in_L2_training'):
+        for k in ('n_events', 'n_patients', 'n_recordings', 'patients_also_in_L2_training',
+                  'events_whose_recording_was_in_L2_training',
+                  'patients_with_another_recording_in_L2_training'):
             put(reg, f'common.{k}', ce[k], ce_p)
         for target, t in ce['tasks'].items():
             b = f'common.{TASK[target]}'
             put(reg, f'{b}.majority_accuracy', t['majority_class_accuracy'], ce_p)
+            for i, n in enumerate(t.get('patient_class_counts', [])):
+                put(reg, f'{b}.children.class{i}', n, ce_p)
+            for i, n in enumerate(t['class_counts']):
+                put(reg, f'{b}.events.class{i}', n, ce_p)
             for arm in ('L0', 'L2'):
                 add_metric_block(reg, f'{b}.{arm.lower()}', t[arm], ce_p)
             for m in ('auc', 'accuracy'):

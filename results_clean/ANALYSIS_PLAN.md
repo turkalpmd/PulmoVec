@@ -82,8 +82,17 @@ majority class → duration only → demographics only (age, sex, site) → own-
 * 2026-09-21 — the pre-specified comparison of the two split designs on the events both held
   out was run (`scripts/run_clean_common_events.py`) and is reported in the Results. No
   pre-specified analysis remains un-run.
-* 2026-09-22 — two preprocessing controls added after internal review, not pre-specified and
-  reported as such: retraining with the mel bands above the band-pass cut-off masked, and
-  with the event embedded in real surrounding audio instead of isolated and noise-padded
-  (`scripts/run_clean_ablations.py`).
+* 2026-09-21 (logged 2026-09-22) — two preprocessing controls added after internal review,
+  not pre-specified and reported as such: retraining with the mel bands above the band-pass
+  cut-off masked, and with the event embedded in real surrounding audio instead of isolated
+  and noise-padded (`scripts/run_clean_ablations.py`; run 2026-09-21 01:45-02:30).
+* Timing note — arm L1 is the run of 2026-09-14, which predates this plan; its base models
+  were not re-trained. All other arms and analyses were run after the plan was written.
+* Cohort — nine events of one child whose age was encoded as 55 years in three recordings
+  (2.5 years in all others) were excluded (user decision, 2026-09-19); the cohort is therefore
+  19 693 rather than the expected 19 702 events, with the same 736 patients.
+* Subgroups — annotated-event-duration tertiles were added to the pre-specified subgroups
+  (age band, sex, site) as a shortcut check; exploratory, like the others.
+* 2026-09-22 — child-level aggregation rules (at least one / at least two events predicted
+  adventitious) added after review, not pre-specified (`scripts/run_clean_patient_rules.py`).
 

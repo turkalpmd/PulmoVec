@@ -288,7 +288,9 @@ fig5 <- function() {
   dl <- rd("saliency_deletion.csv") %>% mutate(task = fct(task))
   bd <- rd("mel_bands.csv")
   cut_band <- max(bd$band[bd$high_hz <= 1800]) + 0.5
-  brk <- c(1, 3, 5, 7); blab <- sprintf("%.1f", bd$low_hz[brk] / 1000)
+  # tick marks at band EDGES (band b spans b - 0.5 to b + 0.5 on the plot)
+  brk <- c(0.5, 2.5, 4.5, 6.5, 8.5)
+  blab <- sub("\\.?0+$", "", sprintf("%.2f", c(bd$low_hz[c(1, 3, 5, 7)], 8000) / 1000))
   mp <- mp %>% mutate(panel = factor(paste0(task, "\n", class),
                                      levels = unique(paste0(task, "\n", class))))
 
@@ -301,7 +303,7 @@ fig5 <- function() {
     scale_x_continuous(breaks = c(0, 1, 2), labels = c("0", "1", "2"),
                        expand = c(0, 0)) +
     facet_wrap(~ panel, nrow = 1) +
-    labs(x = "Time in clip (s)", y = "Mel band, lower edge (kHz)", tag = "a") +
+    labs(x = "Time in clip (s)", y = "Mel band edge (kHz)", tag = "a") +
     theme_pub() +
     theme(panel.grid = element_blank(), legend.position = "right",
           legend.key.width = unit(2.6, "mm"), legend.key.height = unit(7, "mm"),
@@ -311,9 +313,10 @@ fig5 <- function() {
   p2 <- ggplot(pf, aes(band, share, colour = task, linetype = class)) +
     geom_vline(xintercept = cut_band, colour = RED, size = 0.35, linetype = "22") +
     geom_line(size = 0.5) + geom_point(size = 0.9) +
-    scale_colour_manual(values = COL, guide = "none") +
+    scale_colour_manual(values = COL[c("Screening", "Sound pattern")]) +
     scale_linetype_manual(values = c("solid", "22", "11", "4212")) +
     scale_x_continuous(breaks = 1:8) +
+    guides(colour = guide_legend(order = 1), linetype = guide_legend(order = 2)) +
     labs(x = "Mel band (1 = lowest frequency)",
          y = "Share of positive attribution", tag = "b") +
     theme_pub() + theme(legend.position = "right") + tag_theme
