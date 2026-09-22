@@ -82,3 +82,8 @@ majority class → duration only → demographics only (age, sex, site) → own-
 * 2026-09-21 — the pre-specified comparison of the two split designs on the events both held
   out was run (`scripts/run_clean_common_events.py`) and is reported in the Results. No
   pre-specified analysis remains un-run.
+* 2026-09-22 — two preprocessing controls added after internal review, not pre-specified and
+  reported as such: retraining with the mel bands above the band-pass cut-off masked, and
+  with the event embedded in real surrounding audio instead of isolated and noise-padded
+  (`scripts/run_clean_ablations.py`).
+

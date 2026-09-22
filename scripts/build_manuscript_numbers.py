@@ -193,6 +193,21 @@ def main():
                     put(reg, f'sub.{arm}.{TASK[target]}.duration_tertile.sens_min', min(sens), sp)
                     put(reg, f'sub.{arm}.{TASK[target]}.duration_tertile.sens_max', max(sens), sp)
 
+    ab_p = RC / 'ablations' / 'ablations.json'
+    if ab_p.exists():
+        ab = json.loads(ab_p.read_text())
+        put(reg, 'abl.n_test_events', ab['n_test_events'], ab_p)
+        for target, t in ab['tasks'].items():
+            b = f'abl.{TASK[target]}'
+            for mode in ('reference', 'band', 'context'):
+                if mode in t:
+                    add_metric_block(reg, f'{b}.{mode}', t[mode], ab_p)
+            for mode in ('band', 'context'):
+                k = f'delta_auc_{mode}_minus_reference'
+                if k in t:
+                    put(reg, f'{b}.delta_auc.{mode}', t[k]['delta'], ab_p, t[k]['ci'])
+                    put(reg, f'{b}.delta_auc.{mode}.p', t[k]['p'], ab_p)
+
     ce_p = RC / 'metrics' / 'common_events' / 'common_events.json'
     if ce_p.exists():
         ce = json.loads(ce_p.read_text())

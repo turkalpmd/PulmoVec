@@ -1,8 +1,8 @@
 {
- "_git_commit": "9f4c8c2",
+ "_git_commit": "3b7a108",
  "numbers": {
   "repo.commit": {
-   "value": "9f4c8c2",
+   "value": "3b7a108",
    "source": "results_clean/manuscript_numbers.json"
   },
   "l0.n_events": {
@@ -13736,6 +13736,490 @@
   "sub.l0.disease.demographic.auc_max": {
    "value": 0.7574730816217041,
    "source": "results_clean/arm_L0_clean/subgroups/subgroups.json"
+  },
+  "abl.n_test_events": {
+   "value": 1903,
+   "source": "results_clean/ablations/ablations.json"
+  },
+  "abl.screen.reference.accuracy": {
+   "value": 0.930635838150289,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9084161494747003,
+    0.9514135722221365
+   ]
+  },
+  "abl.screen.reference.balanced_accuracy": {
+   "value": 0.9072986577181208,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8605150935049173,
+    0.9329283311794584
+   ]
+  },
+  "abl.screen.reference.macro_f1": {
+   "value": 0.8683409436834094,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.7983750821684157,
+    0.8919870912886299
+   ]
+  },
+  "abl.screen.reference.weighted_f1": {
+   "value": 0.9337767571990392,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9119563547220068,
+    0.9549898869868271
+   ]
+  },
+  "abl.screen.reference.mcc": {
+   "value": 0.7437262040800889,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.616553746775743,
+    0.7895504949247515
+   ]
+  },
+  "abl.screen.reference.auc": {
+   "value": 0.9671281916172093,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9429293160121571,
+    0.9806434081739068
+   ]
+  },
+  "abl.screen.reference.auprc": {
+   "value": 0.8824316352645557,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.7505730308086086,
+    0.9262996353240432
+   ]
+  },
+  "abl.screen.reference.brier": {
+   "value": 0.128625821357017,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.10610435527728293,
+    0.15181253452281535
+   ]
+  },
+  "abl.screen.reference.ece": {
+   "value": 0.11011899529290212,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.09789796575701507,
+    0.12438528237743784
+   ]
+  },
+  "abl.screen.band.accuracy": {
+   "value": 0.9369416710457172,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9170986326626966,
+    0.954796825537706
+   ]
+  },
+  "abl.screen.band.balanced_accuracy": {
+   "value": 0.9125483018100468,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8595730910024703,
+    0.9367264147442662
+   ]
+  },
+  "abl.screen.band.macro_f1": {
+   "value": 0.8786383000433662,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8079708533131996,
+    0.902688815182628
+   ]
+  },
+  "abl.screen.band.weighted_f1": {
+   "value": 0.9394170226576443,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9200031694555836,
+    0.9579743950363727
+   ]
+  },
+  "abl.screen.band.mcc": {
+   "value": 0.7625718914334911,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.627520032833643,
+    0.8094356517265965
+   ]
+  },
+  "abl.screen.band.auc": {
+   "value": 0.9693676391739234,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9455959871126178,
+    0.9831426726560062
+   ]
+  },
+  "abl.screen.band.auprc": {
+   "value": 0.8827867577769349,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.7617078920841083,
+    0.9253773603906379
+   ]
+  },
+  "abl.screen.band.brier": {
+   "value": 0.17684800246332052,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.15404826019562315,
+    0.20167376349199312
+   ]
+  },
+  "abl.screen.band.ece": {
+   "value": 0.1967320843113766,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.1847754901609308,
+    0.20732427153589436
+   ]
+  },
+  "abl.screen.context.accuracy": {
+   "value": 0.9358906988964792,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9125929388140185,
+    0.9590793885333255
+   ]
+  },
+  "abl.screen.context.balanced_accuracy": {
+   "value": 0.8753940410819605,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8261565071259286,
+    0.9033331183546289
+   ]
+  },
+  "abl.screen.context.macro_f1": {
+   "value": 0.8683597559592661,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8085992166108593,
+    0.8927093178872292
+   ]
+  },
+  "abl.screen.context.weighted_f1": {
+   "value": 0.9364852486508788,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9127190566664151,
+    0.9601557693344929
+   ]
+  },
+  "abl.screen.context.mcc": {
+   "value": 0.7369881295001898,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.6214794521971154,
+    0.7854227200347539
+   ]
+  },
+  "abl.screen.context.auc": {
+   "value": 0.9610153548911937,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9362262552086931,
+    0.9784235191953391
+   ]
+  },
+  "abl.screen.context.auprc": {
+   "value": 0.8573066631474543,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.7482499369905228,
+    0.9067135563385323
+   ]
+  },
+  "abl.screen.context.brier": {
+   "value": 0.13698810536079464,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.10631812722693687,
+    0.1695921523451161
+   ]
+  },
+  "abl.screen.context.ece": {
+   "value": 0.13671402250285908,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.12398926837108806,
+    0.14874854655967198
+   ]
+  },
+  "abl.screen.delta_auc.band": {
+   "value": 0.0022394475567141248,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    -0.0013731328083009947,
+    0.0073002227099805556
+   ]
+  },
+  "abl.screen.delta_auc.band.p": {
+   "value": 0.25,
+   "source": "results_clean/ablations/ablations.json"
+  },
+  "abl.screen.delta_auc.context": {
+   "value": -0.006112836726015591,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    -0.013164014033218088,
+    0.0029271648062333577
+   ]
+  },
+  "abl.screen.delta_auc.context.p": {
+   "value": 0.162,
+   "source": "results_clean/ablations/ablations.json"
+  },
+  "abl.pattern.reference.accuracy": {
+   "value": 0.8864950078822911,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8579433879256905,
+    0.9139900756682764
+   ]
+  },
+  "abl.pattern.reference.balanced_accuracy": {
+   "value": 0.8457064970149618,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.7805358016213298,
+    0.87542490226157
+   ]
+  },
+  "abl.pattern.reference.macro_f1": {
+   "value": 0.7446667568861405,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.6302150540119639,
+    0.7901119647881141
+   ]
+  },
+  "abl.pattern.reference.weighted_f1": {
+   "value": 0.8980990815926402,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8703225984777827,
+    0.926271229130034
+   ]
+  },
+  "abl.pattern.reference.mcc": {
+   "value": 0.65206211405002,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.49977193018752075,
+    0.7120003207906306
+   ]
+  },
+  "abl.pattern.reference.auc": {
+   "value": 0.9588790450874439,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9364777074943406,
+    0.9709067159948089
+   ]
+  },
+  "abl.pattern.reference.auprc": {
+   "value": 0.8527959752859037,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.7541084349975085,
+    0.89124549459012
+   ]
+  },
+  "abl.pattern.reference.brier": {
+   "value": 0.20227436092106368,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.17506177790688612,
+    0.2320596173626125
+   ]
+  },
+  "abl.pattern.reference.ece": {
+   "value": 0.1419766560799814,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.12450217574179644,
+    0.16146035861691577
+   ]
+  },
+  "abl.pattern.band.accuracy": {
+   "value": 0.8728323699421965,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8459737656088899,
+    0.8990279082684488
+   ]
+  },
+  "abl.pattern.band.balanced_accuracy": {
+   "value": 0.859808076779098,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8245814313995757,
+    0.8868212622146252
+   ]
+  },
+  "abl.pattern.band.macro_f1": {
+   "value": 0.7328677304646277,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.6234813463998776,
+    0.7799045958640846
+   ]
+  },
+  "abl.pattern.band.weighted_f1": {
+   "value": 0.8886688963295374,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8624843811195619,
+    0.916265847051596
+   ]
+  },
+  "abl.pattern.band.mcc": {
+   "value": 0.6409857044875515,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.49490249530692154,
+    0.7057688783069153
+   ]
+  },
+  "abl.pattern.band.auc": {
+   "value": 0.9575804050026372,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9426174182586684,
+    0.96791481855948
+   ]
+  },
+  "abl.pattern.band.auprc": {
+   "value": 0.8428688149523499,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.7655514844837902,
+    0.8775033543191083
+   ]
+  },
+  "abl.pattern.band.brier": {
+   "value": 0.22062925926382332,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.19165222427149306,
+    0.251245263244248
+   ]
+  },
+  "abl.pattern.band.ece": {
+   "value": 0.13852398485117565,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.12450046599494832,
+    0.15443071876676748
+   ]
+  },
+  "abl.pattern.context.accuracy": {
+   "value": 0.8712559117183395,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8378629514749313,
+    0.9031918683984435
+   ]
+  },
+  "abl.pattern.context.balanced_accuracy": {
+   "value": 0.8314346139017071,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.7987889078655885,
+    0.8739833483080158
+   ]
+  },
+  "abl.pattern.context.macro_f1": {
+   "value": 0.7177879299051675,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.6250034174890784,
+    0.7568157630023482
+   ]
+  },
+  "abl.pattern.context.weighted_f1": {
+   "value": 0.8849957792984638,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.8506116359967082,
+    0.9195542462070813
+   ]
+  },
+  "abl.pattern.context.mcc": {
+   "value": 0.6184966428871816,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.5059944866566659,
+    0.6701124649601006
+   ]
+  },
+  "abl.pattern.context.auc": {
+   "value": 0.9524082317656065,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.9404703222246338,
+    0.96645168589671
+   ]
+  },
+  "abl.pattern.context.auprc": {
+   "value": 0.816761188262534,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.7431939357090128,
+    0.8586086724166119
+   ]
+  },
+  "abl.pattern.context.brier": {
+   "value": 0.2469799928082953,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.21892099803524032,
+    0.27653854167719116
+   ]
+  },
+  "abl.pattern.context.ece": {
+   "value": 0.19128828736524234,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    0.17631804840275267,
+    0.21344673096288652
+   ]
+  },
+  "abl.pattern.delta_auc.band": {
+   "value": -0.0012986400848067348,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    -0.007850624800189452,
+    0.01026568305908837
+   ]
+  },
+  "abl.pattern.delta_auc.band.p": {
+   "value": 0.759,
+   "source": "results_clean/ablations/ablations.json"
+  },
+  "abl.pattern.delta_auc.context": {
+   "value": -0.00647081332183741,
+   "source": "results_clean/ablations/ablations.json",
+   "ci": [
+    -0.01602917882574812,
+    0.014424859459217114
+   ]
+  },
+  "abl.pattern.delta_auc.context.p": {
+   "value": 0.44,
+   "source": "results_clean/ablations/ablations.json"
   },
   "common.n_events": {
    "value": 191,
