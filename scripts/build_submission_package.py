@@ -130,8 +130,10 @@ def main():
     plan = re.sub(r'^## ', '### ', plan, flags=re.M)
     i, j = af1.index('# Pre-specified analysis plan'), af1.index('# Hyper-parameters and software')
     af1 = af1[:i] + '# Pre-specified analysis plan and deviations\n' + plan + '\n' + af1[j:]
-    (build / '_af1_src.md').write_text(af1)
-    render(build / '_af1_src.md', build / '_af1.md', strict=False)
+    tmp_src = src / '_af1_build.md'          # same directory, so relative includes resolve
+    tmp_src.write_text(af1)
+    render(tmp_src, build / '_af1.md', strict=False)
+    tmp_src.unlink()
     pandoc(build / '_af1.md', d['af'] / 'Additional file 1.docx', ms)
     pandoc(ms / 'TRIPOD_AI.md', d['af'] / 'Additional file 2.docx', ms)
 
@@ -153,7 +155,7 @@ disease group.
 
 ![Figure S3. Share of mean absolute SHAP attribution by feature, coloured by feature group, for the three outcomes.]({shap_dir / 'shap_group_share.png'}){{width=100%}}
 
-Table S8 Mean absolute SHAP value and share of attribution per feature
+Table S11 Mean absolute SHAP value and share of attribution per feature
 
 {md_table(ft)}
 
@@ -181,7 +183,7 @@ pattern ({{{{sal.pattern.n_correct}}}} correctly classified). <!-- numbers-ok --
 
 ![Figure S2. Per-event faithfulness statistics for correctly classified events. a Share of positive occlusion attribution inside the annotated event against the share of the clip that the event occupies (dotted line: equality). b Correlation between occlusion maps of the trained model and of a model whose classification head was re-initialised. c Correlation between occlusion and integrated-gradients maps.]({img / 'FigS2_faithfulness.png'}){{width=100%}}
 
-Table S9 Summary of faithfulness checks (correctly classified events)
+Table S12 Summary of faithfulness checks (correctly classified events)
 
 | Measure | Screening | Sound pattern |
 |:---|---:|---:|

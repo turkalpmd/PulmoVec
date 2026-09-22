@@ -257,6 +257,10 @@ def main():
         for k2 in ('n_tensors_common', 'n_tensors_changed', 'max_abs_diff'):
             if k2 in au:
                 put(reg, f'audit.{k2}', au[k2], au_p)
+        if 'pristine_sha256' in au:
+            put(reg, 'audit.pristine_sha256_short', au['pristine_sha256'][:16], au_p)
+        if isinstance(au.get('legacy_meta', {}).get('epoch'), int):
+            put(reg, 'audit.legacy_epoch', au['legacy_meta']['epoch'], au_p)
 
     split = RC / 'split_summary.json'
     for part, d in json.loads(split.read_text()).items():
