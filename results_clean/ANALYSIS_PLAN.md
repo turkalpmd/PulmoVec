@@ -105,3 +105,7 @@ majority class → duration only → demographics only (age, sex, site) → own-
   specificity, added after internal review; not pre-specified
   (`scripts/run_clean_duration_operating_point.py`, output in
   `results_clean/duration_operating_point/`).
+* 2026-09-23 (later) — after a further internal review, not pre-specified: pneumonia versus
+  healthy controls as an additional post hoc disease target, age by disease group and severe
+  versus non-severe pneumonia (`scripts/run_clean_disease_posthoc.py`; earlier rows unchanged),
+  and positive predictive values at other prevalences (`scripts/run_clean_ppv_prevalence.py`).

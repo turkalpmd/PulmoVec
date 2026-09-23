@@ -56,17 +56,18 @@ def aggregate(g, key):
 
 rec = aggregate(ev, 'filename')
 rmeta = ev.groupby('filename').agg(pid=('_group_key', 'first'), y=('model3_label', 'first'),
-                                   age=('age', 'first'), sex=('gender_code', 'first'))
+                                   age=('age', 'first'), sex=('gender_code', 'first'),
+                                   dx=('disease', 'first'))
 rec = rec.join(rmeta)
 pat = aggregate(ev, '_group_key')
 pat['n_recordings'] = ev.groupby('_group_key').filename.nunique()
 pmeta = ev.groupby('_group_key').agg(y=('model3_label', 'first'), age=('age', 'mean'),
-                                     sex=('gender_code', 'first'))
+                                     sex=('gender_code', 'first'), dx=('disease', 'first'))
 pmeta['pid'] = pmeta.index
 pat = pat.join(pmeta)
 assert ev.groupby('_group_key').model3_label.nunique().max() == 1  # no conflicting dx
-ACOU_R = [c for c in rec.columns if c not in ('pid', 'y', 'age', 'sex')]
-ACOU_P = [c for c in pat.columns if c not in ('pid', 'y', 'age', 'sex')]
+ACOU_R = [c for c in rec.columns if c not in ('pid', 'y', 'age', 'sex', 'dx')]
+ACOU_P = [c for c in pat.columns if c not in ('pid', 'y', 'age', 'sex', 'dx')]
 DEMO = ['age', 'sex']
 
 
@@ -128,8 +129,11 @@ dx = (dx.groupby(['model3_label', 'disease'])
 dx.to_csv(OUT + 'diagnoses_by_group.csv', index=False)
 
 rows = []
-for level, df, acou in [('recording', rec, ACOU_R), ('patient', pat, ACOU_P)]:
-    for target in ['3class', 'pneumonia_vs_rest']:
+for level, df_all, acou in [('recording', rec, ACOU_R), ('patient', pat, ACOU_P)]:
+    for target in ['3class', 'pneumonia_vs_rest', 'pneumonia_vs_control']:
+        # pneumonia versus healthy control: children (recordings) of those two diagnoses only
+        df = (df_all[(df_all.y == 0) | (df_all.dx == 'Control Group')]
+              if target == 'pneumonia_vs_control' else df_all)
         y = df.y.values.astype(int)
         if target != '3class':
             y = (y == 0).astype(int)
@@ -165,6 +169,37 @@ for level, df, acou in [('recording', rec, ACOU_R), ('patient', pat, ACOU_P)]:
 res = pd.DataFrame(rows)
 res.to_csv(OUT + 'results.csv', index=False)
 print(res.to_string())
+
+# age by disease group (healthy controls shown separately), patient level
+grp = pat.y.map({0: 'Pneumonia', 1: 'Bronchial disease', 2: 'Normal/other'})
+grp = grp.where(pat.dx != 'Control Group', 'Healthy control (within normal/other)')
+age = (pat.groupby(grp).age.describe(percentiles=[.25, .5, .75])[['count', '25%', '50%', '75%']]
+       .round(2).rename(columns={'count': 'children', '25%': 'q1', '50%': 'median', '75%': 'q3'}))
+age.to_csv(OUT + 'age_by_group.csv')
+print(age)
+
+# severe versus non-severe pneumonia (descriptive): acoustic summaries of each child
+pn = pat[pat.y == 0].copy()
+pn['severe'] = (pn.dx == 'Pneumonia (severe)').astype(int)
+sev_rows = []
+for feat, label in [('f_abn2', 'fraction of events predicted adventitious (screening)'),
+                    ('f_crackle', 'fraction of events predicted crackles'),
+                    ('model3_label_p0_mean', 'mean predicted probability of pneumonia')]:
+    yy, xx = pn.severe.values, pn[feat].values
+    auc = roc_auc_score(yy, xx)
+    rng = np.random.default_rng(0)
+    bs = []
+    for _ in range(2000):
+        ix = rng.integers(0, len(yy), len(yy))
+        if yy[ix].min() != yy[ix].max():
+            bs.append(roc_auc_score(yy[ix], xx[ix]))
+    sev_rows.append(dict(feature=label, n_severe=int(yy.sum()), n_non_severe=int((1 - yy).sum()),
+                         median_severe=round(float(np.median(xx[yy == 1])), 3),
+                         median_non_severe=round(float(np.median(xx[yy == 0])), 3),
+                         auc_severe_vs_non=round(auc, 3),
+                         auc_ci=f'{np.percentile(bs, 2.5):.3f}-{np.percentile(bs, 97.5):.3f}'))
+pd.DataFrame(sev_rows).to_csv(OUT + 'severity.csv', index=False)
+print(pd.DataFrame(sev_rows).to_string())
 
 
 # paired patient-bootstrap contrasts: accuracy minus majority rate, AUC gain over demographics
