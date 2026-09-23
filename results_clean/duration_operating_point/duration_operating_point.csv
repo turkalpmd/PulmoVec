@@ -1,0 +1,13 @@
+target,class,tertile,n_class_events,n_normal_events,n_patients,sensitivity,sensitivity_ci,specificity,specificity_ci,sensitivity_at_overall_specificity,sensitivity_at_overall_specificity_ci
+model2_label,Adventitious,short,2355,4215,541,0.885,0.842-0.920,0.866,0.842-0.889,0.797,0.737-0.847
+model2_label,Adventitious,medium,594,5973,647,0.646,0.573-0.715,0.944,0.936-0.952,0.673,0.607-0.744
+model2_label,Adventitious,long,348,6208,614,0.526,0.414-0.627,0.977,0.972-0.981,0.681,0.593-0.759
+model2_label,Adventitious,all,3297,16396,736,0.804,0.757-0.845,0.936,0.927-0.945,0.804,0.760-0.842
+model1_label,Crackles,short,1273,4215,541,0.788,0.735-0.839,0.866,0.844-0.887,0.723,0.633-0.802
+model1_label,Crackles,medium,412,5973,647,0.592,0.510-0.668,0.945,0.936-0.952,0.675,0.590-0.748
+model1_label,Crackles,long,161,6208,614,0.267,0.168-0.371,0.976,0.971-0.981,0.559,0.434-0.671
+model1_label,Crackles,all,1846,16396,736,0.699,0.646-0.746,0.936,0.928-0.945,0.765,0.708-0.818
+model1_label,Wheeze/rhonchi,short,1082,4215,541,0.848,0.770-0.904,0.866,0.844-0.887,0.874,0.820-0.913
+model1_label,Wheeze/rhonchi,medium,182,5973,647,0.637,0.532-0.738,0.945,0.936-0.952,0.758,0.653-0.842
+model1_label,Wheeze/rhonchi,long,187,6208,614,0.684,0.523-0.807,0.976,0.971-0.981,0.802,0.692-0.887
+model1_label,Wheeze/rhonchi,all,1451,16396,736,0.8,0.732-0.855,0.936,0.928-0.945,0.877,0.832-0.914

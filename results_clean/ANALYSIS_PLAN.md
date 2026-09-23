@@ -100,3 +100,8 @@ majority class → duration only → demographics only (age, sex, site) → own-
   probabilities, and pneumonia versus other diagnoses as a target, added after the primary
   results were known; not pre-specified (`scripts/run_clean_disease_posthoc.py`, output in
   `results_clean/posthoc_disease/`). The pre-specified disease-group conclusion is unchanged.
+* 2026-09-23 — sensitivity and specificity of the acoustic outcomes by event-duration tertile,
+  at the model's own decision and at a tertile-specific threshold matched to the overall
+  specificity, added after internal review; not pre-specified
+  (`scripts/run_clean_duration_operating_point.py`, output in
+  `results_clean/duration_operating_point/`).
