@@ -134,7 +134,7 @@ def patient_bootstrap_ci(y_true, y_proba, groups, n_classes, n_boot=1000, seed=4
             for k, v in acc.items()}
 
 
-def tune_and_fit(Xtr, ytr, Xva, yva, n_classes, n_trials, seed=42):
+def tune_and_fit(Xtr, ytr, Xva, yva, n_classes, n_trials, seed=42, class_weight='balanced'):
     def objective(trial):
         params = {
             'objective': 'binary' if n_classes == 2 else 'multiclass',
@@ -147,7 +147,7 @@ def tune_and_fit(Xtr, ytr, Xva, yva, n_classes, n_trials, seed=42):
             'colsample_bytree': trial.suggest_float('colsample_bytree', 0.6, 1.0),
             'reg_alpha': trial.suggest_float('reg_alpha', 1e-8, 10.0, log=True),
             'reg_lambda': trial.suggest_float('reg_lambda', 1e-8, 10.0, log=True),
-            'class_weight': 'balanced',
+            'class_weight': class_weight,
             'verbose': -1,
             'random_state': seed,
         }
@@ -163,7 +163,7 @@ def tune_and_fit(Xtr, ytr, Xva, yva, n_classes, n_trials, seed=42):
 
     best = study.best_params.copy()
     best.update({'objective': 'binary' if n_classes == 2 else 'multiclass',
-                 'class_weight': 'balanced', 'verbose': -1, 'random_state': seed})
+                 'class_weight': class_weight, 'verbose': -1, 'random_state': seed})
     if n_classes > 2:
         best['num_class'] = n_classes
     model = lgb.LGBMClassifier(**best)

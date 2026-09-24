@@ -65,6 +65,9 @@ def main():
                     help='directory holding split_{train,val,test}.csv (for event duration)')
     ap.add_argument('--trials', type=int, default=100)
     ap.add_argument('--seed', type=int, default=42)
+    ap.add_argument('--class-weight', choices=['balanced', 'none'], default='balanced',
+                    help="'none' = unweighted second stage (post hoc sensitivity analysis)")
+    ap.add_argument('--sets', nargs='+', default=None, help='restrict to these feature sets')
     ap.add_argument('--allow-patient-overlap', action='store_true',
                     help='only for the deliberately leaky event-level arm')
     args = ap.parse_args()
@@ -92,8 +95,11 @@ def main():
         ytr, yva, yte = (d[target].values.astype(int) for d in (tr, va, te))
         summary[target] = {}
         for set_name, cols in feature_sets(target).items():
+            if args.sets and set_name not in args.sets:
+                continue
             model, params, val_f1 = tune_and_fit(tr[cols], ytr, va[cols], yva, n_classes,
-                                                 args.trials, seed=args.seed)
+                                                 args.trials, seed=args.seed,
+                                                 class_weight=None if args.class_weight == 'none' else 'balanced')
             proba = model.predict_proba(te[cols])
             np.save(out_dir / f'test_proba_{target}_{set_name}.npy', proba)
             with open(out_dir / f'model_{target}_{set_name}.pkl', 'wb') as f:

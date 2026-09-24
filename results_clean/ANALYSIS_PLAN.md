@@ -109,3 +109,11 @@ majority class → duration only → demographics only (age, sex, site) → own-
   healthy controls as an additional post hoc disease target, age by disease group and severe
   versus non-severe pneumonia (`scripts/run_clean_disease_posthoc.py`; earlier rows unchanged),
   and positive predictive values at other prevalences (`scripts/run_clean_ppv_prevalence.py`).
+* 2026-09-24 — revision requests, all post hoc (`scripts/run_clean_revision_requests.py`, output in
+  `results_clean/revision_requests/`): child-level confusion counts and PPV/NPV at prevalences
+  0.10, 0.20 and 0.327 (A1); inventory of the 42 post hoc disease-group configurations, six of
+  which are unfitted mean predicted probabilities (A2); child-level decision curve (C1); release
+  inventory for a cross-release validation, no model trained (B1); and the nested CV re-run with
+  an unweighted second stage for the full stack, demographics-only and duration-only sets
+  (`run_clean_meta_v2.py --class-weight none`, same folds, features and 50-trial tuning; B2).
+  A re-run of the weighted full stack in fold 1 reproduced the original AUCs to four decimals.

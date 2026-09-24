@@ -1,0 +1,43 @@
+target,level,features,learner,n_units,majority_rate,auc,auc_ci,accuracy,accuracy_ci,balanced_accuracy
+three groups,recording,unfitted mean predicted probability,none,4985,0.625,0.637,0.608-0.666,0.489,0.452-0.524,0.454
+three groups,recording,age and sex,logistic regression,4985,0.625,0.576,0.529-0.622,0.625,0.577-0.671,0.333
+three groups,recording,age and sex,LightGBM,4985,0.625,0.577,0.536-0.622,0.634,0.585-0.679,0.368
+three groups,recording,acoustic aggregates,logistic regression,4985,0.625,0.628,0.595-0.663,0.619,0.573-0.663,0.341
+three groups,recording,acoustic aggregates,LightGBM,4985,0.625,0.621,0.588-0.653,0.622,0.576-0.666,0.351
+three groups,recording,"acoustic aggregates, age and sex",logistic regression,4985,0.625,0.651,0.617-0.683,0.61,0.565-0.652,0.354
+three groups,recording,"acoustic aggregates, age and sex",LightGBM,4985,0.625,0.664,0.626-0.699,0.634,0.590-0.677,0.397
+pneumonia vs other,recording,unfitted mean predicted probability,none,4985,0.625,0.653,0.607-0.693,0.492,0.455-0.530,0.579
+pneumonia vs other,recording,age and sex,logistic regression,4985,0.625,0.568,0.506-0.623,0.636,0.589-0.681,0.522
+pneumonia vs other,recording,age and sex,LightGBM,4985,0.625,0.609,0.555-0.667,0.632,0.581-0.680,0.553
+pneumonia vs other,recording,acoustic aggregates,logistic regression,4985,0.625,0.648,0.604-0.691,0.634,0.597-0.670,0.569
+pneumonia vs other,recording,acoustic aggregates,LightGBM,4985,0.625,0.646,0.601-0.686,0.631,0.593-0.667,0.566
+pneumonia vs other,recording,"acoustic aggregates, age and sex",logistic regression,4985,0.625,0.668,0.624-0.709,0.653,0.615-0.690,0.595
+pneumonia vs other,recording,"acoustic aggregates, age and sex",LightGBM,4985,0.625,0.687,0.640-0.729,0.672,0.631-0.710,0.622
+pneumonia vs healthy controls,recording,unfitted mean predicted probability,none,3574,0.872,0.695,0.637-0.748,0.324,0.283-0.369,0.587
+pneumonia vs healthy controls,recording,age and sex,logistic regression,3574,0.872,0.506,0.414-0.604,0.872,0.832-0.907,0.5
+pneumonia vs healthy controls,recording,age and sex,LightGBM,3574,0.872,0.516,0.414-0.614,0.872,0.832-0.907,0.5
+pneumonia vs healthy controls,recording,acoustic aggregates,logistic regression,3574,0.872,0.692,0.637-0.751,0.872,0.832-0.907,0.5
+pneumonia vs healthy controls,recording,acoustic aggregates,LightGBM,3574,0.872,0.67,0.615-0.729,0.871,0.830-0.905,0.502
+pneumonia vs healthy controls,recording,"acoustic aggregates, age and sex",logistic regression,3574,0.872,0.698,0.645-0.754,0.872,0.831-0.906,0.5
+pneumonia vs healthy controls,recording,"acoustic aggregates, age and sex",LightGBM,3574,0.872,0.673,0.605-0.741,0.87,0.829-0.905,0.504
+three groups,patient,unfitted mean predicted probability,none,736,0.595,0.621,0.588-0.653,0.448,0.414-0.485,0.433
+three groups,patient,age and sex,logistic regression,736,0.595,0.537,0.504-0.574,0.595,0.560-0.629,0.333
+three groups,patient,age and sex,LightGBM,736,0.595,0.598,0.565-0.632,0.594,0.560-0.630,0.347
+three groups,patient,acoustic aggregates,logistic regression,736,0.595,0.615,0.581-0.650,0.601,0.567-0.637,0.379
+three groups,patient,acoustic aggregates,LightGBM,736,0.595,0.63,0.597-0.664,0.59,0.554-0.624,0.377
+three groups,patient,"acoustic aggregates, age and sex",logistic regression,736,0.595,0.627,0.593-0.663,0.592,0.560-0.628,0.384
+three groups,patient,"acoustic aggregates, age and sex",LightGBM,736,0.595,0.645,0.612-0.680,0.599,0.565-0.635,0.386
+pneumonia vs other,patient,unfitted mean predicted probability,none,736,0.595,0.618,0.576-0.655,0.467,0.433-0.504,0.547
+pneumonia vs other,patient,age and sex,logistic regression,736,0.595,0.517,0.473-0.561,0.591,0.556-0.624,0.497
+pneumonia vs other,patient,age and sex,LightGBM,736,0.595,0.614,0.571-0.654,0.62,0.586-0.655,0.561
+pneumonia vs other,patient,acoustic aggregates,logistic regression,736,0.595,0.634,0.592-0.674,0.607,0.572-0.640,0.569
+pneumonia vs other,patient,acoustic aggregates,LightGBM,736,0.595,0.628,0.588-0.667,0.61,0.577-0.644,0.576
+pneumonia vs other,patient,"acoustic aggregates, age and sex",logistic regression,736,0.595,0.652,0.611-0.693,0.649,0.618-0.685,0.615
+pneumonia vs other,patient,"acoustic aggregates, age and sex",LightGBM,736,0.595,0.647,0.607-0.687,0.633,0.601-0.667,0.599
+pneumonia vs healthy controls,patient,unfitted mean predicted probability,none,509,0.861,0.645,0.581-0.707,0.248,0.212-0.289,0.551
+pneumonia vs healthy controls,patient,age and sex,logistic regression,509,0.861,0.471,0.406-0.543,0.861,0.829-0.890,0.5
+pneumonia vs healthy controls,patient,age and sex,LightGBM,509,0.861,0.521,0.452-0.597,0.861,0.829-0.890,0.5
+pneumonia vs healthy controls,patient,acoustic aggregates,logistic regression,509,0.861,0.623,0.555-0.691,0.859,0.825-0.890,0.499
+pneumonia vs healthy controls,patient,acoustic aggregates,LightGBM,509,0.861,0.626,0.556-0.699,0.864,0.833-0.892,0.52
+pneumonia vs healthy controls,patient,"acoustic aggregates, age and sex",logistic regression,509,0.861,0.624,0.552-0.693,0.859,0.825-0.890,0.499
+pneumonia vs healthy controls,patient,"acoustic aggregates, age and sex",LightGBM,509,0.861,0.621,0.551-0.693,0.861,0.829-0.890,0.518
